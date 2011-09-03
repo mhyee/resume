@@ -163,26 +163,48 @@
       <div id="name">
         <h1><%= contact["name"] %></h1>
         <h2 class="ieandjobmine"><%= contact["term"] %> <%= contact["program"] %></h2>
-        <h2 class="ieandjobmine"><%= contact["id"] %></h2>
+        <h2 class="ieandjobmine">
+          <% unless contact["id"].nil? %>
+            <%= contact["id"] %>
+          <% else %>
+            <%# Empty <h2> for padding %>
+            <!-- Removed from web version of resume -->
+          <% end %>
+        </h2>
       </div>
       <div id="permaddr">
-        <h2>Permanent Address</h2>
-        <% contact["permanent"]["address"].each do |line| %>
-          <%= line %>
-          <br />
+        <% unless contact["permanent"].nil? %>
+          <h2>Permanent Address</h2>
+          <% contact["permanent"]["address"].each do |line| %>
+            <%= line %>
+            <br />
+          <% end %>
+        <% else %>
+          <%# Empty <div> for padding %>
+          <!-- Removed from web version of resume -->
         <% end %>
       </div>
       <div id="locaddr">
-        <h2>Local Address (until <%= contact["local"]["until"] %>)</h2>
-        <% contact["local"]["address"].each do |line| %>
-          <%= line %>
-          <br />
+        <% unless contact["local"].nil? %>
+          <h2>Local Address (until <%= contact["local"]["until"] %>)</h2>
+          <% contact["local"]["address"].each do |line| %>
+            <%= line %>
+            <br />
+          <% end %>
+        <% else %>
+          <%# Empty <div> for padding %>
+          <!-- Removed from web version of resume -->
         <% end %>
       </div>
       <div id="other">
-        <% email = contact["email"] %>
-        <% site = contact["site"] %>
-        <a href="mailto:<%= email %>"><%= email %></a> | <%= contact["cell"] %> | <a href="http://<%= site %>"><%= site %></a>
+        <% unless contact["cell"].nil? %>
+          <% email = contact["email"] %>
+          <% site = contact["site"] %>
+          <a href="mailto:<%= email %>"><%= email %></a> | <%= contact["cell"] %> | <a href="http://<%= site %>"><%= site %></a>
+        <% else %>
+          <%# Empty <div> for padding %>
+          <!-- Removed from web version of resume -->
+        <% end %>
       </div>
     </div>
     <div id="computer" class="main">

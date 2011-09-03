@@ -3,5 +3,5 @@
     - http://www.dribin.org/dave/blog/archives/2006/11/17/hashes_to_ostruct/
 - Suppress newlines in the template
 - Create a LaTeX template
-- Have the option to generate "normal" and "web" versions
 - Use a makefile
+- Take a look at Ruby's OptionParser
