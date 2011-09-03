@@ -1,7 +1,7 @@
 contact:
   name: "Ming-Ho Yee"
   program: "Software Engineering"
-  term: "2T (co-op)"
+  term: "2T"
   email: "ming-ho.yee@uwaterloo.ca"
   site: "csclub.uwaterloo.ca/~m5yee"
 skills:
@@ -11,7 +11,7 @@ skills:
     - "Working knowledge of Java, PHP, HTML5, JavaScript, XSLT, Visual Basic, and IDL"
     - "Experienced with git, CVS, ClearCase, vim, TextMate, and Eclipse"
     - "Proficient with Windows, Mac OS X, and Linux"
-  transferrable:
+  transferable:
     - "Excellent ability to learn quickly and work independently, as demonstrated by previous work-terms"
     - "Outstanding organization and time management"
     - "Strong oral and written communication skills"
@@ -65,7 +65,7 @@ awards:
   -
     name: "University of Waterloo"
     location: "Waterloo ON"
-    award:
+    awards:
       -
         name: "NSERC Undergraduate Student Research Award"
         date: "April 2011"
@@ -81,7 +81,7 @@ awards:
   -
     name: "London Central Secondary School"
     location: "London ON"
-    award:
+    awards:
       -
         name: "Governor General's Academic Medal"
         date: "June 2009"
@@ -98,4 +98,5 @@ education:
   -
     level: "Ontario Secondary School Diploma"
     name: "London Central Secondary School"
+    location: "London ON"
     date: "June 2009"
