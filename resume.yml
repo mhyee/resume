@@ -1,0 +1,101 @@
+contact:
+  name: "Ming-Ho Yee"
+  program: "Software Engineering"
+  term: "2T (co-op)"
+  email: "ming-ho.yee@uwaterloo.ca"
+  site: "csclub.uwaterloo.ca/~m5yee"
+skills:
+  computer:
+    - "Highly competent with Ruby, Rails, Perl, XHTML, and CSS"
+    - "Familiar with C, C++, Scheme, VoiceXML, SCXML, XML, JSON and jQuery"
+    - "Working knowledge of Java, PHP, HTML5, JavaScript, XSLT, Visual Basic, and IDL"
+    - "Experienced with git, CVS, ClearCase, vim, TextMate, and Eclipse"
+    - "Proficient with Windows, Mac OS X, and Linux"
+  transferrable:
+    - "Excellent ability to learn quickly and work independently, as demonstrated by previous work-terms"
+    - "Outstanding organization and time management"
+    - "Strong oral and written communication skills"
+work:
+  -
+    title: "Ruby on Rails Web Developer in News & Social Media"
+    employer: "Eqentia Inc"
+    location: "Toronto ON"
+    start: "Sept"
+    end: "present"
+    description:
+      - "Returned for a second work-term"
+  -
+    title: "Ruby on Rails Web Developer in News & Social Media"
+    employer: "Eqentia Inc"
+    location: "Toronto ON"
+    start: "Jan"
+    end: "April 2011"
+    description:
+      - "Designed and implemented a feature for users to add content by sending emails"
+      - "Migrated Eqentia's outgoing email services to the Amazon Simple Email Service"
+      - "Co-led the implementation of the new front-end interface redesign"
+      - "Developed a feature for tracking and sorting documents by relevancy"
+  -
+    title: "Software Development Research Intern"
+    employer: "Genesys Telecommunications Inc (Alcatel-Lucent)"
+    location: "Markham ON"
+    start: "May"
+    end: "Aug 2010"
+    description:
+      - "Worked on a proof-of-concept speech analytics application to improve the customer experience at call centres"
+      - "Developed Interactive Voice Response applications with VoiceXML, and SCXML applications for advanced call routing"
+      - "Designed and implemented a web-based call recordings report with XHTML, CSS, jQuery, and Google Chart Tools, and Ajax-based polling for automatic updates"
+      - "Contributed to a Java backend for integration with external APIs and processing multichannel recordings"
+      - "Also worked with XML, XSLT, JSON, JavaScript, HTML5, Perl, ClearCase, and Eclipse"
+  -
+    title: "Junior software developer"
+    employer: "Robarts Research Institute (University of Western Ontario)"
+    location: "London ON"
+    start: "Oct 2007"
+    end: "Aug 2008"
+    description:
+      - "Developed and wrote a new module for pre-existing data analysis software, using IDL (Interactive Data Language)"
+      - "Examined MRI spectroscopy data with the new module to research drug treatments for Alzheimer's Disease"
+activities:
+  - "Writer for the Math Society's fortnightly publication"
+  - "Webmaster and past president of the University of Waterloo Quiz Bowl Club"
+  - "Director for the Engineering Society's Genius Bowl competition in May 2011"
+  - "Volunteer for Reach for the Top, a Canada-wide high school trivia competition"
+awards:
+  -
+    name: "University of Waterloo"
+    location: "Waterloo ON"
+    award:
+      -
+        name: "NSERC Undergraduate Student Research Award"
+        date: "April 2011"
+      -
+        name: "Term Dean's Honours List"
+        date: "Jan 2010, May 2010, Jan 2011"
+      -
+        name: "Scotiabank Software Engineering Scholarship"
+        date: "May 2009"
+      -
+        name: "President's Scholarship of Distinction"
+        date: "May 2009"
+  -
+    name: "London Central Secondary School"
+    location: "London ON"
+    award:
+      -
+        name: "Governor General's Academic Medal"
+        date: "June 2009"
+      -
+        name: "Neufeld Learning Systems Mathematics and Computer Science Bursary"
+        date: "June 2009"
+education:
+  -
+    level: "Candidate for Bachelor of Software Engineering"
+    name: "Honours Software Engineering, University of Waterloo"
+    location: "Waterloo ON"
+    start: "Sept 2009"
+    end: "present"
+  -
+    level: "Ontario Secondary School Diploma"
+    name: "London Central Secondary School"
+    date: "June 2009"
