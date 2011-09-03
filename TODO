@@ -1,0 +1,7 @@
+- Figure out a more elegant way of passing in the bindings to ERB
+- Use OpenStruct instead of hashes in the templates
+    - http://www.dribin.org/dave/blog/archives/2006/11/17/hashes_to_ostruct/
+- Suppress newlines in the template
+- Create a LaTeX template
+- Have the option to generate "normal" and "web" versions
+- Use a makefile
