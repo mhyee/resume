@@ -16,27 +16,38 @@
 \begin{resume}
 
 \vspace*{-1cm}
-\hspace*{-\sectionwidth}
 <% local = contact["local"] %>
 <% permanent = contact["permanent"] %>
-<% iterations = [ local["address"].size, permanent["address"].size ].max %>
-\begin{tabular}{c l l}
-  \multirow{<%= iterations+1 %>}{*}{\textbf{\fontsize{30}{40}\selectfont <%= contact["name"] %>}}
-  & \textbf{Local Address (until <%= local["until"] %>)}
-  & \textbf{Permanent Address} \\
-    <% for i in 0..(iterations-1) %>
-     & \small <%= local["address"][i] %> & \small <%= permanent["address"][i] %> \\
-    <% end %>
-  \textbf{\large <%= contact["term"] %> <%= contact["program"] %>} & & \\
-  \textbf{\large <%= contact["id"] %>} & & \\
-\end{tabular}
 
-\begin{center}
-  <% email = contact["email"] %>
-  <% site = contact["site"] %>
+<% if !local.nil? && !permanent.nil? %>
+  <% iterations = [ local["address"].size, permanent["address"].size ].max %>
   \hspace*{-\sectionwidth}
-  \href{mailto:<%= email %>}{\url{<%= email %>}} | <%= contact["cell"] %> | \href{http://<%= site %>}{\url{<%= site %>}}
-\end{center}
+  \begin{tabular}{c l l}
+    \multirow{<%= iterations+1 %>}{*}{\textbf{\fontsize{30}{40}\selectfont <%= contact["name"] %>}}
+    & \textbf{Local Address (until <%= local["until"] %>)}
+    & \textbf{Permanent Address} \\
+      <% for i in 0..(iterations-1) %>
+       & \small <%= local["address"][i] %> & \small <%= permanent["address"][i] %> \\
+      <% end %>
+    \textbf{\large <%= contact["term"] %> <%= contact["program"] %>} & & \\
+    \textbf{\large <%= contact["id"] %>} & & \\
+  \end{tabular}
+<% else %>
+  \hspace*{-\sectionwidth}
+  \begin{minipage}[l]{\textwidth}
+    \textbf{\fontsize{30}{40}\selectfont <%= contact["name"] %>} \\
+    \textbf{\large <%= contact["term"] %> <%= contact["program"] %>}
+  \end{minipage}
+<% end %>
+
+<% unless contact["cell"].nil? %>
+  \begin{center}
+    <% email = contact["email"] %>
+    <% site = contact["site"] %>
+    \hspace*{-\sectionwidth}
+    \href{mailto:<%= email %>}{\url{<%= email %>}} | <%= contact["cell"] %> | \href{http://<%= site %>}{\url{<%= site %>}}
+  \end{center}
+<% end %>
 
 \section{Computer Skills}
 \begin{itemize}

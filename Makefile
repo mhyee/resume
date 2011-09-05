@@ -1,4 +1,4 @@
-all: resume.html resume-web.html resume.pdf
+all: resume.html resume-web.html resume.pdf resume-web.pdf
 
 resume.html: generate.rb resume.yml private.yml resume.html.erb
 	@./generate.rb html
@@ -12,10 +12,15 @@ resume.tex: generate.rb resume.yml private.yml resume.tex.erb
 resume.pdf: resume.tex res.cls
 	@pdflatex -interaction=batchmode resume.tex
 
+resume-web.tex: generate.rb resume.yml resume.tex.erb
+	@./generate.rb tex web
+
+resume-web.pdf: resume-web.tex res.cls
+	@pdflatex -interaction=batchmode resume-web.tex
+
 .PHONY: clean
 clean:
-	rm -rf resume.html
-	rm -rf resume-web.html
-	rm -rf resume.tex
-	rm -rf resume.pdf
-	rm -rf resume.log
+	rm -rf resume.html resume-web.html
+	rm -rf resume.tex resume-web.tex
+	rm -rf resume.log resume-web.log
+	rm -rf resume.pdf resume-web.pdf
