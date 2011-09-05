@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transition//EN"
-  "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -101,10 +101,7 @@
        list-style: disc outside none;
        margin-bottom: 15px;
      }
-     #resume .main li > ul > li > ul, #resume .usethis {
-       list-style: circle outside none;
-     }
-     #resume #computer ul, #resume #transferable ul {
+     #resume #computer ul, #resume #transferable ul, #resume #activities ul {
       list-style: disc outside none;
       padding-left: 15px;
       margin-bottom: 25px !important;
@@ -233,12 +230,12 @@
             <%= job["location"] %>,
             <span class="date"><%= job["start"] %> &#8212; <%= job["end"] %></span>
             <% unless job["description"].empty? %>
-            <% end %>
               <ul class="meto">
                 <% job["description"].each do |item| %>
                   <li><%= item %></li>
                 <% end %>
               </ul>
+            <% end %>
           </li>
         <% end %>
       </ul>
