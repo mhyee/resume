@@ -1,0 +1,96 @@
+\documentclass[margin]{res}
+
+\usepackage[T1]{fontenc}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{multirow}
+
+\hypersetup{pdfborder={0 0 0}}
+
+\renewcommand{\namefont}{\Huge\textbf}
+\renewcommand{\sectionfont}{\bfseries\scshape}
+
+\begin{document}
+
+\begin{raggedright}
+\begin{resume}
+
+\vspace*{-1cm}
+\hspace*{-\sectionwidth}
+<% local = contact["local"] %>
+<% permanent = contact["permanent"] %>
+<% iterations = [ local["address"].size, permanent["address"].size ].max %>
+\begin{tabular}{c l l}
+  \multirow{<%= iterations+1 %>}{*}{\textbf{\fontsize{30}{40}\selectfont <%= contact["name"] %>}}
+  & \textbf{Local Address (until <%= local["until"] %>)}
+  & \textbf{Permanent Address} \\
+    <% for i in 0..(iterations-1) %>
+     & \small <%= local["address"][i] %> & \small <%= permanent["address"][i] %> \\
+    <% end %>
+  \textbf{\large <%= contact["term"] %> <%= contact["program"] %>} & & \\
+  \textbf{\large <%= contact["id"] %>} & & \\
+\end{tabular}
+
+\begin{center}
+  <% email = contact["email"] %>
+  <% site = contact["site"] %>
+  \hspace*{-\sectionwidth}
+  \href{mailto:<%= email %>}{\url{<%= email %>}} | <%= contact["cell"] %> | \href{http://<%= site %>}{\url{<%= site %>}}
+\end{center}
+
+\section{Computer Skills}
+\begin{itemize}
+  <% skills["computer"].each do |skill| %>
+    \item <%= skill %>
+  <% end %>
+\end{itemize}
+
+\section{Skills}
+\begin{itemize}
+  <% skills["transferable"].each do |skill| %>
+    \item <%= skill %>
+  <% end %>
+\end{itemize}
+
+\section{Work Experience}
+<% work.each do |job| %>
+  \textbf{<%= job["title"] %>}, <%= job["employer"] %>, <%= job["location"] %>,
+  \textit{<%= job["start"] %> -- <%= job["end"] %>}
+  <% unless job["description"].empty? %>
+    \begin{itemize}
+      <% job["description"].each do |item| %>
+        \item <%= item %>
+      <% end %>
+    \end{itemize}
+  <% end %>
+<% end %>
+
+\section{Activities \& Interests}
+\begin{itemize}
+  <% activities.each do |activity| %>
+    \item <%= activity %>
+  <% end %>
+\end{itemize}
+
+\section{Awards}
+<% awards.each do |institution| %>
+  \textbf{<%= institution["name"] %>}, <%= institution["location"] %>
+  \begin{itemize}
+    <% institution["awards"].each do |award| %>
+      \item <%= award["name"] %>, \textit{<%= award["date"] %>}
+    <% end %>
+  \end{itemize}
+<% end %>
+
+\section{Education}
+<% education.each do |institution| %>
+  \textbf{<%= institution["level"] %>}, <%= institution["name"] %>,
+  <%= institution["location"] %>,
+  <% if institution["date"].nil? %> \textit{<%= institution["start"] %> -- <%= institution["end"] %>}
+  <% else %> \textit{<%= institution["date"] %>}
+  <% end %>
+<% end %>
+
+\end{resume}
+\end{raggedright}
+\end{document}

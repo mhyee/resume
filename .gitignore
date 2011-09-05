@@ -1,5 +1,9 @@
+.DS_Store
 *~
 *.swp
 private.yml
 resume.html
 resume-web.html
+resume.log
+resume.tex
+resume.pdf

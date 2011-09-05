@@ -14,12 +14,25 @@ end
 # Load the resume YAML files
 resume = YAML::load( File.open("resume.yml") )
 
-if ARGV[0] == "web"
-  puts "Generating web version of resume..."
-  outputfile = "resume-web.html"
+if ARGV.size < 1
+  puts "usage: ./generate.rb <extension> [web]"
+  puts "\n"
+  puts "\t <extension> specifies the template, eg 'html' or 'tex'"
+  puts "\t use option [web] for web-version, default is full resume"
+  exit 0
+end
+
+# Figure out which template we're using
+extension = ARGV[0].downcase
+template_file = "resume." + extension + ".erb"
+
+# Does the template actually exist?
+abort("Error: template #{template_file} doesn't exist!") unless File.exists?( template_file )
+
+if ARGV[1] == "web"
+  output_file = "resume-web." + extension
 else
-  puts "Generating normal version of resume..."
-  outputfile = "resume.html"
+  output_file = "resume." + extension
 
   # Load and merge contact information (for full resume)
   # private.yml contains contact information I don't want posted
@@ -28,12 +41,13 @@ else
 end
 
 # Load the ERB template (for now, only HTML)
-template = ERB.new( File.new("resume.html.erb").read, 0, "%<>" )
+template = ERB.new( File.new(template_file).read, 0, "<>" )
 
 namespace = ErbBinding.new resume
 result = template.result namespace.send(:get_binding)
 
 # Write to output file
-File.open( outputfile, "w" ) do |file|
+File.open( output_file, "w" ) do |file|
   file.write result
 end
+puts "Created #{output_file}"

@@ -1,6 +1,6 @@
 - Figure out a more elegant way of passing in the bindings to ERB
 - Use OpenStruct instead of hashes in the templates
     - http://www.dribin.org/dave/blog/archives/2006/11/17/hashes_to_ostruct/
+- Escape YAML before using it in HTML/LaTeX
 - Suppress newlines in the template
-- Create a LaTeX template
 - Take a look at Ruby's OptionParser
