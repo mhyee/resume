@@ -3,12 +3,11 @@
 \usepackage[T1]{fontenc}
 \usepackage{url}
 \usepackage{hyperref}
-\usepackage{multirow}
 
 \hypersetup{pdfborder={0 0 0}}
 
 \renewcommand{\namefont}{\Huge\textbf}
-\renewcommand{\sectionfont}{\bfseries\scshape}
+\renewcommand{\sectionfont}{\large\bfseries\scshape}
 
 \begin{document}
 
@@ -21,23 +20,31 @@
 
 <% if !local.nil? && !permanent.nil? %>
   <% iterations = [ local["address"].size, permanent["address"].size ].max %>
+
   \hspace*{-\sectionwidth}
-  \begin{tabular}{c l l}
-    \multirow{<%= iterations+1 %>}{*}{\textbf{\fontsize{30}{40}\selectfont <%= contact["name"] %>}}
-    & \textbf{Local Address (until <%= local["until"] %>)}
-    & \textbf{Permanent Address} \\
+  \begin{minipage}{0.4\textwidth}
+    \begin{tabular}{c}
+      \textbf{\fontsize{30}{40}\selectfont <%= contact["name"] %>} \\
+      \textbf{\large <%=contact["term"] %> <%= contact["program"] %>} \\
+      \textbf{\large <%= contact["id"] %>} \\
+    \end{tabular}
+  \end{minipage}
+  \hspace*{1.2cm}
+  \begin{minipage}{0.6\textwidth}
+    \begin{tabular}{l l}
+      \textbf{Local Address (until <%= local["until"] %>)} & \textbf{Permanent Address} \\
       <% for i in 0..(iterations-1) %>
-       & \small <%= local["address"][i] %> & \small <%= permanent["address"][i] %> \\
+        \small <%= local["address"][i] %> & \small <%= permanent["address"][i] %> \\
       <% end %>
-    \textbf{\large <%= contact["term"] %> <%= contact["program"] %>} & & \\
-    \textbf{\large <%= contact["id"] %>} & & \\
-  \end{tabular}
+    \end{tabular}
+  \end{minipage}
+  \vspace*{-0.5cm}
 <% else %>
   \hspace*{-\sectionwidth}
-  \begin{minipage}[l]{\textwidth}
+  \begin{tabular}{c}
     \textbf{\fontsize{30}{40}\selectfont <%= contact["name"] %>} \\
     \textbf{\large <%= contact["term"] %> <%= contact["program"] %>}
-  \end{minipage}
+  \end{tabular}
 <% end %>
 
 <% unless contact["cell"].nil? %>
@@ -50,18 +57,18 @@
 <% end %>
 
 \section{Computer Skills}
-\begin{itemize}
+\begin{list}{\labelitemi}{\leftmargin=1em}
   <% skills["computer"].each do |skill| %>
     \item <%= skill %>
   <% end %>
-\end{itemize}
+\end{list}
 
 \section{Skills}
-\begin{itemize}
+\begin{list}{\labelitemi}{\leftmargin=1em}
   <% skills["transferable"].each do |skill| %>
     \item <%= skill %>
   <% end %>
-\end{itemize}
+\end{list}
 
 \section{Work Experience}
 <% work.each do |job| %>
@@ -77,11 +84,11 @@
 <% end %>
 
 \section{Activities \& Interests}
-\begin{itemize}
+\begin{list}{\labelitemi}{\leftmargin=1em}
   <% activities.each do |activity| %>
     \item <%= activity %>
   <% end %>
-\end{itemize}
+\end{list}
 
 \section{Awards}
 <% awards.each do |institution| %>
