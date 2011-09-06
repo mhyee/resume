@@ -18,6 +18,12 @@ resume-web.tex: generate.rb resume.yml resume.tex.erb
 resume-web.pdf: resume-web.tex res.cls
 	@pdflatex -interaction=batchmode resume-web.tex
 
+.PHONY: publish
+publish: resume-web.html resume-web.pdf resume-web.tex
+	scp resume-web.html m5yee@csclub.uwaterloo.ca:~/www/resume/YeeMing-Ho_resume_online.html
+	scp resume-web.pdf m5yee@csclub.uwaterloo.ca:~/www/resume/YeeMing-Ho_resume_online.pdf
+	scp resume-web.tex  m5yee@csclub.uwaterloo.ca:~/www/resume/YeeMing-Ho_resume_online.tex
+
 .PHONY: clean
 clean:
 	rm -rf resume.html resume-web.html
