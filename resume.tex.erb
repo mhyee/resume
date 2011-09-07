@@ -41,10 +41,18 @@
   \vspace*{-0.5cm}
 <% else %>
   \hspace*{-\sectionwidth}
-  \begin{tabular}{c}
-    \textbf{\fontsize{30}{40}\selectfont <%= contact["name"] %>} \\
-    \textbf{\large <%= contact["term"] %> <%= contact["program"] %>}
-  \end{tabular}
+  \begin{minipage}{0.4\textwidth}
+    \begin{tabular}{c}
+      \textbf{\fontsize{30}{40}\selectfont <%= contact["name"] %>} \\
+      \textbf{\large <%= contact["term"] %> <%= contact["program"] %>}
+    \end{tabular}
+  \end{minipage}
+  \hspace*{1.2cm}
+  \begin{minipage}{0.6\textwidth}
+    \hfill
+    \hypersetup{pdfborder={0 0 1}}
+    \large To contact me, please see \href{<%= contact["page"] %>}{this page}.
+  \end{minipage}
 <% end %>
 
 <% unless contact["cell"].nil? %>

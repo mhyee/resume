@@ -4,6 +4,7 @@ contact:
   term: "2T"
   email: "ming-ho.yee@uwaterloo.ca"
   site: "csclub.uwaterloo.ca/~m5yee"
+  page: "http://csclub.uwaterloo.ca/~m5yee/about.html#contactme"
 skills:
   computer:
     - "Highly competent with Ruby, Rails, Perl, XHTML, and CSS"
