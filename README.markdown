@@ -7,9 +7,11 @@ You may notice references to a `private.yml` file and "web" and "regular" versio
 
 This system is inspired by [David Hu's][]. In fact, it may be more accurate to say that this is my implementation of David's idea, with a few of my own tweaks.
 
-If you are interested in how this works, a blog post will be coming soon.
+If you are interested in how this works, the templates are included in this repository. The generated resumes are on [my site][], as is a brief-ish [blog post][].
 
 [David Hu's]: https://github.com/divad12/resume
+[my site]: http://csclub.uwaterloo.ca/~m5yee/resume.html
+[blog post]: http://csclub.uwaterloo.ca/~m5yee/blog/yaml_resume.html
 
 To use this for your own resume
 -------------------------------
