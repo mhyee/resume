@@ -24,7 +24,11 @@ work:
     start: "Sept"
     end: "Dec 2011"
     description:
-      - "Returned for a second work-term"
+      - "Developed monitors to ensure cloud computing costs were economical"
+      - "Worked with PHP to enhance and maintain the Eqentia WordPress plugin"
+      - "Along with a senior developer, designed, built, and launched Engagio, \"the universal commenting inbox\""
+      - "Integrated multiple commenting APIs with Engagio, including Disqus and Google+"
+      - "Optimized the background task queuing system to dynamically prioritize fetch tasks"
   -
     title: "Ruby on Rails Web Developer in News and Social Media"
     employer: "Eqentia Inc"
