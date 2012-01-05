@@ -1,16 +1,16 @@
 contact:
   name: "Ming-Ho Yee"
   program: "Software Engineering"
-  term: "2T"
-  email: "ming-ho.yee@uwaterloo.ca"
-  site: "csclub.uwaterloo.ca/~m5yee"
-  page: "http://csclub.uwaterloo.ca/~m5yee/about.html#contactme"
+  term: "3A"
+  email: "mh@mhyee.com"
+  site: "mhyee.com"
+  page: "http://mhyee.com/about.html#contactme"
 skills:
   computer:
     - "Highly competent with Ruby, Rails, Perl, XHTML, and CSS"
-    - "Familiar with C, C++, Scheme, VoiceXML, SCXML, XML, JSON and jQuery"
-    - "Working knowledge of Java, PHP, HTML5, JavaScript, XSLT, Visual Basic, and IDL"
-    - "Experienced with git, CVS, ClearCase, vim, TextMate, and Eclipse"
+    - "Familiar with C, C++, PHP, Scheme, VoiceXML, SCXML, XML, JSON and jQuery"
+    - "Working knowledge of Java, HTML5, JavaScript, XSLT, Visual Basic, and IDL"
+    - "Experienced with LaTeX, git, CVS, ClearCase, vim, and Eclipse"
     - "Proficient with Windows, Mac OS X, and Linux"
   transferable:
     - "Excellent ability to learn quickly and work independently, as demonstrated by previous work-terms"
@@ -22,7 +22,7 @@ work:
     employer: "Eqentia Inc"
     location: "Toronto ON"
     start: "Sept"
-    end: "present"
+    end: "Dec 2011"
     description:
       - "Returned for a second work-term"
   -
@@ -58,21 +58,22 @@ work:
       - "Developed and wrote a new module for pre-existing data analysis software, using IDL (Interactive Data Language)"
       - "Examined MRI spectroscopy data with the new module to research drug treatments for Alzheimer's Disease"
 activities:
-  - "Writer for the Math Society's fortnightly publication"
   - "Webmaster and past president of the University of Waterloo Quiz Bowl Club"
+  - "Volunteered and competed at numerous Ontario quizbowl tournaments throughout university"
+  - "Writer for the Math Society's fortnightly publication"
   - "Director for the Engineering Society's Genius Bowl competition in May 2011"
-  - "Volunteer for Reach for the Top, a Canada-wide high school trivia competition"
+  - "Volunteered at the 2010 Reach for the Top national finals, a Canada-wide high school trivia competition"
 awards:
   -
     name: "University of Waterloo"
     location: "Waterloo ON"
     awards:
       -
+        name: "Term Dean's Honours List"
+        date: "Jan 2010, May 2010, Jan 2011, Sept 2011"
+      -
         name: "NSERC Undergraduate Student Research Award"
         date: "April 2011"
-      -
-        name: "Term Dean's Honours List"
-        date: "Jan 2010, May 2010, Jan 2011"
       -
         name: "Scotiabank Software Engineering Scholarship"
         date: "May 2009"
