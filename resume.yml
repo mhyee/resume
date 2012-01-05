@@ -35,10 +35,10 @@ work:
       - "Designed and implemented a feature for users to add content by sending emails"
       - "Migrated Eqentia's outgoing email services to the Amazon Simple Email Service"
       - "Co-led the implementation of the new front-end interface redesign"
-      - "Developed a feature for tracking and sorting documents by relevancy"
+      - "Developed a feature for tracking and sorting articles by relevancy"
   -
     title: "Software Development Research Intern"
-    employer: "Genesys Telecommunications Inc (Alcatel-Lucent)"
+    employer: "Genesys Canada Laboratories Inc"
     location: "Markham ON"
     start: "May"
     end: "Aug 2010"
@@ -50,7 +50,7 @@ work:
       - "Also worked with XML, XSLT, JSON, JavaScript, HTML5, Perl, ClearCase, and Eclipse"
   -
     title: "Junior software developer"
-    employer: "Robarts Research Institute (University of Western Ontario)"
+    employer: "Robarts Research Institute"
     location: "London ON"
     start: "Oct 2007"
     end: "Aug 2008"
