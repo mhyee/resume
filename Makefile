@@ -19,10 +19,10 @@ output/resume-web.pdf: output/resume-web.tex res.cls
 	@pdflatex -interaction=batchmode -output-directory output $<
 
 .PHONY: publish
-publish: resume-web.html resume-web.pdf resume-web.tex
-	scp resume-web.html mhyee@mhyee.com:~/www/resume/YeeMing-Ho_resume_online.html
-	scp resume-web.pdf mhyee@mhyee.com~/www/resume/YeeMing-Ho_resume_online.pdf
-	scp resume-web.tex  mhyee@mhyee.com~/www/resume/YeeMing-Ho_resume_online.tex
+publish: output/resume-web.html output/resume-web.pdf output/resume-web.tex
+	scp output/resume-web.html mhyee@mhyee.com:~/public_html/resume/YeeMing-Ho_resume_online.html
+	scp output/resume-web.pdf mhyee@mhyee.com:~/public_html/resume/YeeMing-Ho_resume_online.pdf
+	scp output/resume-web.tex  mhyee@mhyee.com:~/public_html/resume/YeeMing-Ho_resume_online.tex
 
 .PHONY: clean
 clean:
