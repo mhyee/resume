@@ -7,9 +7,9 @@ contact:
   page: "http://mhyee.com/about.html#contactme"
 skills:
   computer:
-    - "Highly competent with Ruby, Rails, Perl, XHTML, and CSS"
-    - "Familiar with C, C++, PHP, Scheme, VoiceXML, SCXML, XML, JSON and jQuery"
-    - "Working knowledge of Java, HTML5, JavaScript, XSLT, Visual Basic, and IDL"
+    - "Highly competent with Ruby, Rails, Perl, HTML, and CSS"
+    - "Familiar with PHP, VoiceXML, SCXML, JavaScript, and jQuery"
+    - "Completed course work with C, C++, Java, Scheme, MIPS assembly, and ColdFire assembly"
     - "Experienced with LaTeX, git, CVS, ClearCase, vim, and Eclipse"
     - "Proficient with Windows, Mac OS X, and Linux"
   transferable:
