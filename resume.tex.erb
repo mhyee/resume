@@ -84,7 +84,14 @@
   <% end %>
 <% end %>
 
-\section{Activities \& Interests}
+\section{Projects}
+\begin{list}{\labelitemi}{\leftmargin=1em}
+  <% projects.each do |project| %>
+    \item <%= project %>
+  <% end %>
+\end{list}
+
+\section{Activities}
 \begin{list}{\labelitemi}{\leftmargin=1em}
   <% activities.each do |activity| %>
     \item <%= activity %>

@@ -57,6 +57,10 @@ work:
     description:
       - "Developed and wrote a new module for pre-existing data analysis software, using IDL (Interactive Data Language)"
       - "Examined MRI spectroscopy data with the new module to research drug treatments for Alzheimer's Disease"
+projects:
+  - "Resume generator, which takes content from a YAML file to generate LaTeX and HTML resumes"
+  - "Wishlist, a Ruby on Rails application for organizing gift-giving in my family"
+  - "Server administration for personal website, including setting up a Git server"
 activities:
   - "Webmaster and past president of the University of Waterloo Quiz Bowl Club"
   - "Volunteered and competed at numerous Ontario quizbowl tournaments throughout university"

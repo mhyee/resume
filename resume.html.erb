@@ -102,7 +102,7 @@
        list-style: disc outside none;
        margin-bottom: 15px;
      }
-     #resume #computer ul, #resume #activities ul {
+     #resume #computer ul, #resume #projects ul, #resume #activities ul {
       list-style: disc outside none;
       padding-left: 15px;
       margin-bottom: 25px !important;
@@ -144,7 +144,7 @@
        #resume .main h2 {
          width: 18%;
        }
-       #resume .main > ul, #resume #computer ul.areforcing, #resume #work ul.areforcing, #resume #activities ul.areforcing, #resume #awards ul.areforcing, #resume #education ul.areforcing {
+       #resume .main > ul, #resume #computer ul.areforcing, #resume #work ul.areforcing, #resume #projects ul.areforcing, #resume #activities ul.areforcing, #resume #awards ul.areforcing, #resume #education ul.areforcing {
          margin-left: 20%;
          width: 83%;
          float: none;
@@ -234,8 +234,18 @@
         <% end %>
       </ul>
     </div>
+    <div id="projects" class="main">
+      <h2>Projects</h2>
+      <ul class="areforcing">
+        <% projects.each do |project| %>
+          <li>
+            <%= project %>
+          </li>
+        <% end %>
+      </ul>
+    </div>
     <div id="activities" class="main">
-      <h2>Activities &amp; interests</h2>
+      <h2>Activities</h2>
       <ul class="areforcing">
         <% activities.each do |activity| %>
           <li>
