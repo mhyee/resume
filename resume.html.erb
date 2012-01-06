@@ -102,7 +102,7 @@
        list-style: disc outside none;
        margin-bottom: 15px;
      }
-     #resume #computer ul, #resume #transferable ul, #resume #activities ul {
+     #resume #computer ul, #resume #activities ul {
       list-style: disc outside none;
       padding-left: 15px;
       margin-bottom: 25px !important;
@@ -144,7 +144,7 @@
        #resume .main h2 {
          width: 18%;
        }
-       #resume .main > ul, #resume #computer ul.areforcing, #resume #transferable ul.areforcing, #resume #work ul.areforcing, #resume #activities ul.areforcing, #resume #awards ul.areforcing, #resume #education ul.areforcing {
+       #resume .main > ul, #resume #computer ul.areforcing, #resume #work ul.areforcing, #resume #activities ul.areforcing, #resume #awards ul.areforcing, #resume #education ul.areforcing {
          margin-left: 20%;
          width: 83%;
          float: none;
@@ -210,14 +210,6 @@
       <h2>Computer Skills</h2>
       <ul class="areforcing">
         <% skills["computer"].each do |skill| %>
-          <li><%= skill %></li>
-        <% end %>
-      </ul>
-    </div>
-    <div id="transferable" class="main">
-      <h2>Skills</h2>
-      <ul class="areforcing">
-        <% skills["transferable"].each do |skill| %>
           <li><%= skill %></li>
         <% end %>
       </ul>

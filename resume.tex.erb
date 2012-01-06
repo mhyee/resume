@@ -71,13 +71,6 @@
   <% end %>
 \end{list}
 
-\section{Skills}
-\begin{list}{\labelitemi}{\leftmargin=1em}
-  <% skills["transferable"].each do |skill| %>
-    \item <%= skill %>
-  <% end %>
-\end{list}
-
 \section{Work Experience}
 <% work.each do |job| %>
   \textbf{<%= job["title"] %>}, <%= job["employer"] %>, <%= job["location"] %>,
