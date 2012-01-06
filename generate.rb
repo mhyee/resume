@@ -40,6 +40,11 @@ else
   resume["contact"] = resume["contact"].merge(private["contact"])
 end
 
+# Load the escape function and run it on resume hash (if escape function exists)
+escape_defn = File.join( File.dirname(__FILE__), 'templates', '/escape_' + extension + '.rb' )
+require escape_defn if File.exists?(escape_defn)
+escape(resume) if defined?(escape)
+
 # Load the ERB template
 template = ERB.new( File.new(template_file).read, 0, "<>" )
 

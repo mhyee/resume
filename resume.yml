@@ -10,11 +10,11 @@ skills:
     - "Highly competent with Ruby, Rails, Perl, HTML, and CSS"
     - "Familiar with PHP, VoiceXML, SCXML, JavaScript, and jQuery"
     - "Completed course work with C, C++, Java, Scheme, MIPS assembly, and ColdFire assembly"
-    - "Experienced with LaTeX, Git, CVS, ClearCase, Vim, and Eclipse"
+    - "Experienced with [LaTeX], Git, CVS, ClearCase, Vim, and Eclipse"
     - "Proficient with Windows, Mac OS X, and Linux"
 work:
   -
-    title: "Ruby on Rails Web Developer in News and Social Media"
+    title: "Ruby on Rails Web Developer in News [&] Social Media"
     employer: "Eqentia Inc"
     location: "Toronto ON"
     start: "Sept"
@@ -22,11 +22,11 @@ work:
     description:
       - "Developed monitors to ensure cloud computing costs were economical"
       - "Worked with PHP to enhance and maintain the Eqentia WordPress plugin"
-      - "Along with a senior developer, designed, built, and launched Engagio, \"the universal commenting inbox\""
+      - "Along with a senior developer, designed, built, and launched [Engagio](http://www.avc.com/a_vc/2011/12/engagio.html), [``]the universal commenting inbox['']"
       - "Integrated multiple commenting APIs with Engagio, including Disqus and Google+"
       - "Optimized the background task queuing system to dynamically prioritize fetch tasks"
   -
-    title: "Ruby on Rails Web Developer in News and Social Media"
+    title: "Ruby on Rails Web Developer in News [&] Social Media"
     employer: "Eqentia Inc"
     location: "Toronto ON"
     start: "Jan"
@@ -56,17 +56,17 @@ work:
     end: "Aug 2008"
     description:
       - "Developed and wrote a new module for pre-existing data analysis software, using IDL (Interactive Data Language)"
-      - "Examined MRI spectroscopy data with the new module to research drug treatments for Alzheimer's Disease"
+      - "[Examined MRI spectroscopy data with the new module to research drug treatments for Alzheimer's Disease](http://www.alzheimersanddementia.com/article/PIIS1552526009002611/fulltext)"
 projects:
-  - "Resume generator, which takes content from a YAML file to generate LaTeX and HTML resumes"
-  - "Wishlist, a Ruby on Rails application for organizing gift-giving in my family"
-  - "Server administration for personal website, including setting up a Git server"
+  - "[Resume generator](https://github.com/mhyee/resume), which takes content from a YAML file to generate [LaTeX ] and HTML resumes"
+  - "[Wishlist](https://github.com/mhyee/wishlist), a Ruby on Rails application for organizing gift-giving in my family"
+  - "Server administration for personal website, including setting up a [Git server](http://git.mhyee.com/)"
 activities:
-  - "Webmaster and past president of the University of Waterloo Quiz Bowl Club"
+  - "Webmaster and past president of the [University of Waterloo Quiz Bowl Club](http://quizbowl.uwaterloo.ca/)"
   - "Volunteered and competed at numerous Ontario quizbowl tournaments throughout university"
   - "Writer for the Math Society's fortnightly publication"
   - "Director for the Engineering Society's Genius Bowl competition in May 2011"
-  - "Volunteered at the 2010 Reach for the Top national finals, a Canada-wide high school trivia competition"
+  - "Volunteered at the 2010 [Reach for the Top](http://www.reachforthetop.com/) national finals, a Canada-wide high school trivia competition"
 awards:
   -
     name: "University of Waterloo"
