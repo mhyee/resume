@@ -24,15 +24,15 @@ end
 
 # Figure out which template we're using
 extension = ARGV[0].downcase
-template_file = "resume." + extension + ".erb"
+template_file = "templates/resume." + extension + ".erb"
 
 # Does the template actually exist?
 abort("Error: template #{template_file} doesn't exist!") unless File.exists?( template_file )
 
 if ARGV[1] == "web"
-  output_file = "resume-web." + extension
+  output_file = "output/resume-web." + extension
 else
-  output_file = "resume." + extension
+  output_file = "output/resume." + extension
 
   # Load and merge contact information (for full resume)
   # private.yml contains contact information I don't want posted
@@ -40,11 +40,14 @@ else
   resume["contact"] = resume["contact"].merge(private["contact"])
 end
 
-# Load the ERB template (for now, only HTML)
+# Load the ERB template
 template = ERB.new( File.new(template_file).read, 0, "<>" )
 
 namespace = ErbBinding.new resume
 result = template.result namespace.send(:get_binding)
+
+# Create 'output' directory if it doesn't exist
+Dir.mkdir("output") unless File.exists?("output") && File.directory?("output")
 
 # Write to output file
 File.open( output_file, "w" ) do |file|

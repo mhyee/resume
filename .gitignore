@@ -2,9 +2,4 @@
 *~
 *.swp
 private.yml
-
-# A whitelist is easier
-resume.*
-resume-web.*
-!resume.yml
-!resume.*.erb
+output/*
