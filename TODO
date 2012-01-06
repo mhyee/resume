@@ -4,4 +4,3 @@
 - Refactor code (especially escape code)
 - Suppress newlines in the template
 - Take a look at Ruby's OptionParser
-- Confirm that HTML version works on JobMine (with IE)
