@@ -9,8 +9,8 @@ def escape(input='')
     input.gsub!(/\[&\]/, "&amp;")      # Ampersands
     input.gsub!(/\[LaTeX\]/, "LaTeX")  # LaTeX
     input.gsub!(/\[LaTeX \]/, "LaTeX") # LaTeX (trailing space)
-    input.gsub!(/\[``\]/, '"')         # Smart quotes (open)
-    input.gsub!(/\[''\]/, '"')         # Smart quotes (close)
+    input.gsub!(/\[``\]/, "&ldquo;")   # Smart quotes (open)
+    input.gsub!(/\[''\]/, "&rdquo;")   # Smart quotes (close)
     input.gsub!(/\[(.*)\]\((.*)\)/, "<a href=\"\\2\">\\1</a>")   # Link handling
   else
     input

@@ -4,7 +4,7 @@ contact:
   term: "3A"
   email: "mh@mhyee.com"
   site: "mhyee.com"
-  page: "http://mhyee.com/about.html#contactme"
+  page: "http://mhyee.com/about.html"
 skills:
   computer:
     - "Highly competent with Ruby, Rails, Perl, HTML, and CSS"
