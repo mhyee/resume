@@ -20,10 +20,10 @@ work:
     start: "Sept"
     end: "Dec 2011"
     description:
-      - "Developed monitors to ensure cloud computing costs were economical"
+      - "Developed monitors to ensure Amazon Web Services costs were economical"
       - "Worked with PHP to enhance and maintain the Eqentia WordPress plugin"
       - "Along with a senior developer, designed, built, and launched [Engagio](http://www.avc.com/a_vc/2011/12/engagio.html), [``]the universal commenting inbox['']"
-      - "Integrated multiple commenting APIs with Engagio, including Disqus and Google+"
+      - "Integrated multiple APIs with Engagio, including Disqus and Google+"
       - "Optimized the background task queuing system to dynamically prioritize fetch tasks"
   -
     title: "Ruby on Rails Web Developer in News [&] Social Media"
@@ -45,9 +45,8 @@ work:
     description:
       - "Worked on a proof-of-concept speech analytics application to improve the customer experience at call centres"
       - "Developed Interactive Voice Response applications with VoiceXML, and SCXML applications for advanced call routing"
-      - "Designed and implemented a web-based call recordings report with XHTML, CSS, jQuery, and Google Chart Tools, and Ajax-based polling for automatic updates"
+      - "Designed and implemented a web-based call recordings report, featuring Google Chart Tools and Ajax-based polling for automatic updates"
       - "Contributed to a Java backend for integration with external APIs and processing multichannel recordings"
-      - "Also worked with XML, XSLT, JSON, JavaScript, HTML5, Perl, ClearCase, and Eclipse"
   -
     title: "Junior software developer"
     employer: "Robarts Research Institute"
