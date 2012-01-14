@@ -9,7 +9,7 @@ skills:
   computer:
     - "Highly competent with Ruby, Rails, Perl, HTML, and CSS"
     - "Familiar with PHP, MySQL, VoiceXML, SCXML, JavaScript, jQuery, JSON, XML, and XSLT"
-    - "Completed course work with C, C++, Java, Scheme, VHDL, MIPS assembly, and ColdFire assembly"
+    - "Completed course work with C, C[+][+], Java, Scheme, VHDL, MIPS assembly, and ColdFire assembly"
     - "Experienced with [LaTeX], Git, CVS, ClearCase, Vim, and Eclipse"
     - "Proficient with Windows, Mac OS X, and Linux"
 work:
@@ -23,7 +23,7 @@ work:
       - "Developed monitors to ensure Amazon Web Services costs were economical"
       - "Worked with PHP to enhance and maintain the Eqentia WordPress plugin"
       - "Along with a senior developer, designed, built, and launched [Engagio](http://www.avc.com/a_vc/2011/12/engagio.html), [``]the universal commenting inbox['']"
-      - "Integrated multiple APIs with Engagio, including Disqus and Google+"
+      - "Integrated multiple APIs with Engagio, including Disqus and Google[+]"
       - "Optimized the background task queuing system to dynamically prioritize fetch tasks"
   -
     title: "Ruby on Rails Web Developer in News [&] Social Media"
