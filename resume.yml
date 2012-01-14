@@ -57,9 +57,10 @@ work:
       - "Developed and wrote a new module for pre-existing data analysis software, using IDL (Interactive Data Language)"
       - "[Examined MRI spectroscopy data with the new module to research drug treatments for Alzheimer's Disease](http://www.alzheimersanddementia.com/article/PIIS1552526009002611/fulltext)"
 projects:
-  - "[Resume generator](https://github.com/mhyee/resume), which takes content from a YAML file to generate [LaTeX ] and HTML resumes"
-  - "[Wishlist](https://github.com/mhyee/wishlist), a Ruby on Rails application for organizing gift-giving in my family"
+  - "Resume generator, which takes content from a YAML file to generate [LaTeX ] and HTML resumes"
+  - "Wishlist, a Ruby on Rails application for organizing gift-giving in my family"
   - "Server administration for personal website, including setting up a [Git server](http://git.mhyee.com/)"
+  - "All projects available on GitHub: [github.com/mhyee](https://github.com/mhyee)"
 activities:
   - "Webmaster and past president of the [University of Waterloo Quiz Bowl Club](http://quizbowl.uwaterloo.ca/)"
   - "Volunteered and competed at numerous Ontario quizbowl tournaments throughout university"
