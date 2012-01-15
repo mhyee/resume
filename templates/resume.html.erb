@@ -125,6 +125,10 @@
      }
      @media print {
        /* Print styles */
+       #resume a {
+        color: #000;
+        text-decoration: none;
+       }
        #resume #contact {
          width: 100%;
        }
@@ -179,7 +183,7 @@
           <% end %>
         <% else %>
           <%# Empty <div> for padding %>
-          To contact me, please see <a href="<%= contact["page"] %>">this page</a>.
+          To contact me, please see <a href="<%= contact["page"] %>">mhyee.com/about.html</a>.
           <!-- Removed from web version of resume -->
         <% end %>
       </div>
