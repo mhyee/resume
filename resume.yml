@@ -1,7 +1,7 @@
 contact:
   name: "Ming-Ho Yee"
   program: "Software Engineering"
-  term: "3A"
+  term: "3N"
   email: "mh@mhyee.com"
   site: "mhyee.com"
   page: "http://mhyee.com/about.html"
@@ -12,6 +12,14 @@ skills:
     - "Completed course work with C, C[+][+], Java, Scheme, VHDL, MIPS assembly, and ColdFire assembly"
     - "Experienced with [LaTeX], Git, CVS, ClearCase, Vim, and Eclipse"
 work:
+  -
+    title: "Research Assistant and Developer"
+    employer: "University of Waterloo"
+    location: "Waterloo ON"
+    start: "May 2012"
+    end: "present"
+    description:
+      - "Working on a project to improve software reliability by analyzing runtime logs"
   -
     title: "Ruby on Rails Web Developer in News [&] Social Media"
     employer: "Eqentia Inc"
@@ -58,6 +66,8 @@ work:
 projects:
   - "Resume generator, which takes content from a YAML file to generate [LaTeX ] and HTML resumes"
   - "Wishlist, a Ruby on Rails application for organizing gift-giving in my family"
+  - "[LaTeX ] projects, including a class for University of Waterloo work reports, and assignment templates"
+  - "Learning Haskell"
   - "Server administration for personal website, including setting up a [Git server](http://git.mhyee.com/)"
   - "All projects available on GitHub: [github.com/mhyee](https://github.com/mhyee)"
 activities:
@@ -65,18 +75,21 @@ activities:
   - "Volunteered and competed at numerous Ontario quizbowl tournaments throughout university"
   - "Writer for the Math Society's fortnightly publication"
   - "Director for the Engineering Society's Genius Bowl competition in May 2011"
-  - "Volunteered at the 2010 [Reach for the Top](http://www.reachforthetop.com/) national finals, a Canada-wide high school trivia competition"
+  - "Volunteered at the 2010 and 2012 [Reach for the Top](http://www.reachforthetop.com/) national finals, a Canada-wide high school trivia competition"
 awards:
   -
     name: "University of Waterloo"
     location: "Waterloo ON"
     awards:
       -
-        name: "Term Dean's Honours List"
-        date: "Jan 2010, May 2010, Jan 2011, Sept 2011"
-      -
         name: "NSERC Undergraduate Student Research Award"
-        date: "April 2011"
+        date: "April 2011, March 2012, June 2012"
+      -
+        name: "President's Research Award"
+        date: "May 2012"
+      -
+        name: "Term Dean's Honours List"
+        date: "Jan 2010, May 2010, Jan 2011, Sept 2011, May 2012"
       -
         name: "Scotiabank Software Engineering Scholarship"
         date: "May 2009"
