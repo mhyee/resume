@@ -12,6 +12,7 @@ def escape(input='')
     input.gsub!(/\[``\]/, "``")                 # Smart quotes (open)
     input.gsub!(/\[''\]/, "''")                 # Smart quotes (close)
     input.gsub!(/\[\+\]/, "$+$")                # Plus sign
+    input.gsub!(/\[#\]/, "\\\\#")               # Number sign
     input.gsub!(/\[(.*)\]\((.*)\)/, "\\\\href{\\2}{\\1}")   # Link handling
   else
     input

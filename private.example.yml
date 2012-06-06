@@ -1,0 +1,15 @@
+contact:
+  local:
+    address:
+      - "Street Address"
+      - "City Name"
+      - "Postal Code"
+    until: "some time"
+  permanent:
+    address:
+      - "Street Address"
+      - "City Name"
+      - "Postal Code"
+      - "Home Phone Number"
+  id: "xxxxxxxx"
+  cell: "xxx-xxx-xxxx"

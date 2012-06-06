@@ -5,7 +5,7 @@ This resume system stores content in a YAML file and uses Ruby's ERB templating 
 
 There are also `escape_html.rb` and `escape_tex.rb` files, which define an `escape` function for handling special characters in LaTex or HTML. (For example, & must be escaped as \&amp; in HTML, and \\& in LaTeX. The `escape` function also handles other special cases, including links.)
 
-You may notice references to a `private.yml` file and "web" and "regular" versions of a resume. This is to prevent certain contact information (eg phone number, addresses) from being uploaded to a public repository or website.
+You may notice references to a `private.yml` file and "web" and "regular" versions of a resume. This is to prevent certain contact information (eg phone number, addresses) from being uploaded to a public repository or website. For an example, see `private.example.yml`.
 
 This system is inspired by [David Hu's][]. In fact, it may be more accurate to say that this is my implementation of David's idea, with a few of my own tweaks.
 
