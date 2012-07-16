@@ -12,6 +12,11 @@ This is a fork of [Ming-Ho Yee's resume project], which in turn was inspired by 
 [Ming-Ho Yee's resume project]: https://github.com/mhyee/resume
 [David Hu's resume project]: https://github.com/divad12/resume
 
+    Usage: generate.rb [options]
+    -i, --input INPUT                input file
+    -t, --template TEMPLATE          template file
+    -w, --web                        create a web version omitting private information
+
 
 ### Dependencies
 * Ruby
