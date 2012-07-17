@@ -1,4 +1,3 @@
 - Figure out a more elegant way of passing in the bindings to ERB
 - Refactor code (especially escape code)
 - Suppress newlines in the template
-- Take a look at Ruby's OptionParser

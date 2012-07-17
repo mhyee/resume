@@ -1,26 +1,22 @@
 Resume
 ======
 
-This resume system stores content in a YAML file and uses Ruby's ERB templating system to handle format and layout. Currently, the only two templates are HTML and LaTeX. pdflatex then creates a PDF file from the LaTeX source.
+This resume system stores content in a YAML file and uses Ruby's ERB templating system to handle format and layout.  Currently, the only two templates implemented are HTML and LaTeX. You can use pdflatex to create a PDF file from the generated LaTeX file.
 
-There are also `escape_html.rb` and `escape_tex.rb` files, which define an `escape` function for handling special characters in LaTex or HTML. (For example, & must be escaped as \&amp; in HTML, and \\& in LaTeX. The `escape` function also handles other special cases, including links.)
+`escape_html.rb` and `escape_tex.rb` define `escape` functions for handling special characters in LaTex or HTML.  (For example, & must be escaped as \&amp; in HTML, and \\& in LaTeX.  The `escape` function also handles other special cases, including links.)  Escape characters must appear in square brackets in the YAML file.  For example, to include an ampersand, use [&].
 
-You may notice references to a `private.yml` file and "web" and "regular" versions of a resume. This is to prevent certain contact information (eg phone number, addresses) from being uploaded to a public repository or website. For an example, see `private.example.yml`.
+Store private contact information in the `private.yml` file.  This information will be omitted from the "web" version of the generated resume (selected with the -w or --web option).  This is to prevent certain contact information (e.g. phone number, address) from being uploaded to a public repository or website. For an example, see `private.example.yml`.
 
-This system is inspired by [David Hu's][]. In fact, it may be more accurate to say that this is my implementation of David's idea, with a few of my own tweaks.
+This is a fork of [Ming-Ho Yee's resume project], which in turn was inspired by [David Hu's resume project].
 
-If you are interested in how this works, the templates are included in this repository. The generated resumes are on [my site][], as is a brief-ish [blog post][].
+[Ming-Ho Yee's resume project]: https://github.com/mhyee/resume
+[David Hu's resume project]: https://github.com/divad12/resume
 
-[David Hu's]: https://github.com/divad12/resume
-[my site]: http://mhyee.com/resume.html
-[blog post]: http://mhyee.com/blog/yaml_resume.html
+    Usage: generate.rb [options]
+    -i, --input INPUT                input file
+    -t, --template TEMPLATE          template file
+    -w, --web                        create a web version omitting private information
 
-To use this for your own resume
--------------------------------
-
-It should go without saying that your resume is made up from your experiences. My content comes from my experiences, so please don't copy it.
-
-Also, since a unique layout stands out, I would strongly encourage you to create your own templates, though you can use mine as examples. I would suggest creating the template only after you have a good idea of the layout -- I learned the hard way that writing LaTeX and Ruby code at the same time (and compiling the template twice) is more trouble than it's worth.
 
 ### Dependencies
 * Ruby
