@@ -12,6 +12,10 @@ optparse = OptionParser.new do |opts|
   opts.on( '-i', '--input INPUT', 'input file' ) do |input|
     options[:input] = input
   end
+  options[:private] = 'private.yml'
+  opts.on( '-p', '--private PRIVATE', 'private input file' ) do |private|
+    options[:private] = private
+  end
   options[:template] = 'resume.html.erb'
   opts.on( '-t', '--template TEMPLATE', 'template file' ) do |template|
     options[:template] = template
@@ -35,6 +39,9 @@ abort("Error: #{options[:input]} is not present in this directory.  Use -i or --
 # Load the resume YAML files
 resume = YAML::load( File.open(options[:input]) )
 
+# Does the private input file exist?
+abort("Error: #{options[:private]} is not present in this directory.  Use -p or --private to specify another private input file.") unless File.exists?( options[:private] )
+
 # Does the template file exist?
 abort("Error: template #{options[:template]} is not present in the templates directory.  Use -t or --template to specify another template file.") unless File.exists?( 'templates/' + options[:template] )
 
@@ -48,7 +55,7 @@ else
 
   # Load and merge contact information (for full resume)
   # private.yml contains contact information I don't want posted
-  private = YAML::load( File.open("private.yml") )
+  private = YAML::load( File.open(options[:private]) )
   resume["contact"] = resume["contact"].merge(private["contact"])
 end
 
