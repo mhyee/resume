@@ -28,6 +28,7 @@ Feel free to fork or use this project and adapt the templates for your own resum
 
     Usage: generate.rb [options]
         -i, --input INPUT                input file
+        -p, --private PRIVATE            private input file
         -t, --template TEMPLATE          template file
         -w, --web                        create a web version omitting private information
 
