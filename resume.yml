@@ -12,6 +12,13 @@ skills:
     - "Completed course work with C, C[+][+], Java, Scheme, VHDL, MIPS assembly, and ColdFire assembly"
     - "Experienced with [LaTeX], Git, CVS, ClearCase, Vim, and Eclipse"
 work:
+  - title: "Undergraduate Research Assistant"
+    employer: "University of Waterloo"
+    location: "Waterloo ON"
+    start: "Sept 2012"
+    end: "present"
+    description:
+      - "Working part-time on a project to determine software dependencies"
   -
     title: "Research Assistant and Developer"
     employer: "University of Waterloo"
@@ -19,7 +26,8 @@ work:
     start: "May"
     end: "Aug 2012"
     description:
-      - "Worked on a project to improve developer productivity by automatically reproducing bugs"
+      - "Investigated how to improve developer productivity by automatically producing test cases from stack traces"
+      - "Worked with C, C[+][+], GDB, GCC, LLVM, and LLVM assembly"
   -
     title: "Ruby on Rails Web Developer in News [&] Social Media"
     employer: "Eqentia Inc"
@@ -68,6 +76,7 @@ projects:
   - "Wishlist, a Ruby on Rails application for organizing gift-giving in my family"
   - "[LaTeX ] projects, including a class for University of Waterloo work reports, and assignment templates"
   - "Learning Haskell"
+  - "Emulator and in-progress assembler for the DCPU-16, a fictional computer architecture"
   - "Server administration for personal website, including setting up a [Git server](http://git.mhyee.com/)"
   - "All projects available on GitHub: [github.com/mhyee](https://github.com/mhyee)"
 activities:
