@@ -58,7 +58,7 @@ work:
     title: "Junior software developer"
     employer: "Robarts Research Institute"
     location: "London ON"
-    start: "Oct 2007"
+    start: "Jul"
     end: "Aug 2008"
     description:
       - "Developed and wrote a new module for pre-existing data analysis software, using IDL (Interactive Data Language)"
