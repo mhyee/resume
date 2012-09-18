@@ -7,10 +7,9 @@ contact:
   page: "http://mhyee.com/about.html"
 skills:
   computer:
-    - "Highly competent with Ruby, Rails, HTML, and CSS"
-    - "Familiar with Perl, PHP, MySQL, VoiceXML, SCXML, JavaScript, jQuery, JSON, XML, and XSLT"
-    - "Completed course work with C, C[+][+], Java, Scheme, VHDL, MIPS assembly, and ColdFire assembly"
-    - "Experienced with [LaTeX], Git, CVS, ClearCase, Vim, and Eclipse"
+    - "Rails, PHP, MySQL, JavaScript, jQuery, HTML, CSS, VoiceXML, SCXML, XSLT"
+    - "Ruby, Perl, C, C[+][+], Java, Scheme, VHDL, assembly (MIPS, ColdFire, LLVM)"
+    - "[LaTeX], Git, CVS, ClearCase, Vim, Eclipse, GDB, GCC, LLVM"
 work:
   - title: "Undergraduate Research Assistant"
     employer: "University of Waterloo"
