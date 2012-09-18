@@ -104,16 +104,6 @@ awards:
       -
         name: "President's Scholarship of Distinction"
         date: "May 2009"
-  -
-    name: "London Central Secondary School"
-    location: "London ON"
-    awards:
-      -
-        name: "Governor General's Academic Medal"
-        date: "Jun 2009"
-      -
-        name: "Neufeld Learning Systems Mathematics and Computer Science Bursary"
-        date: "Jun 2009"
 education:
   -
     level: "Candidate for Bachelor of Software Engineering"
