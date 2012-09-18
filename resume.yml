@@ -1,7 +1,7 @@
 contact:
   name: "Ming-Ho Yee"
   program: "Software Engineering"
-  term: "3N"
+  term: "3B"
   email: "mh@mhyee.com"
   site: "mhyee.com"
   page: "http://mhyee.com/about.html"
@@ -16,10 +16,10 @@ work:
     title: "Research Assistant and Developer"
     employer: "University of Waterloo"
     location: "Waterloo ON"
-    start: "May 2012"
-    end: "present"
+    start: "May"
+    end: "Aug 2012"
     description:
-      - "Working on a project to improve software reliability by analyzing runtime logs"
+      - "Worked on a project to improve developer productivity by automatically reproducing bugs"
   -
     title: "Ruby on Rails Web Developer in News [&] Social Media"
     employer: "Eqentia Inc"
@@ -37,7 +37,7 @@ work:
     employer: "Eqentia Inc"
     location: "Toronto ON"
     start: "Jan"
-    end: "April 2011"
+    end: "Apr 2011"
     description:
       - "Designed and implemented a feature for users to add content by sending emails"
       - "Migrated Eqentia's outgoing email services to the Amazon Simple Email Service"
@@ -83,7 +83,7 @@ awards:
     awards:
       -
         name: "NSERC Undergraduate Student Research Award"
-        date: "April 2011, March 2012, June 2012"
+        date: "Apr 2011, Mar 2012, Jun 2012"
       -
         name: "President's Research Award"
         date: "May 2012"
@@ -102,19 +102,19 @@ awards:
     awards:
       -
         name: "Governor General's Academic Medal"
-        date: "June 2009"
+        date: "Jun 2009"
       -
         name: "Neufeld Learning Systems Mathematics and Computer Science Bursary"
-        date: "June 2009"
+        date: "Jun 2009"
 education:
   -
     level: "Candidate for Bachelor of Software Engineering"
     name: "Honours Software Engineering, University of Waterloo"
     location: "Waterloo ON"
     start: "Sept 2009"
-    end: "present"
+    end: "present (expected Apr 2014)"
   -
     level: "Ontario Secondary School Diploma"
     name: "London Central Secondary School"
     location: "London ON"
-    date: "June 2009"
+    date: "Jun 2009"
