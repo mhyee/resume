@@ -71,11 +71,11 @@ work:
       - "Developed and wrote a new module for pre-existing data analysis software, using IDL (Interactive Data Language)"
       - "[Examined MRI spectroscopy data with the new module to research drug treatments for Alzheimer's Disease](http://www.alzheimersanddementia.com/article/PIIS1552526009002611/fulltext)"
 projects:
+  - "Emulator, in-progress assembler, and planned compiler for the DCPU-16, a fictional computer architecture"
   - "Resume generator, which takes content from a YAML file to generate [LaTeX ] and HTML resumes"
-  - "Wishlist, a Ruby on Rails application for organizing gift-giving in my family"
-  - "[LaTeX ] projects, including a class for University of Waterloo work reports, and assignment templates"
   - "Learning Haskell"
-  - "Emulator and in-progress assembler for the DCPU-16, a fictional computer architecture"
+  - "[LaTeX ] projects, including a class for University of Waterloo work reports and assignment templates"
+  - "Wishlist, a Ruby on Rails application for organizing gift-giving in my family"
   - "Server administration for personal website, including setting up a [Git server](http://git.mhyee.com/)"
   - "All projects available on GitHub: [github.com/mhyee](https://github.com/mhyee)"
 activities:
