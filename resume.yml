@@ -1,7 +1,7 @@
 contact:
   name: "Ming-Ho Yee"
   program: "Software Engineering"
-  term: "3B"
+  term: "3T"
   email: "mh@mhyee.com"
   site: "mhyee.com"
   page: "http://mhyee.com/about.html"
@@ -14,10 +14,11 @@ work:
   - title: "Undergraduate Research Assistant"
     employer: "University of Waterloo"
     location: "Waterloo ON"
-    start: "Sept 2012"
-    end: "present"
+    start: "Sep 2012"
+    end: "Dec 2012"
     description:
-      - "Working part-time on a project to analyze software dependencies"
+      - "Part-time work on a project to analyze software dependencies"
+      - "Investigated the Chrome build process"
   -
     title: "Research Assistant and Developer"
     employer: "University of Waterloo"
@@ -31,7 +32,7 @@ work:
     title: "Ruby on Rails Web Developer in News [&] Social Media"
     employer: "Eqentia Inc"
     location: "Toronto ON"
-    start: "Sept"
+    start: "Sep"
     end: "Dec 2011"
     description:
       - "Developed monitors to ensure Amazon Web Services costs were economical"
@@ -90,6 +91,9 @@ awards:
     location: "Waterloo ON"
     awards:
       -
+        name: "President's International Experience Award"
+        date: "Nov 2012"
+      -
         name: "NSERC Undergraduate Student Research Award"
         date: "Apr 2011, Mar 2012, Jun 2012"
       -
@@ -97,7 +101,7 @@ awards:
         date: "May 2012"
       -
         name: "Term Dean's Honours List"
-        date: "Jan 2010, May 2010, Jan 2011, Sept 2011, May 2012"
+        date: "Jan 2010, May 2010, Jan 2011, Sep 2011, May 2012"
       -
         name: "Scotiabank Software Engineering Scholarship"
         date: "May 2009"
@@ -109,7 +113,7 @@ education:
     level: "Candidate for Bachelor of Software Engineering"
     name: "Honours Software Engineering, University of Waterloo"
     location: "Waterloo ON"
-    start: "Sept 2009"
+    start: "Sep 2009"
     end: "present (expected Apr 2014)"
   -
     level: "Ontario Secondary School Diploma"
