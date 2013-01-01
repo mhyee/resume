@@ -40,7 +40,7 @@ abort("Error: #{options[:input]} is not present in this directory.  Use -i or --
 resume = YAML::load( File.open(options[:input]) )
 
 # Does the private input file exist?
-abort("Error: #{options[:private]} is not present in this directory.  Use -p or --private to specify another private input file.") unless File.exists?( options[:private] )
+abort("Error: #{options[:private]} is not present in this directory.  Use -p or --private to specify another private input file.") unless File.exists?( options[:private] ) or options[:web]
 
 # Does the template file exist?
 abort("Error: template #{options[:template]} is not present in the templates directory.  Use -t or --template to specify another template file.") unless File.exists?( 'templates/' + options[:template] )
