@@ -14,14 +14,6 @@ For examples, my templates are included in this repository, while the generated 
 [David Hu's resume project]: https://github.com/divad12/resume
 [my website]: http://mhyee.com/resume.html
 
-### Contributions
-
-This project was always intended to solve a very specific, personal problem, rather than to be for general use. However, I am more than happy to review pull requests. If the changes are compatible with my use case, I'll accept them.
-
-I would like to thank [tshieh][] for adding OptionParser and updating the documentation.
-
-[tshieh]: https://github.com/tshieh
-
 ### Usage
 
 Feel free to fork or use this project and adapt the templates for your own resume. (Obviously, the resume content is mine.)
@@ -35,3 +27,19 @@ Feel free to fork or use this project and adapt the templates for your own resum
 ### Dependencies
 * Ruby
 * LaTeX
+
+### License
+
+`res.cls` is copyrighted by Michael DeCorte. See `res.cls` for details.
+
+The resume content in this repo, `resume.yml` is copyrighted by Ming-Ho Yee.
+
+The rest of the project is licensed under the MIT License.
+
+### Contributions
+
+This project was always intended to solve a very specific, personal problem, rather than to be for general use. However, I am more than happy to review pull requests. If the changes are compatible with my use case, I'll accept them.
+
+I would like to thank [tshieh][] for adding OptionParser and updating the documentation.
+
+[tshieh]: https://github.com/tshieh
