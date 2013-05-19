@@ -1,20 +1,31 @@
 contact:
   name: "Ming-Ho Yee"
   program: "Software Engineering"
-  term: "3T"
+  term: "4A"
   email: "mh@mhyee.com"
   site: "mhyee.com"
   page: "http://mhyee.com/about.html"
 skills:
   computer:
     - "Rails, PHP, MySQL, JavaScript, jQuery, HTML, CSS, VoiceXML, SCXML, XSLT"
-    - "Ruby, Perl, C, C[+][+], Java, Scheme, VHDL, assembly (MIPS, ColdFire, LLVM)"
-    - "[LaTeX], Git, CVS, ClearCase, Vim, Eclipse, GDB, GCC, LLVM"
+    - "Ruby, Perl, C, C[+][+], C[#], Java, Scheme, VHDL, assembly (MIPS, ColdFire, LLVM)"
+    - "[LaTeX], Git, CVS, ClearCase, Vim, Eclipse, Visual Studio, GDB, GCC, LLVM"
 work:
-  - title: "Undergraduate Research Assistant"
+  -
+    title: "Software Development Engineering Intern"
+    employer: "Microsoft"
+    location: "Redmond WA"
+    start: "Jan"
+    end: "Apr 2013"
+    description:
+      - "Prototyped and developed a heap memory collection tool for .NET applications"
+      - "Designed and conducted performance tests for the memory collection tool"
+      - "Implemented LINQ queries for heap memory graphs"
+  -
+    title: "Undergraduate Research Assistant"
     employer: "University of Waterloo"
     location: "Waterloo ON"
-    start: "Sep 2012"
+    start: "Sep"
     end: "Dec 2012"
     description:
       - "Part-time work on a project to analyze software dependencies"
@@ -36,7 +47,6 @@ work:
     end: "Dec 2011"
     description:
       - "Developed monitors to ensure Amazon Web Services costs were economical"
-      - "Worked with PHP to enhance and maintain the Eqentia WordPress plugin"
       - "Along with a senior developer, designed, built, and launched [Engagio](http://www.avc.com/a_vc/2011/12/engagio.html), [``]the universal commenting inbox['']"
       - "Integrated multiple APIs with Engagio, including Disqus and Google[+]"
       - "Optimized the background task queuing system to dynamically prioritize fetch tasks"
@@ -59,7 +69,6 @@ work:
     end: "Aug 2010"
     description:
       - "Worked on a proof-of-concept speech analytics application to improve the customer experience at call centres"
-      - "Developed Interactive Voice Response applications with VoiceXML, and SCXML applications for advanced call routing"
       - "Designed and implemented a web-based call recordings report, featuring Google Chart Tools and Ajax-based polling for automatic updates"
       - "Contributed to a Java backend for integration with external APIs and processing multichannel recordings"
   -
@@ -76,14 +85,11 @@ projects:
   - "Resume generator, which takes content from a YAML file to generate [LaTeX ] and HTML resumes"
   - "Learning Haskell"
   - "[LaTeX ] projects, including a class for University of Waterloo work reports and assignment templates"
-  - "Wishlist, a Ruby on Rails application for organizing gift-giving in my family"
   - "Server administration for personal website, including setting up a [Git server](http://git.mhyee.com/)"
   - "All projects available on GitHub: [github.com/mhyee](https://github.com/mhyee)"
 activities:
   - "Webmaster and past president of the [University of Waterloo Quiz Bowl Club](http://quizbowl.uwaterloo.ca/)"
-  - "Volunteered and competed at numerous Ontario quizbowl tournaments throughout university"
   - "Writer for the Math Society's fortnightly publication"
-  - "Director for the Engineering Society's Genius Bowl competition in May 2011"
   - "Volunteered at the 2010 and 2012 [Reach for the Top](http://www.reachforthetop.com/) national finals, a Canada-wide high school trivia competition"
 awards:
   -
@@ -101,7 +107,7 @@ awards:
         date: "May 2012"
       -
         name: "Term Dean's Honours List"
-        date: "Jan 2010, May 2010, Jan 2011, Sep 2011, May 2012"
+        date: "Jan 2010, May 2010, Jan 2011, Sep 2011, May 2012, Jan 2013"
       -
         name: "Scotiabank Software Engineering Scholarship"
         date: "May 2009"
