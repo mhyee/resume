@@ -1,7 +1,7 @@
 contact:
   name: "Ming-Ho Yee"
   program: "Software Engineering"
-  term: "4A"
+  term: "4N"
   email: "mh@mhyee.com"
   site: "mhyee.com"
   page: "http://mhyee.com/about.html"
@@ -15,12 +15,20 @@ work:
     title: "Software Development Engineering Intern"
     employer: "Microsoft"
     location: "Redmond WA"
+    start: "Sep 2013"
+    end: "present"
+    description:
+      - "C[+][+] compiler team"
+  -
+    title: "Software Development Engineering Intern"
+    employer: "Microsoft"
+    location: "Redmond WA"
     start: "Jan"
     end: "Apr 2013"
     description:
       - "Prototyped and developed a heap memory collection tool for .NET applications"
       - "Designed and conducted performance tests for the memory collection tool"
-      - "Implemented LINQ queries for heap memory graphs"
+      - "Implemented LINQ for heap memory graphs"
   -
     title: "Undergraduate Research Assistant"
     employer: "University of Waterloo"
@@ -28,7 +36,7 @@ work:
     start: "Sep"
     end: "Dec 2012"
     description:
-      - "Part-time work on a project to analyze software dependencies"
+      - "Part-time work on a project to analyze software dependencies using the LLVM infrastructure"
       - "Investigated the Chrome build process"
   -
     title: "Research Assistant and Developer"
@@ -46,7 +54,6 @@ work:
     start: "Sep"
     end: "Dec 2011"
     description:
-      - "Developed monitors to ensure Amazon Web Services costs were economical"
       - "Along with a senior developer, designed, built, and launched [Engagio](http://www.avc.com/a_vc/2011/12/engagio.html), [``]the universal commenting inbox['']"
       - "Integrated multiple APIs with Engagio, including Disqus and Google[+]"
       - "Optimized the background task queuing system to dynamically prioritize fetch tasks"
@@ -58,7 +65,6 @@ work:
     end: "Apr 2011"
     description:
       - "Designed and implemented a feature for users to add content by sending emails"
-      - "Migrated Eqentia's outgoing email services to the Amazon Simple Email Service"
       - "Co-led the implementation of the new front-end interface redesign"
       - "Developed a feature for tracking and sorting articles by relevancy"
   -
@@ -68,9 +74,8 @@ work:
     start: "May"
     end: "Aug 2010"
     description:
-      - "Worked on a proof-of-concept speech analytics application to improve the customer experience at call centres"
-      - "Designed and implemented a web-based call recordings report, featuring Google Chart Tools and Ajax-based polling for automatic updates"
-      - "Contributed to a Java backend for integration with external APIs and processing multichannel recordings"
+      - "Developed a proof-of-concept speech analytics application in VoiceXML and SCXML to improve customer experience at call centres"
+      - "Integrated external APIs to a Java backend and added support for multichannel audio processing"
   -
     title: "Junior software developer"
     employer: "Robarts Research Institute"
@@ -78,27 +83,28 @@ work:
     start: "Jul"
     end: "Aug 2008"
     description:
-      - "Developed and wrote a new module for pre-existing data analysis software, using IDL (Interactive Data Language)"
+      - "Implemented a new module for pre-existing data analysis software, using IDL (Interactive Data Language)"
       - "[Examined MRI spectroscopy data with the new module to research drug treatments for Alzheimer's Disease](http://www.alzheimersanddementia.com/article/PIIS1552526009002611/fulltext)"
 projects:
-  - "Emulator, in-progress assembler, and planned compiler for the DCPU-16, a fictional computer architecture"
+  - "Emulator and in-progress assembler for the DCPU-16, a fictional computer architecture"
   - "Resume generator, which takes content from a YAML file to generate [LaTeX ] and HTML resumes"
-  - "Learning Haskell"
+  - "Learning Haskell by writing a Scheme interpreter"
   - "[LaTeX ] projects, including a class for University of Waterloo work reports and assignment templates"
   - "Server administration for personal website, including setting up a [Git server](http://git.mhyee.com/)"
   - "All projects available on GitHub: [github.com/mhyee](https://github.com/mhyee)"
 activities:
+  - "Student representative on the University of Waterloo Software Engineering Curriculum Committee"
+  - "Past academic representative for the University of Waterloo Software Engineering Class of 2014"
   - "Webmaster and past president of the [University of Waterloo Quiz Bowl Club](http://quizbowl.uwaterloo.ca/)"
   - "Writer for the Math Society's fortnightly publication"
-  - "Volunteered at the 2010 and 2012 [Reach for the Top](http://www.reachforthetop.com/) national finals, a Canada-wide high school trivia competition"
 awards:
   -
     name: "University of Waterloo"
     location: "Waterloo ON"
     awards:
       -
-        name: "President's International Experience Award"
-        date: "Nov 2012"
+        name: "Fourth Year Design Project Pitch Competition"
+        date: "May 2013"
       -
         name: "NSERC Undergraduate Student Research Award"
         date: "Apr 2011, Mar 2012, Jun 2012"
@@ -107,12 +113,9 @@ awards:
         date: "May 2012"
       -
         name: "Term Dean's Honours List"
-        date: "Jan 2010, May 2010, Jan 2011, Sep 2011, May 2012, Jan 2013"
+        date: "all terms"
       -
-        name: "Scotiabank Software Engineering Scholarship"
-        date: "May 2009"
-      -
-        name: "President's Scholarship of Distinction"
+        name: "Scotiabank Software Engineering Entrance Scholarship"
         date: "May 2009"
 education:
   -
