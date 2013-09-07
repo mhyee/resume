@@ -1,15 +1,37 @@
 contact:
   name: "Ming-Ho Yee"
-  program: "Software Engineering"
-  term: "4N"
   email: "mh@mhyee.com"
   site: "mhyee.com"
-  page: "http://mhyee.com/about.html"
-skills:
-  computer:
-    - "Rails, PHP, MySQL, JavaScript, jQuery, HTML, CSS, VoiceXML, SCXML, XSLT"
-    - "Ruby, Perl, C, C[+][+], C[#], Java, Scheme, VHDL, assembly (MIPS, ColdFire, LLVM)"
-    - "[LaTeX], Git, CVS, ClearCase, Vim, Eclipse, Visual Studio, GDB, GCC, LLVM"
+  github: "github.com/mhyee"
+research:
+  -
+    position: "Fourth Year Design Project"
+    institution: "University of Waterloo"
+    location: "Waterloo ON"
+    start: "Nov 2012"
+    end: "present"
+    description:
+      - "Course work in a team of four undergraduate students, advised by Professor Derek Rayside"
+      - "Project: designing, implementing, and evaluating improvements for the [guided improvement algorithm](http://dspace.mit.edu/handle/1721.1/46322)"
+  -
+    position: "Undergraduate Research Assistant"
+    institution: "University of Waterloo"
+    location: "Waterloo ON"
+    start: "Sep"
+    end: "Dec 2012"
+    description:
+      - "Part-time position under Professor Lin Tan"
+      - "Project: analyzing software dependencies using the LLVM infrastructure"
+  -
+    position: "Research Assistant and Developer"
+    institution: "University of Waterloo"
+    location: "Waterloo ON"
+    start: "May"
+    end: "Aug 2012"
+    description:
+      - "Full-time position under Professor Lin Tan"
+      - "Project: improving developer productivity by automatically producing test cases from stack traces"
+      - "Worked with C, C++, GDB, GCC, LLVM, and LLVM IR"
 work:
   -
     title: "Software Development Engineering Intern"
@@ -18,7 +40,7 @@ work:
     start: "Sep 2013"
     end: "present"
     description:
-      - "C[+][+] compiler team"
+      - "Planned project: implementing a C++11 feature"
   -
     title: "Software Development Engineering Intern"
     employer: "Microsoft"
@@ -30,36 +52,19 @@ work:
       - "Designed and conducted performance tests for the memory collection tool"
       - "Implemented LINQ for heap memory graphs"
   -
-    title: "Undergraduate Research Assistant"
-    employer: "University of Waterloo"
-    location: "Waterloo ON"
-    start: "Sep"
-    end: "Dec 2012"
-    description:
-      - "Part-time work on a project to analyze software dependencies using the LLVM infrastructure"
-      - "Investigated the Chrome build process"
-  -
-    title: "Research Assistant and Developer"
-    employer: "University of Waterloo"
-    location: "Waterloo ON"
-    start: "May"
-    end: "Aug 2012"
-    description:
-      - "Investigated how to improve developer productivity by automatically producing test cases from stack traces"
-      - "Worked with C, C[+][+], GDB, GCC, LLVM, and LLVM assembly"
-  -
-    title: "Ruby on Rails Web Developer in News [&] Social Media"
-    employer: "Eqentia Inc"
+    title: "Developer"
+    employer: "Engagio (formerly Eqentia)"
     location: "Toronto ON"
     start: "Sep"
     end: "Dec 2011"
     description:
       - "Along with a senior developer, designed, built, and launched [Engagio](http://www.avc.com/a_vc/2011/12/engagio.html), [``]the universal commenting inbox['']"
-      - "Integrated multiple APIs with Engagio, including Disqus and Google[+]"
+      - "Integrated multiple APIs with Engagio, including Disqus and Google+"
       - "Optimized the background task queuing system to dynamically prioritize fetch tasks"
+      - "Worked with Ruby on Rails, PHP, MySQL, and jQuery"
   -
-    title: "Ruby on Rails Web Developer in News [&] Social Media"
-    employer: "Eqentia Inc"
+    title: "Developer"
+    employer: "Eqentia"
     location: "Toronto ON"
     start: "Jan"
     end: "Apr 2011"
@@ -69,7 +74,7 @@ work:
       - "Developed a feature for tracking and sorting articles by relevancy"
   -
     title: "Software Development Research Intern"
-    employer: "Genesys Canada Laboratories Inc"
+    employer: "Genesys Telecommunications Laboratories"
     location: "Markham ON"
     start: "May"
     end: "Aug 2010"
@@ -77,7 +82,7 @@ work:
       - "Developed a proof-of-concept speech analytics application in VoiceXML and SCXML to improve customer experience at call centres"
       - "Integrated external APIs to a Java backend and added support for multichannel audio processing"
   -
-    title: "Junior software developer"
+    title: "Junior Developer"
     employer: "Robarts Research Institute"
     location: "London ON"
     start: "Jul"
@@ -86,12 +91,15 @@ work:
       - "Implemented a new module for pre-existing data analysis software, using IDL (Interactive Data Language)"
       - "[Examined MRI spectroscopy data with the new module to research drug treatments for Alzheimer's Disease](http://www.alzheimersanddementia.com/article/PIIS1552526009002611/fulltext)"
 projects:
-  - "Emulator and in-progress assembler for the DCPU-16, a fictional computer architecture"
-  - "Resume generator, which takes content from a YAML file to generate [LaTeX ] and HTML resumes"
   - "Learning Haskell by writing a Scheme interpreter"
+  - "Emulator and in-progress assembler for the DCPU-16, a fictional computer architecture"
+  - "Resume generator, which takes content from a YAML file to produce [LaTeX ] and HTML resumes"
   - "[LaTeX ] projects, including a class for University of Waterloo work reports and assignment templates"
   - "Server administration for personal website, including setting up a [Git server](http://git.mhyee.com/)"
-  - "All projects available on GitHub: [github.com/mhyee](https://github.com/mhyee)"
+skills:
+  - "Experienced with C/C++, Java, and Ruby; familiar with C[#], Perl, and assembly"
+  - "Comfortable with Linux, OS X, and Windows environments"
+  - "Tools: [LaTeX], Git, Vim, Visual Studio, GDB, GCC, LLVM"
 activities:
   - "Student representative on the University of Waterloo Software Engineering Curriculum Committee"
   - "Past academic representative for the University of Waterloo Software Engineering Class of 2014"
@@ -99,33 +107,29 @@ activities:
   - "Writer for the Math Society's fortnightly publication"
 awards:
   -
-    name: "University of Waterloo"
-    location: "Waterloo ON"
-    awards:
-      -
-        name: "Fourth Year Design Project Pitch Competition"
-        date: "May 2013"
-      -
-        name: "NSERC Undergraduate Student Research Award"
-        date: "Apr 2011, Mar 2012, Jun 2012"
-      -
-        name: "President's Research Award"
-        date: "May 2012"
-      -
-        name: "Term Dean's Honours List"
-        date: "all terms"
-      -
-        name: "Scotiabank Software Engineering Entrance Scholarship"
-        date: "May 2009"
+    name: "Fourth Year Design Project Pitch Competition"
+    date: "May 2013"
+  -
+    name: "NSERC Undergraduate Student Research Award"
+    date: "Jun 2012"
+  -
+    name: "President's Research Award"
+    date: "May 2012"
+  -
+    name: "Term Dean's Honours List"
+    date: "all terms"
+  -
+    name: "Scotiabank Software Engineering Entrance Scholarship"
+    date: "May 2009"
 education:
   -
     level: "Candidate for Bachelor of Software Engineering"
-    name: "Honours Software Engineering, University of Waterloo"
+    institution: "University of Waterloo"
     location: "Waterloo ON"
     start: "Sep 2009"
     end: "present (expected Apr 2014)"
   -
     level: "Ontario Secondary School Diploma"
-    name: "London Central Secondary School"
+    institution: "London Central Secondary School"
     location: "London ON"
     date: "Jun 2009"

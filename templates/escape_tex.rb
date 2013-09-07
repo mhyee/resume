@@ -11,7 +11,6 @@ def escape(input='')
     input.gsub!(/\[LaTeX \]/, "\\\\LaTeX\\\\")  # LaTeX (trailing space)
     input.gsub!(/\[``\]/, "``")                 # Smart quotes (open)
     input.gsub!(/\[''\]/, "''")                 # Smart quotes (close)
-    input.gsub!(/\[\+\]/, "$+$")                # Plus sign
     input.gsub!(/\[#\]/, "\\\\#")               # Number sign
     input.gsub!(/\[\$\]/, "\\\\$")              # Dollar sign
     input.gsub!(/\[(.*)\]\((.*)\)/, "\\\\href{\\2}{\\1}")   # Link handling
