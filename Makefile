@@ -15,13 +15,13 @@ output/resume-web.html: generate.rb resume.yml templates/resume.html.erb templat
 output/resume.tex: generate.rb resume.yml private.yml templates/resume.tex.erb templates/escape_tex.rb
 	@./generate.rb -t resume.tex.erb
 
-output/resume.pdf: output/resume.tex res.cls
+output/resume.pdf: output/resume.tex
 	@pdflatex -interaction=batchmode -output-directory output $<
 
 output/resume-web.tex: generate.rb resume.yml templates/resume.tex.erb templates/escape_tex.rb
 	@./generate.rb -t resume.tex.erb -w
 
-output/resume-web.pdf: output/resume-web.tex res.cls
+output/resume-web.pdf: output/resume-web.tex
 	@pdflatex -interaction=batchmode -output-directory output $<
 
 .PHONY: publish

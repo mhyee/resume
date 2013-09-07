@@ -93,7 +93,7 @@ work:
 projects:
   - "Learning Haskell by writing a Scheme interpreter"
   - "Emulator and in-progress assembler for the DCPU-16, a fictional computer architecture"
-  - "Resume generator, which takes content from a YAML file to produce [LaTeX ] and HTML resumes"
+  - "Resume generator, which takes content from a YAML file to produce [LaTeX ], HTML, and plain text resumes"
   - "[LaTeX ] projects, including a class for University of Waterloo work reports and assignment templates"
   - "Server administration for personal website, including setting up a [Git server](http://git.mhyee.com/)"
 skills:
