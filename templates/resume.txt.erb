@@ -1,0 +1,84 @@
+<%= contact["name"] + "\n" %>
+
+http://<%= contact["github"] %> * <%= contact["email"] %> * http://<%= contact["site"] %>
+<% if contact["address"] && contact["cell"] %>
+<%= contact["address"] %> * <%= contact["cell"] %>
+
+<% end #if %>
+--------------------------------------------------------------------------------
+<% def wrap(text) %>
+<% text.gsub(/(.{1,74})(\s+|$)/, "\\1\n      ").strip %>
+<% end #def %>
+
+RESEARCH EXPERIENCE
+
+<% research.each do |entry| %>
+  <%= entry["position"] %>
+  <%= entry["institution"] %>, <%= entry["location"] %>
+  <%= entry["start"] %> -- <%= entry["end"] %>
+
+<% if entry["description"] %>
+<% entry["description"].each do |item| %>
+    - <%= wrap item %>
+<% end #each %>
+
+<% end #if %>
+<% end #each %>
+
+WORK EXPERIENCE
+
+<% work.each do |entry| %>
+  <%= entry["title"] %>
+  <%= entry["employer"] %>, <%= entry["location"] %>
+  <%= entry["start"] %> -- <%= entry["end"] %>
+
+<% if entry["description"] %>
+<% entry["description"].each do |item| %>
+    - <%= wrap item %>
+<% end #each %>
+
+<% end #if %>
+<% end #each %>
+
+PROJECTS
+
+<% projects.each do |entry| %>
+    - <%= wrap entry %>
+<% end #each %>
+
+
+TECHNICAL SKILLS
+
+<% skills.each do |entry| %>
+    - <%= wrap entry %>
+<% end #each %>
+
+
+ACTIVITIES
+
+<% activities.each do |entry| %>
+    - <%= wrap entry %>
+<% end #each %>
+
+
+AWARDS
+
+<% awards.each do |entry| %>
+    - <%= wrap entry["name"] + ", " + entry["date"] %>
+<% end #each %>
+
+
+EDUCATION
+
+<% education.each_with_index do |entry, index| %>
+  <%= entry["level"] %>
+  <%= entry["institution"] %>, <%= entry["location"] %>
+<% if entry["date"].nil? %>
+  <%= entry["start"] %> -- <%= entry["end"] %>
+<% else %>
+  <%= entry["date"] %>
+<% end #if %>
+<% if index != education.size - 1 %>
+
+<% end #if %>
+<% end #each_with_index %>
