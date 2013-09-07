@@ -1,121 +1,156 @@
-\documentclass[margin]{res}
+\documentclass[10pt,letterpaper]{article}
 
+\usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage{url}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{changepage}
+\usepackage{libertine}
+\usepackage{microtype}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{xcolor}
 \usepackage{hyperref}
 
-\hypersetup{colorlinks=true,urlcolor=blue}
+\titleformat*{\section}{\Large\bfseries\scshape}
+\definecolor{foo}{rgb}{0.18,0.31,0.65}
+\hypersetup{colorlinks=true,urlcolor=foo}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlist{nolistsep}
 
-\renewcommand{\namefont}{\Huge\textbf}
-\renewcommand{\sectionfont}{\large\bfseries\scshape}
+\newcommand{\indentleft}{0.75cm}
+\newcommand{\indentright}{0cm}
+\newcommand{\interlist}{0.5em}
+\newcommand{\postsubhead}{-0.5em}
 
 \begin{document}
 
-\begin{raggedright}
-\begin{resume}
+  {\Huge\textbf{<%= contact["name"] %>}}
+  \vspace*{2pt}
 
-\vspace*{-1cm}
-<% local = contact["local"] %>
-<% permanent = contact["permanent"] %>
-
-<% if !local.nil? && !permanent.nil? %>
-  <% iterations = [ local["address"].size, permanent["address"].size ].max %>
-
-  \hspace*{-\sectionwidth}
-  \begin{minipage}{0.4\textwidth}
-    \begin{tabular}{c}
-      \textbf{\fontsize{30}{40}\selectfont <%= contact["name"] %>} \\
-      \textbf{\large <%=contact["term"] %> <%= contact["program"] %>} \\
-      \textbf{\large <%= contact["id"] %>} \\
-    \end{tabular}
-  \end{minipage}
-  \hspace*{1.2cm}
-  \begin{minipage}{0.6\textwidth}
-    \begin{tabular}{l l}
-      \textbf{Local Address (until <%= local["until"] %>)} & \textbf{Permanent Address} \\
-      <% for i in 0..(iterations-1) %>
-        \small <%= local["address"][i] %> & \small <%= permanent["address"][i] %> \\
-      <% end %>
-    \end{tabular}
-  \end{minipage}
-  \vspace*{-0.5cm}
-<% else %>
-  \hspace*{-\sectionwidth}
-  \begin{minipage}{0.4\textwidth}
-    \begin{tabular}{c}
-      \textbf{\fontsize{30}{40}\selectfont <%= contact["name"] %>} \\
-      \textbf{\large <%= contact["term"] %> <%= contact["program"] %>}
-    \end{tabular}
-  \end{minipage}
-  \hspace*{1.2cm}
-  \begin{minipage}{0.6\textwidth}
+<% site = contact["site"] %>
+<% email = contact["email"] %>
+<% github = contact["github"] %>
+  {\small
+    \href{http://<%= github %>}{<%= github %>}
+    \textbullet\
+    \href{mailto:<%= email %>}{<%= email %>}
+    \textbullet\
+    \href{http://<%= site %>}{<%= site %>}
+<% if contact["address"] && contact["cell"] %>
     \hfill
-    \large To contact me, please see \href{<%= contact["page"] %>}{this page}.
-  \end{minipage}
-<% end %>
+    <%= contact["address"] %>
+    \hfill
+    <%= contact["cell"] %>
+<% end #if %>
+  }
+  \hrule
 
-<% unless contact["cell"].nil? %>
-  \begin{center}
-    <% email = contact["email"] %>
-    <% site = contact["site"] %>
-    \hspace*{-\sectionwidth}
-    \href{mailto:<%= email %>}{\url{<%= email %>}} | <%= contact["cell"] %> | \href{http://<%= site %>}{\url{<%= site %>}}
-  \end{center}
-<% end %>
-
-\section{Computer Skills}
-\begin{list}{\labelitemi}{\leftmargin=1em}
-  <% skills["computer"].each do |skill| %>
-    \item <%= skill %>
-  <% end %>
-\end{list}
-
-\section{Work Experience}
-<% work.each do |job| %>
-  \textbf{<%= job["title"] %>}, <%= job["employer"] %>, <%= job["location"] %>,
-  \textit{<%= job["start"] %> -- <%= job["end"] %>}
-  <% unless job["description"].empty? %>
-    \begin{itemize}
-      <% job["description"].each do |item| %>
+  \section*{Research Experience}
+    \vspace{\postsubhead}
+    \begin{adjustwidth}{\indentleft}{\indentright}
+<% research.each_with_index do |entry, index| %>
+      \textbf{<%= entry["position"] %>}
+      \hfill
+      \textbf{<%= entry["location"] %>}\\
+      \textit{<%= entry["institution"] %>}
+      \hfill
+      \textit{<%= entry["start"] %> -- <%= entry["end"] %>}
+<% if entry["description"] %>
+      \begin{itemize}
+<% entry["description"].each do |item| %>
         \item <%= item %>
-      <% end %>
-    \end{itemize}
-  <% end %>
-<% end %>
+<% end #each %>
+      \end{itemize}
+<% end #if %>
+<% if index != research.size - 1 %>
+      \vspace{\interlist}
 
-\section{Projects}
-\begin{list}{\labelitemi}{\leftmargin=1em}
-  <% projects.each do |project| %>
-    \item <%= project %>
-  <% end %>
-\end{list}
+<% end #if %>
+<% end #each_with_index %>
+    \end{adjustwidth}
 
-\section{Activities}
-\begin{list}{\labelitemi}{\leftmargin=1em}
-  <% activities.each do |activity| %>
-    \item <%= activity %>
-  <% end %>
-\end{list}
+  \section*{Work Experience}
+    \vspace{\postsubhead}
+    \begin{adjustwidth}{\indentleft}{\indentright}
+<% work.each_with_index do |entry, index| %>
+      \textbf{<%= entry["title"] %>}
+      \hfill
+      \textbf{<%= entry["location"] %>}\\
+      \textit{<%= entry["employer"] %>}
+      \hfill
+      \textit{<%= entry["start"] %> -- <%= entry["end"] %>}
+<% if entry["description"] %>
+      \begin{itemize}
+<% entry["description"].each do |item| %>
+        \item <%= item %>
+<% end #each %>
+      \end{itemize}
+<% end #if %>
+<% if index != work.size - 1 %>
+      \vspace{\interlist}
 
-\section{Awards}
-<% awards.each do |institution| %>
-  \textbf{<%= institution["name"] %>}, <%= institution["location"] %>
-  \begin{itemize}
-    <% institution["awards"].each do |award| %>
-      \item <%= award["name"] %>, \textit{<%= award["date"] %>}
-    <% end %>
-  \end{itemize}
-<% end %>
+<% end #if %>
+<% end #each_with_index %>
+    \end{adjustwidth}
 
-\section{Education}
-<% education.each do |institution| %>
-  \textbf{<%= institution["level"] %>}, <%= institution["name"] %>,
-  <%= institution["location"] %>,
-  <% if institution["date"].nil? %> \textit{<%= institution["start"] %> -- <%= institution["end"] %>}
-  <% else %> \textit{<%= institution["date"] %>}
-  <% end %>
-<% end %>
+  \section*{Projects}
+    \vspace{\postsubhead}
+    \begin{adjustwidth}{\indentleft}{\indentright}
+      \begin{itemize}
+<% projects.each do |entry| %>
+        \item <%= entry %>
+<% end #each %>
+      \end{itemize}
+    \end{adjustwidth}
 
-\end{resume}
-\end{raggedright}
+  \section*{Technical Skills}
+    \vspace{\postsubhead}
+    \begin{adjustwidth}{\indentleft}{\indentright}
+      \begin{itemize}
+<% skills.each do |entry| %>
+        \item <%= entry %>
+<% end #each %>
+      \end{itemize}
+    \end{adjustwidth}
+
+  \section*{Activities}
+    \vspace{\postsubhead}
+    \begin{adjustwidth}{\indentleft}{\indentright}
+      \begin{itemize}
+<% activities.each do |entry| %>
+        \item <%= entry %>
+<% end #each %>
+      \end{itemize}
+    \end{adjustwidth}
+
+  \section*{Awards}
+    \vspace{\postsubhead}
+    \begin{adjustwidth}{\indentleft}{\indentright}
+      \begin{itemize}
+<% awards.each do |entry| %>
+        \item <%= entry["name"] %>, \textit{<%= entry["date"] %>}
+<% end #each %>
+      \end{itemize}
+    \end{adjustwidth}
+
+  \section*{Education}
+    \vspace{\postsubhead}
+    \begin{adjustwidth}{\indentleft}{\indentright}
+<% education.each_with_index do |entry, index| %>
+      \textbf{<%= entry["level"] %>}
+      \hfill
+      \textbf{<%= entry["location"] %>}\\
+      \textit{<%= entry["institution"] %>}
+      \hfill
+<% if entry["date"].nil? %>
+      \textit{<%= entry["start"] %> -- <%= entry["end"] %>}\\
+<% else %>
+      \textit{<%= entry["date"] %>}\\
+<% end #if %>
+<% if index != education.size - 1 %>
+
+<% end #if %>
+<% end #each_with_index %>
+    \end{adjustwidth}
 \end{document}
