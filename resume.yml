@@ -61,7 +61,6 @@ work:
       - "Along with a senior developer, designed, built, and launched [Engagio](http://www.avc.com/a_vc/2011/12/engagio.html), [``]the universal commenting inbox['']"
       - "Integrated multiple APIs with Engagio, including Disqus and Google+"
       - "Optimized the background task queuing system to dynamically prioritize fetch tasks"
-      - "Worked with Ruby on Rails, PHP, MySQL, and jQuery"
   -
     title: "Developer"
     employer: "Eqentia"
