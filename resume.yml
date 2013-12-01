@@ -12,7 +12,7 @@ research:
     end: "present"
     description:
       - "Course work in a team of four undergraduate students, advised by Professor Derek Rayside"
-      - "Project: designing, implementing, and evaluating improvements for the [guided improvement algorithm](http://dspace.mit.edu/handle/1721.1/46322)"
+      - "Project: [designing, implementing, and evaluating improvements for the guided improvement algorithm](http://mhyee.com/fydp.html)"
   -
     position: "Undergraduate Research Assistant"
     institution: "University of Waterloo"
@@ -92,7 +92,7 @@ work:
 projects:
   - "Learning Haskell by writing a Scheme interpreter"
   - "Emulator and in-progress assembler for the DCPU-16, a fictional computer architecture"
-  - "Resume generator, which takes content from a YAML file to produce [LaTeX ], HTML, and plain text resumes"
+  - "Resume generator, which takes content from a YAML file to produce [LaTeX], HTML, and plain text resumes"
   - "[LaTeX ] projects, including a class for University of Waterloo work reports and assignment templates"
   - "Server administration for personal website, including setting up a [Git server](http://git.mhyee.com/)"
 skills:
