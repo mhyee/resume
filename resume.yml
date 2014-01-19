@@ -37,10 +37,10 @@ work:
     title: "Software Development Engineering Intern"
     employer: "Microsoft"
     location: "Redmond WA"
-    start: "Sep 2013"
-    end: "present"
+    start: "Sep"
+    end: "Dec 2013"
     description:
-      - "Planned project: implementing a C++11 feature"
+      - "Worked on the Visual C++ compiler, implementing C++11 features"
   -
     title: "Software Development Engineering Intern"
     employer: "Microsoft"
@@ -101,7 +101,7 @@ skills:
   - "Tools: [LaTeX], Git, Vim, Visual Studio, GDB, GCC, LLVM"
 activities:
   - "Student representative on the University of Waterloo Software Engineering Curriculum Committee"
-  - "Past academic representative for the University of Waterloo Software Engineering Class of 2014"
+  - "Academic representative for the University of Waterloo Software Engineering Class of 2014"
   - "Webmaster and past president of the [University of Waterloo Quiz Bowl Club](http://quizbowl.uwaterloo.ca/)"
   - "Writer for the Math Society's fortnightly publication"
 awards:
@@ -126,7 +126,7 @@ education:
     institution: "University of Waterloo"
     location: "Waterloo ON"
     start: "Sep 2009"
-    end: "present (expected Apr 2014)"
+    end: "Apr 2014 (expected)"
   -
     level: "Ontario Secondary School Diploma"
     institution: "London Central Secondary School"
