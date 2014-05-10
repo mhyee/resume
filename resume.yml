@@ -31,8 +31,15 @@ research:
     description:
       - "Full-time position under Professor Lin Tan"
       - "Project: improving developer productivity by automatically producing test cases from stack traces"
-      - "Worked with C, C++, GDB, GCC, LLVM, and LLVM IR"
 work:
+  -
+    title: "Software Development Engineering Intern"
+    employer: "Microsoft"
+    location: "Redmond WA"
+    start: "May 2014"
+    end: "present"
+    description:
+      - "Prototyping C++ language features for the Visual C++ compiler"
   -
     title: "Software Development Engineering Intern"
     employer: "Microsoft"
@@ -107,7 +114,7 @@ activities:
 awards:
   -
     name: "Fourth-Year Design Project Symposium, First Place"
-    date: "March 2014"
+    date: "Mar 2014"
   -
     name: "Fourth-Year Design Project Pitch Competition"
     date: "May 2013"
@@ -133,8 +140,7 @@ education:
     level: "Candidate for Bachelor of Software Engineering"
     institution: "University of Waterloo"
     location: "Waterloo ON"
-    start: "Sep 2009"
-    end: "Jun 2014 (expected)"
+    date: "Jun 2014 (expected)"
   -
     level: "Ontario Secondary School Diploma"
     institution: "London Central Secondary School"
