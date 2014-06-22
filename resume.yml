@@ -39,7 +39,7 @@ work:
     start: "May 2014"
     end: "present"
     description:
-      - "Prototyping C++ language features for the Visual C++ compiler"
+      - "Prototyping language features for the Visual C++ compiler"
   -
     title: "Software Development Engineering Intern"
     employer: "Microsoft"
@@ -47,7 +47,7 @@ work:
     start: "Sep"
     end: "Dec 2013"
     description:
-      - "Worked on the Visual C++ compiler, implementing C++11 features"
+      - "Implemented user-defined literals for the Visual C++ compiler"
   -
     title: "Software Development Engineering Intern"
     employer: "Microsoft"
@@ -113,6 +113,15 @@ activities:
   - "Writer for the Math Society's fortnightly publication"
 awards:
   -
+    name: "Ontario Professional Engineers Foundation Medal for Academic Achievement"
+    date: "May 2014"
+  -
+    name: "Ontario Graduate Scholarship"
+    date: "Apr 2014"
+  -
+    name: "Canada Graduate Scholarship-Master's (declined)"
+    date: "Apr 2014"
+  -
     name: "Fourth-Year Design Project Symposium, First Place"
     date: "Mar 2014"
   -
@@ -124,9 +133,6 @@ awards:
   -
     name: "President's Research Award"
     date: "May 2012"
-  -
-    name: "Term Dean's Honours List"
-    date: "all terms"
   -
     name: "Scotiabank Software Engineering Entrance Scholarship"
     date: "May 2009"
@@ -140,7 +146,7 @@ education:
     level: "Candidate for Bachelor of Software Engineering"
     institution: "University of Waterloo"
     location: "Waterloo ON"
-    date: "Jun 2014 (expected)"
+    date: "Jun 2014"
   -
     level: "Ontario Secondary School Diploma"
     institution: "London Central Secondary School"
