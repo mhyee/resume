@@ -63,8 +63,12 @@ ACTIVITIES
 
 AWARDS
 
-<% awards.each do |entry| %>
-    - <%= wrap entry["name"] + ", " + entry["date"] %>
+<% awards.each_with_index do |entry, index| %>
+    - <%= wrap entry["name"] %>
+      <%= entry["date"] %>
+<% if index != awards.size - 1 %>
+
+<% end #if %>
 <% end #each %>
 
 
@@ -77,6 +81,9 @@ EDUCATION
   <%= entry["start"] %> -- <%= entry["end"] %>
 <% else %>
   <%= entry["date"] %>
+<% end #if %>
+<% if entry["note"] %>
+      <%= entry["note"] %>
 <% end #if %>
 <% if index != education.size - 1 %>
 

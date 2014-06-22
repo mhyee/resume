@@ -96,13 +96,17 @@
       }
       #resume h3 .title, #resume h3 .position,
       #resume .h3sub .employer, #resume .h3sub .institution {
-          float: left;
-        }
-        #resume h3 .location, #resume .h3sub .date {
-          float: right;
-        }
+        float: left;
+      }
+      #resume h3 .location, #resume .h3sub .date,
+      #resume .awards .date {
+        float: right;
+      }
       #resume .h3spacing .h3sub {
-          margin-bottom: 0;
+        margin-bottom: 0;
+      }
+      #resume .h3spacing ul {
+        margin-top: 5px;
       }
       #resume .h3sub {
         font-weight: normal;
@@ -150,7 +154,7 @@
         </h3>
         <div class="h3sub">
           <span class="institution"><%= entry["institution"] %></span>
-          <span class="date"><%= entry["start"] %> &#8212; <%= entry["end"] %></span>
+          <span class="date"><%= entry["start"] %> &ndash; <%= entry["end"] %></span>
         </div>
 <% if entry["description"] %>
         <ul>
@@ -173,7 +177,7 @@
         </h3>
         <div class="h3sub">
           <span class="employer"><%= entry["employer"] %></span>
-          <span class="date"><%= entry["start"] %> &#8212; <%= entry["end"] %></span>
+          <span class="date"><%= entry["start"] %> &ndash; <%= entry["end"] %></span>
         </div>
 <% if entry["description"] %>
         <ul>
@@ -223,11 +227,12 @@
       </div><!-- div.subsection -->
 
       <h2>Awards</h2>
-      <div class="subsection">
+      <div class="subsection awards">
         <ul>
 <% awards.each do |entry| %>
           <li>
-            <%= entry["name"] %>, <span class="date"><%= entry["date"] %></span>
+            <%= entry["name"] %>
+            <span class="date"><%= entry["date"] %></span>
           </li>
 <% end #each %>
         </ul>
@@ -245,9 +250,16 @@
 <% if entry["date"] %>
           <span class="date"><%= entry["date"] %></span>
 <% else %>
-          <span class="date"><%= entry["start"] %> &#8212; <%= entry["end"] %></span>
+  <span class="date"><%= entry["start"] %> &ndash; <%= entry["end"] %></span>
 <% end #if %>
         </div>
+<% if entry["note"] %>
+        <ul>
+          <li>
+            <%= entry["note"] %>
+          </li>
+        </ul>
+<% end #if %>
 <% end #each %>
       </div><!-- div.subsection -->
 

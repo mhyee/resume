@@ -129,7 +129,9 @@
     \begin{adjustwidth}{\indentleft}{\indentright}
       \begin{itemize}
 <% awards.each do |entry| %>
-        \item <%= entry["name"] %>, \textit{<%= entry["date"] %>}
+        \item <%= entry["name"] %>
+        \hfill
+        \textit{<%= entry["date"] %>}
 <% end #each %>
       \end{itemize}
     \end{adjustwidth}
@@ -146,8 +148,14 @@
 <% if entry["date"].nil? %>
       \textit{<%= entry["start"] %> -- <%= entry["end"] %>}\\
 <% else %>
-      \textit{<%= entry["date"] %>}\\
+      \textit{<%= entry["date"] %>}
 <% end #if %>
+<% if entry["note"] %>
+      \begin{itemize}
+        \item <%= entry["note"] %>
+      \end{itemize}
+<% end #if %>
+\vspace{\interlist}
 <% if index != education.size - 1 %>
 
 <% end #if %>

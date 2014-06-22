@@ -13,6 +13,7 @@ def escape(input='')
     input.gsub!(/\[''\]/, "\"")           # Smart quotes (close)
     input.gsub!(/\[#\]/, "#")             # Number sign
     input.gsub!(/\[\$\]/, "$")            # Dollar sign
+    input.gsub!(/\[---\]/, "---")         # Em dash
     # Don't need to escape links for txt resume
   else
     input
