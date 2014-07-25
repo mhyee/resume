@@ -36,10 +36,10 @@ work:
     title: "Software Development Engineering Intern"
     employer: "Microsoft"
     location: "Redmond WA"
-    start: "May 2014"
-    end: "present"
+    start: "May"
+    end: "Jul 2014"
     description:
-      - "Prototyping language features for the Visual C++ compiler"
+      - "Prototyped language features for the Visual C++ compiler"
   -
     title: "Software Development Engineering Intern"
     employer: "Microsoft"
