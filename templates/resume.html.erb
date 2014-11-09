@@ -115,8 +115,11 @@
         margin-top: 0;
         margin-bottom: -10px;
       }
-      #resume li .date {
+      #resume li .date, #resume li .title {
         font-style: italic;
+      }
+      #resume li .in {
+        font-weight: bold;
       }
     </style>
   </head>
@@ -193,6 +196,26 @@
 
       <div class="pagebreak"></div>
 
+      <h2>Papers</h2>
+      <div class="subsection">
+        <ul>
+<% papers.each do |entry| %>
+<% authors = entry["authors"] %>
+<% title = entry["title"] %>
+<% published_in = entry["in"] %>
+<% location = entry["location"] %>
+<% date = entry["date"] %>
+          <li>
+            <%= authors %>,
+            <span class="title"><%= title %></span>,
+            <span class="in"><%= published_in %></span>,
+            <%= location %>,
+            <%= date %>
+          </li>
+<% end #each %>
+        </ul>
+      </div><!-- div.subsection -->
+
       <h2>Projects</h2>
       <div class="subsection">
         <ul>
@@ -207,7 +230,7 @@
       <h2>Technical Skills</h2>
       <div class="subsection">
         <ul>
-<% skills.each do |entry | %>
+<% skills.each do |entry| %>
           <li>
             <%= entry %>
           </li>

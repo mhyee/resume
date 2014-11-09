@@ -40,6 +40,19 @@ WORK EXPERIENCE
 <% end #if %>
 <% end #each %>
 
+PAPERS
+
+<% papers.each do |entry| %>
+<% authors = entry["authors"] %>
+<% title = entry["title"] %>
+<% published_in = entry["in"] %>
+<% location = entry["location"] %>
+<% date = entry["date"] %>
+<% entry_text = "#{authors}, #{title}, #{published_in}, #{location}, #{date}" %>
+    - <%= wrap entry_text %>
+<% end #each %>
+
+
 PROJECTS
 
 <% projects.each do |entry| %>
