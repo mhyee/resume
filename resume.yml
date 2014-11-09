@@ -5,11 +5,19 @@ contact:
   github: "github.com/mhyee"
 research:
   -
+    position: "Research Assistant"
+    institution: "University of Waterloo"
+    location: "Waterloo ON"
+    start: "Sep 2014"
+    end: "present"
+    description:
+      - "Graduate student supervised by Ondřej Lhoták"
+  -
     position: "Fourth-Year Design Project"
     institution: "University of Waterloo"
     location: "Waterloo ON"
     start: "Nov 2012"
-    end: "present"
+    end: "Apr 2014"
     description:
       - "Course work in a team of four undergraduate students, advised by Professor Derek Rayside"
       - "Project: [designing, implementing, and evaluating improvements for the guided improvement algorithm](http://mhyee.com/fydp.html)"
@@ -116,6 +124,9 @@ awards:
     name: "Ontario Professional Engineers Foundation Medal for Academic Achievement"
     date: "May 2014"
   -
+    name: "President's Graduate Scholarship"
+    date: "Apr 2014"
+  -
     name: "Ontario Graduate Scholarship"
     date: "Apr 2014"
   -
@@ -141,15 +152,10 @@ education:
     level: "Candidate for Master of Mathematics in Computer Science"
     institution: "University of Waterloo"
     location: "Waterloo ON"
-    date: "Sep 2014 (expected start)"
+    date: "Jun 2016 (expected)"
   -
     level: "Bachelor of Software Engineering"
     institution: "University of Waterloo"
     location: "Waterloo ON"
     date: "Jun 2014"
     note: "With Distinction [---] Dean's Honours List"
-  -
-    level: "Ontario Secondary School Diploma"
-    institution: "London Central Secondary School"
-    location: "London ON"
-    date: "Jun 2009"
