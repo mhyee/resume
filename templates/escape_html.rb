@@ -10,7 +10,6 @@ def escape(input='')
     # Do the actual escaping here
     input.gsub!(/\[&\]/, "&amp;")         # Ampersands
     input.gsub!(/\[LaTeX\]/, LATEX_HTML)  # LaTeX
-    input.gsub!(/\[LaTeX \]/, LATEX_HTML) # LaTeX (trailing space)
     input.gsub!(/\[``\]/, "&ldquo;")      # Smart quotes (open)
     input.gsub!(/\[''\]/, "&rdquo;")      # Smart quotes (close)
     input.gsub!(/\[#\]/, "#")             # Number sign

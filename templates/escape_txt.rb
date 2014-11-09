@@ -8,7 +8,6 @@ def escape(input='')
     # Do the actual escaping here
     input.gsub!(/\[&\]/, "&;")            # Ampersands
     input.gsub!(/\[LaTeX\]/, "LaTeX")     # LaTeX
-    input.gsub!(/\[LaTeX \]/, "LaTeX ")   # LaTeX (trailing space)
     input.gsub!(/\[``\]/, "\"")           # Smart quotes (open)
     input.gsub!(/\[''\]/, "\"")           # Smart quotes (close)
     input.gsub!(/\[#\]/, "#")             # Number sign

@@ -114,10 +114,10 @@ papers:
 projects:
   - "Learning Haskell by writing a Scheme interpreter"
   - "Resume generator, which takes content from a YAML file to produce [LaTeX], HTML, and plain text resumes"
-  - "[LaTeX ] projects, including a class for University of Waterloo work reports and assignment templates"
+  - "[LaTeX] projects, including a class for University of Waterloo work reports and assignment templates"
   - "Server administration for personal website, including setting up a [Git server](http://git.mhyee.com/)"
 skills:
-  - "Experienced with C/C++, Java, and Ruby; familiar with C[#], Perl, and assembly"
+  - "Experienced with C, C++, Java, and Ruby; familiar with C[#], Perl, and assembly"
   - "Some knowledge of Scheme/Racket, OCaml, and Haskell"
   - "Comfortable with Linux, OS X, and Windows environments"
   - "Tools: [LaTeX], Git, Vim, Visual Studio, GDB, GCC, LLVM"
