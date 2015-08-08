@@ -12,6 +12,7 @@ research:
     end: "present"
     description:
       - "Graduate student supervised by Ondřej Lhoták"
+      - "Area: static program analysis, compilers, programming languages"
   -
     position: "Fourth-Year Design Project"
     institution: "University of Waterloo"
@@ -47,7 +48,7 @@ work:
     start: "May"
     end: "Jul 2014"
     description:
-      - "Prototyped language features for the Visual C++ compiler"
+      - "Implemented a partial prototype of concepts lite in the Visual C++ compiler"
   -
     title: "Software Development Engineering Intern"
     employer: "Microsoft"
@@ -117,22 +118,25 @@ projects:
   - "[LaTeX] projects, including a class for University of Waterloo work reports and assignment templates"
   - "Server administration for personal website, including setting up a [Git server](http://git.mhyee.com/)"
 skills:
-  - "Experienced with C, C++, Java, and Ruby; familiar with C[#], Perl, and assembly"
+  - "Experienced with C, C++, Scala, Java, and Ruby; familiar with C[#], Perl, and assembly"
   - "Some knowledge of Scheme/Racket, OCaml, and Haskell"
   - "Comfortable with Linux, OS X, and Windows environments"
   - "Tools: [LaTeX], Git, Vim, Visual Studio, GDB, GCC, LLVM"
 activities:
   - "Past student representative on the Software Engineering Curriculum Committee"
   - "Past academic representative for the Software Engineering Class of 2014"
-  - "Member of the [Quiz Bowl Club](http://quizbowl.uwaterloo.ca/)"
+  - "Member and tournament director for the [University of Waterloo Quiz Bowl Club](http://quizbowl.uwaterloo.ca/)"
   - "Writer for the Math Society's fortnightly publication"
 awards:
+  -
+    name: "Canada Graduate Scholarship-Master's"
+    date: "Apr 2015"
   -
     name: "Ontario Professional Engineers Foundation Medal for Academic Achievement"
     date: "May 2014"
   -
-    name: "President's Graduate Scholarship"
-    date: "Apr 2014"
+    name: "President's Graduate Scholarship (x2)"
+    date: "Apr 2014, Apr 2015"
   -
     name: "Ontario Graduate Scholarship"
     date: "Apr 2014"
