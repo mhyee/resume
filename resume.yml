@@ -104,7 +104,7 @@ work:
     description:
       - "Implemented a new module for pre-existing data analysis software, using IDL (Interactive Data Language)"
       - "[Examined MRI spectroscopy data with the new module to research drug treatments for Alzheimer's Disease](http://www.alzheimersanddementia.com/article/PIIS1552526009002611/fulltext)"
-papers:
+publications:
   -
     authors: "Zulkoski, E., Kleynhans, C., Yee, M.-H., Rayside, D., Czarnecki, K."
     title: "[Optimizing Alloy for Multi-objective Software Product Line Configuration](http://gsd.uwaterloo.ca/node/569)"
