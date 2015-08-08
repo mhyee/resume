@@ -129,35 +129,32 @@ activities:
   - "Writer for the Math Society's fortnightly publication"
 awards:
   -
-    name: "Canada Graduate Scholarship-Master's"
-    date: "Apr 2015"
-  -
-    name: "Ontario Professional Engineers Foundation Medal for Academic Achievement"
-    date: "May 2014"
+    name: "NSERC Alexander Graham Bell Canada Graduate Scholarship - Master's"
+    date: "2015 [--] 2016"
   -
     name: "President's Graduate Scholarship (x2)"
-    date: "Apr 2014, Apr 2015"
+    date: "2014 [--] 2015, 2015 [--] 2016"
   -
     name: "Ontario Graduate Scholarship"
-    date: "Apr 2014"
+    date: "2014 [--] 2015"
   -
-    name: "Canada Graduate Scholarship-Master's (declined)"
-    date: "Apr 2014"
+    name: "NSERC Alexander Graham Bell Canada Graduate Scholarship - Master's (declined)"
+    date: "2014"
   -
-    name: "Capstone Design Project Symposium, First Place"
+    name: "Ontario Professional Engineers Foundation Medal for Academic Achievement"
+    date: "Jun 2014"
+  -
+    name: "Software Engineering Capstone Design Project Symposium, First Place"
     date: "Mar 2014"
   -
-    name: "Capstone Design Project Pitch Competition"
-    date: "May 2013"
-  -
     name: "NSERC Undergraduate Student Research Award"
-    date: "Jun 2012"
+    date: "May [--] Aug 2012"
   -
     name: "President's Research Award"
-    date: "May 2012"
+    date: "May [--] Aug 2012"
   -
     name: "Scotiabank Software Engineering Entrance Scholarship"
-    date: "May 2009"
+    date: "2009 [--] 2014"
 education:
   -
     level: "Candidate for Master of Mathematics in Computer Science"
