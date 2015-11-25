@@ -203,13 +203,11 @@
 <% authors = entry["authors"] %>
 <% title = entry["title"] %>
 <% published_in = entry["in"] %>
-<% location = entry["location"] %>
 <% date = entry["date"] %>
           <li>
             <%= authors %>,
-            <span class="title"><%= title %></span>,
+            <%= title %>,
             <span class="in"><%= published_in %></span>,
-            <%= location %>,
             <%= date %>
           </li>
 <% end #each %>

@@ -102,12 +102,10 @@
 <% authors = entry["authors"] %>
 <% title = entry["title"] %>
 <% published_in = entry["in"] %>
-<% location = entry["location"] %>
 <% date = entry["date"] %>
         \item <%= authors %>,
-              \textit{<%= title %>},
+              <%= title %>,
               \textbf{<%= published_in %>},
-              <%= location %>,
               <%= date %>
 <% end #each %>
       \end{itemize}

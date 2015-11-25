@@ -107,10 +107,14 @@ work:
       - "[Examined MRI spectroscopy data with the new module to research drug treatments for Alzheimer's Disease](http://www.alzheimersanddementia.com/article/PIIS1552526009002611/fulltext)"
 publications:
   -
-    authors: "Zulkoski, E., Kleynhans, C., Yee, M.-H., Rayside, D., Czarnecki, K."
+    authors: "M. Safa, M.-H. Yee, D. Rayside, C. T. Haas"
+    title: "Optimizing Contractor Selection for Construction Packages in Capital Projects"
+    in: "ASCE J. of Computing in Civil Eng."
+    date: "to appear"
+  -
+    authors: "E. Zulkoski, C. Kleynhans, M.-H. Yee, D. Rayside, K. Czarnecki"
     title: "[Optimizing Alloy for Multi-objective Software Product Line Configuration](http://gsd.uwaterloo.ca/node/569)"
     in: "ABZ 2014"
-    location: "Toulouse"
     date: "Jun 2014"
 projects:
   - "Learning Haskell by writing a Scheme interpreter"
