@@ -194,7 +194,28 @@
 <% end #each %>
       </div><!-- div.subsection -->
 
-      <!--<div class="pagebreak"></div>-->
+      <h2>Teaching Experience</h2>
+      <div class="subsection">
+<% teaching.each do |entry| %>
+        <h3>
+          <span class="title"><%= entry["title"] %></span>
+          <span class="location"><%= entry["location"] %></span>
+        </h3>
+        <div class="h3sub">
+          <span class="employer"><%= entry["employer"] %></span>
+          <span class="date"><%= entry["start"] %> &ndash; <%= entry["end"] %></span>
+        </div>
+<% if entry["description"] %>
+        <ul>
+<% entry["description"].each do |item| %>
+          <li>
+            <%= item %>
+          </li>
+<% end #each %>
+        </ul>
+<% end #if %>
+<% end #each %>
+      </div><!-- div.subsection -->
 
       <h2>Publications</h2>
       <div class="subsection">

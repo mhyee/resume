@@ -105,6 +105,25 @@ work:
     description:
       - "Implemented a new module for pre-existing data analysis software, using IDL (Interactive Data Language)"
       - "[Examined MRI spectroscopy data with the new module to research drug treatments for Alzheimer's Disease](http://www.alzheimersanddementia.com/article/PIIS1552526009002611/fulltext)"
+teaching:
+  -
+    title: "Teaching Assistant"
+    employer: "University of Waterloo"
+    location: "Waterloo ON"
+    start: "Sep"
+    end: "Dec 2015"
+    description:
+      - "Course: [Foundations of Sequential Programs, Enriched (CS 241E)](https://www.student.cs.uwaterloo.ca/~cs241e/)"
+      - "Responsibilities: proctoring and marking exams, answering questions in tutorials and on the course newsgroup, providing feedback for assignments and exams"
+  -
+    title: "Teaching Assistant"
+    employer: "University of Waterloo"
+    location: "Waterloo ON"
+    start: "May"
+    end: "Aug 2015"
+    description:
+      - "Course: [Foundations of Sequential Programs (CS 241)](https://www.student.cs.uwaterloo.ca/~cs241/)"
+      - "Responsibilities: proctoring and marking exams, marking assignments"
 publications:
   -
     authors: "M. Safa, M.-H. Yee, D. Rayside, C. T. Haas"

@@ -40,6 +40,21 @@ WORK EXPERIENCE
 <% end #if %>
 <% end #each %>
 
+TEACHING EXPERIENCE
+
+<% teaching.each do |entry| %>
+  <%= entry["title"] %>
+  <%= entry["employer"] %>, <%= entry["location"] %>
+  <%= entry["start"] %> -- <%= entry["end"] %>
+
+<% if entry["description"] %>
+<% entry["description"].each do |item| %>
+    - <%= wrap item %>
+<% end #each %>
+
+<% end #if %>
+<% end #each %>
+
 PUBLICATIONS
 
 <% publications.each do |entry| %>
