@@ -75,7 +75,6 @@ work:
     end: "Dec 2011"
     description:
       - "Along with a senior developer, designed, built, and launched [Engagio](http://www.avc.com/a_vc/2011/12/engagio.html), [``]the universal commenting inbox['']"
-      - "Integrated multiple APIs with Engagio, including Disqus and Google+"
       - "Optimized the background task queuing system to dynamically prioritize fetch tasks"
   -
     title: "Developer"
@@ -86,7 +85,6 @@ work:
     description:
       - "Designed and implemented a feature for users to add content by sending emails"
       - "Co-led the implementation of the new front-end interface redesign"
-      - "Developed a feature for tracking and sorting articles by relevancy"
   -
     title: "Software Development Research Intern"
     employer: "Genesys Telecommunications Laboratories"
