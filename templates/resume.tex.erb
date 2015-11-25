@@ -2,7 +2,7 @@
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[margin=2.5cm]{geometry}
+\usepackage[margin=2.2cm]{geometry}
 \usepackage{changepage}
 \usepackage{libertine}
 \usepackage{microtype}
@@ -21,7 +21,8 @@
 \newcommand{\indentleft}{0.75cm}
 \newcommand{\indentright}{0cm}
 \newcommand{\interlist}{0.5em}
-\newcommand{\postsubhead}{-0.5em}
+\newcommand{\postsubhead}{-0.8em}
+\newcommand{\postsection}{-0.8em}
 
 \begin{document}
 
@@ -69,6 +70,7 @@
 <% end #if %>
 <% end #each_with_index %>
     \end{adjustwidth}
+    \vspace{\postsection}
 
   \section*{Work Experience}
     \vspace{\postsubhead}
@@ -93,6 +95,7 @@
 <% end #if %>
 <% end #each_with_index %>
     \end{adjustwidth}
+    \vspace{\postsection}
 
   \section*{Teaching Experience}
     \vspace{\postsubhead}
@@ -117,6 +120,7 @@
 <% end #if %>
 <% end #each_with_index %>
     \end{adjustwidth}
+    \vspace{\postsection}
 
   \section*{Publications}
     \vspace{\postsubhead}
@@ -134,6 +138,7 @@
 <% end #each %>
       \end{itemize}
     \end{adjustwidth}
+    \vspace{\postsection}
 
   \section*{Technical Skills}
     \vspace{\postsubhead}
@@ -144,6 +149,7 @@
 <% end #each %>
       \end{itemize}
     \end{adjustwidth}
+    \vspace{\postsection}
 
   \section*{Activities}
     \vspace{\postsubhead}
@@ -154,6 +160,7 @@
 <% end #each %>
       \end{itemize}
     \end{adjustwidth}
+    \vspace{\postsection}
 
   \section*{Awards}
     \vspace{\postsubhead}
@@ -166,6 +173,7 @@
 <% end #each %>
       \end{itemize}
     \end{adjustwidth}
+    \vspace{\postsection}
 
   \section*{Education}
     \vspace{\postsubhead}
