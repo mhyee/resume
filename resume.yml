@@ -20,7 +20,7 @@ research:
     start: "Nov 2012"
     end: "Apr 2014"
     description:
-      - "Course work in a team of four undergraduate students, advised by Professor Derek Rayside"
+      - "Course work in a team of four undergraduate students, supervised by Professor Derek Rayside"
       - "Project: [designing, implementing, and evaluating improvements for the guided improvement algorithm](http://mhyee.com/fydp.html)"
   -
     position: "Undergraduate Research Assistant"
@@ -29,7 +29,7 @@ research:
     start: "Sep"
     end: "Dec 2012"
     description:
-      - "Part-time position under Professor Lin Tan"
+      - "Part-time position supervised by Professor Lin Tan"
       - "Project: analyzing software dependencies using the LLVM infrastructure"
   -
     position: "Research Assistant and Developer"
@@ -38,8 +38,8 @@ research:
     start: "May"
     end: "Aug 2012"
     description:
-      - "Full-time position under Professor Lin Tan"
-      - "Project: improving developer productivity by automatically producing test cases from stack traces"
+      - "Full-time position supervised by Professor Lin Tan"
+      - "Project: automatically generating test cases from stack traces"
 work:
   -
     title: "Software Development Engineering Intern"
@@ -64,9 +64,7 @@ work:
     start: "Jan"
     end: "Apr 2013"
     description:
-      - "Prototyped and developed a heap memory collection tool for .NET applications"
-      - "Designed and conducted performance tests for the memory collection tool"
-      - "Implemented LINQ for heap memory graphs"
+      - "Prototyped, developed, and evaluated a heap memory collection tool for .NET applications"
   -
     title: "Developer"
     employer: "Engagio (formerly Eqentia)"
@@ -92,8 +90,7 @@ work:
     start: "May"
     end: "Aug 2010"
     description:
-      - "Developed a proof-of-concept speech analytics application in VoiceXML and SCXML to improve customer experience at call centres"
-      - "Integrated external APIs to a Java backend and added support for multichannel audio processing"
+      - "Developed a proof-of-concept speech analytics application to improve customer experience at call centres"
   -
     title: "Junior Developer"
     employer: "Robarts Research Institute"
@@ -134,10 +131,10 @@ publications:
     in: "ABZ 2014"
     date: "Jun 2014"
 skills:
-  - "Experienced with C, C++, Scala, Java, and Ruby; familiar with C[#], Perl, and assembly"
-  - "Some knowledge of Scheme/Racket, OCaml, and Haskell"
+  - "Experienced with C, C++, Scala, Java, and Ruby"
+  - "Familiar with C[#], Perl, x86 and MIPS assembly, and LLVM IR"
+  - "Some knowledge of Racket, OCaml, Haskell, ARM assembly, and JVM bytecode"
   - "Comfortable with Linux, OS X, and Windows environments"
-  - "Tools: [LaTeX], Git, Vim, Visual Studio, GDB, GCC, LLVM"
 activities:
   - "Past student representative on the Software Engineering Curriculum Committee"
   - "Past academic representative for the Software Engineering Class of 2014"
