@@ -26,10 +26,10 @@ output/resume-web.pdf: output/resume-web.tex
 
 .PHONY: publish
 publish: output/resume-web.txt output/resume-web.html output/resume-web.pdf output/resume-web.tex
-	scp output/resume-web.txt mhyee@mhyee.com:~/public_html/resume/YeeMing-Ho_resume_online.txt
-	scp output/resume-web.html mhyee@mhyee.com:~/public_html/resume/YeeMing-Ho_resume_online.html
-	scp output/resume-web.pdf mhyee@mhyee.com:~/public_html/resume/YeeMing-Ho_resume_online.pdf
-	scp output/resume-web.tex mhyee@mhyee.com:~/public_html/resume/YeeMing-Ho_resume_online.tex
+	scp output/resume-web.txt mhyee@mhyee.com:~/public_html/resume/resume.txt
+	scp output/resume-web.html mhyee@mhyee.com:~/public_html/resume/resume.html
+	scp output/resume-web.pdf mhyee@mhyee.com:~/public_html/resume/resume.pdf
+	scp output/resume-web.tex mhyee@mhyee.com:~/public_html/resume/resume.tex
 
 .PHONY: clean
 clean:
