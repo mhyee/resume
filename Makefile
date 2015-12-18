@@ -26,10 +26,13 @@ output/resume-web.pdf: output/resume-web.tex
 
 .PHONY: publish
 publish: output/resume-web.txt output/resume-web.html output/resume-web.pdf output/resume-web.tex
-	scp output/resume-web.txt mhyee@mhyee.com:~/public_html/resume/resume.txt
-	scp output/resume-web.html mhyee@mhyee.com:~/public_html/resume/resume.html
-	scp output/resume-web.pdf mhyee@mhyee.com:~/public_html/resume/resume.pdf
-	scp output/resume-web.tex mhyee@mhyee.com:~/public_html/resume/resume.tex
+	mkdir temp
+	cp output/resume-web.txt temp/resume.txt
+	cp output/resume-web.html temp/resume.html
+	cp output/resume-web.pdf temp/resume.pdf
+	cp output/resume-web.tex temp/resume.tex
+	rsync -r -a -v -e "ssh -l mhyee" temp/ mhyee.com:~/public_html/resume/
+	rm -rf temp
 
 .PHONY: clean
 clean:
