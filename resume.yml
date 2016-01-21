@@ -105,11 +105,18 @@ teaching:
     title: "Teaching Assistant"
     employer: "University of Waterloo"
     location: "Waterloo ON"
+    start: "Jan"
+    end: "Apr 2016"
+    description:
+      - "[Compiler Construction (CS 444)](https://www.student.cs.uwaterloo.ca/~cs444/)"
+  -
+    title: "Teaching Assistant"
+    employer: "University of Waterloo"
+    location: "Waterloo ON"
     start: "Sep"
     end: "Dec 2015"
     description:
-      - "Course: [Foundations of Sequential Programs, Enriched (CS 241E)](https://www.student.cs.uwaterloo.ca/~cs241e/)"
-      - "Responsibilities: proctoring and marking exams, answering questions in tutorials and on the course newsgroup, providing feedback for assignments and exams"
+      - "[Foundations of Sequential Programs, Enriched (CS 241E)](https://www.student.cs.uwaterloo.ca/~cs241e/)"
   -
     title: "Teaching Assistant"
     employer: "University of Waterloo"
@@ -117,14 +124,13 @@ teaching:
     start: "May"
     end: "Aug 2015"
     description:
-      - "Course: [Foundations of Sequential Programs (CS 241)](https://www.student.cs.uwaterloo.ca/~cs241/)"
-      - "Responsibilities: proctoring and marking exams, marking assignments"
+      - "[Foundations of Sequential Programs (CS 241)](https://www.student.cs.uwaterloo.ca/~cs241/)"
 publications:
   -
     authors: "M. Safa, M.-H. Yee, D. Rayside, C. T. Haas"
-    title: "Optimizing Contractor Selection for Construction Packages in Capital Projects"
+    title: "[Optimizing Contractor Selection for Construction Packages in Capital Projects](http://dx.doi.org/10.1061/(ASCE)CP.1943-5487.0000555)"
     in: "ASCE J. Comput. Civ. Eng."
-    date: "to appear"
+    date: "Jan 2016"
   -
     authors: "E. Zulkoski, C. Kleynhans, M.-H. Yee, D. Rayside, K. Czarnecki"
     title: "[Optimizing Alloy for Multi-objective Software Product Line Configuration](http://gsd.uwaterloo.ca/node/569)"
