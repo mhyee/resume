@@ -16,7 +16,7 @@ def escape(input='')
     input.gsub!(/\[\$\]/, "$")            # Dollar sign
     input.gsub!(/\[---\]/, "&mdash;")     # Em dash
     input.gsub!(/\[--\]/, "&ndash;")      # En dash
-    input.gsub!(/\[(.*)\]\((.*)\)/, "<a href=\"\\2\">\\1</a>")   # Link handling
+    input.gsub!(/\[(.*?)\]\((.*?)\)/, "<a href=\"\\2\">\\1</a>")   # Link handling
   else
     input
   end

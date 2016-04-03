@@ -14,7 +14,7 @@ def escape(input='')
     input.gsub!(/\[\$\]/, "\\\\$")              # Dollar sign
     input.gsub!(/\[---\]/, "---")               # Em dash
     input.gsub!(/\[--\]/, "--")                 # En dash
-    input.gsub!(/\[(.*)\]\((.*)\)/, "\\\\href{\\2}{\\1}")   # Link handling
+    input.gsub!(/\[(.*?)\]\((.*?)\)/, "\\\\href{\\2}{\\1}")   # Link handling
   else
     input
   end
