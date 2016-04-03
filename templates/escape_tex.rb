@@ -1,3 +1,5 @@
+CPP_TEX = '{C\nolinebreak[4]\hspace{-.05em}\raisebox{.3ex}{\relsize{-1}{\textbf{++}}}}'
+
 def escape(input='')
   case input
   when Hash
@@ -15,6 +17,7 @@ def escape(input='')
     input.gsub!(/\[---\]/, "---")               # Em dash
     input.gsub!(/\[--\]/, "--")                 # En dash
     input.gsub!(/\[(.*?)\]\((.*?)\)/, "\\\\href{\\2}{\\1}")   # Link handling
+    input.gsub!(/\[CPP\]/, CPP_TEX)             # C++
   else
     input
   end

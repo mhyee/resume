@@ -17,6 +17,7 @@ def escape(input='')
     input.gsub!(/\[---\]/, "&mdash;")     # Em dash
     input.gsub!(/\[--\]/, "&ndash;")      # En dash
     input.gsub!(/\[(.*?)\]\((.*?)\)/, "<a href=\"\\2\">\\1</a>")   # Link handling
+    input.gsub!(/\[CPP\]/, "C++")         # C++
   else
     input
   end

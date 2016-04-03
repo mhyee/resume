@@ -48,7 +48,7 @@ work:
     start: "May"
     end: "Jul 2014"
     description:
-      - "Implemented a partial prototype of concepts lite in the Visual C++ compiler"
+      - "Implemented a partial prototype of concepts lite in the Visual [CPP] compiler"
   -
     title: "Software Development Engineering Intern"
     employer: "Microsoft"
@@ -56,7 +56,7 @@ work:
     start: "Sep"
     end: "Dec 2013"
     description:
-      - "Implemented user-defined literals for the Visual C++ compiler"
+      - "Implemented user-defined literals for the Visual [CPP] compiler"
   -
     title: "Software Development Engineering Intern"
     employer: "Microsoft"
@@ -128,7 +128,7 @@ publications:
     in: "ABZ 2014"
     date: "Jun 2014"
 skills:
-  - "Experienced with C, C++, Scala, Java, and Ruby"
+  - "Experienced with C, [CPP], Scala, Java, and Ruby"
   - "Familiar with C[#], Perl, x86 and MIPS assembly, and JVM bytecode"
   - "Some knowledge of Racket, OCaml, Haskell, ARM assembly, and LLVM IR"
   - "Comfortable with Linux, OS X, and Windows environments"
