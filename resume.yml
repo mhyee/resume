@@ -105,27 +105,18 @@ teaching:
     title: "Teaching Assistant"
     employer: "University of Waterloo"
     location: "Waterloo ON"
-    start: "Jan"
-    end: "Apr 2016"
+    start: "May 2015"
+    end: "present"
     description:
-      - "[Compiler Construction (CS 444)](https://www.student.cs.uwaterloo.ca/~cs444/)"
-  -
-    title: "Teaching Assistant"
-    employer: "University of Waterloo"
-    location: "Waterloo ON"
-    start: "Sep"
-    end: "Dec 2015"
-    description:
-      - "[Foundations of Sequential Programs, Enriched (CS 241E)](https://www.student.cs.uwaterloo.ca/~cs241e/)"
-  -
-    title: "Teaching Assistant"
-    employer: "University of Waterloo"
-    location: "Waterloo ON"
-    start: "May"
-    end: "Aug 2015"
-    description:
-      - "[Foundations of Sequential Programs (CS 241)](https://www.student.cs.uwaterloo.ca/~cs241/)"
+      - "[CS 444: Compiler Construction](https://www.student.cs.uwaterloo.ca/~cs444/) (Winter 2016)"
+      - "[CS 241E: Foundations of Sequential Programs, Enriched](https://www.student.cs.uwaterloo.ca/~cs241e/) (Fall 2015)"
+      - "[CS 241: Foundations of Sequential Programs](https://www.student.cs.uwaterloo.ca/~cs241/) (Spring 2015)"
 publications:
+  -
+    authors: "M. Madsen, M.-H. Yee, O. Lhoták"
+    title: "From Datalog to Flix: A Declarative Language for Fixed Points on Lattices"
+    in: "PLDI 2016"
+    date: "to appear"
   -
     authors: "M. Safa, M.-H. Yee, D. Rayside, C. T. Haas"
     title: "[Optimizing Contractor Selection for Construction Packages in Capital Projects](http://dx.doi.org/10.1061/%28ASCE%29CP.1943-5487.0000555)"
@@ -138,8 +129,8 @@ publications:
     date: "Jun 2014"
 skills:
   - "Experienced with C, C++, Scala, Java, and Ruby"
-  - "Familiar with C[#], Perl, x86 and MIPS assembly, and LLVM IR"
-  - "Some knowledge of Racket, OCaml, Haskell, ARM assembly, and JVM bytecode"
+  - "Familiar with C[#], Perl, x86 and MIPS assembly, and JVM bytecode"
+  - "Some knowledge of Racket, OCaml, Haskell, ARM assembly, and LLVM IR"
   - "Comfortable with Linux, OS X, and Windows environments"
 activities:
   - "Past student representative on the Software Engineering Curriculum Committee"
@@ -148,7 +139,7 @@ activities:
   - "Writer for the Math Society's fortnightly publication"
 awards:
   -
-    name: "NSERC Alexander Graham Bell Canada Graduate Scholarship - Master's"
+    name: "NSERC Canada Graduate Scholarship - Master's"
     date: "2015 [--] 2016"
   -
     name: "President's Graduate Scholarship (x2)"
@@ -157,7 +148,7 @@ awards:
     name: "Ontario Graduate Scholarship"
     date: "2014 [--] 2015"
   -
-    name: "NSERC Alexander Graham Bell Canada Graduate Scholarship - Master's (declined)"
+    name: "NSERC Canada Graduate Scholarship - Master's (declined)"
     date: "2014"
   -
     name: "Ontario Professional Engineers Foundation Medal for Academic Achievement"
@@ -179,7 +170,7 @@ education:
     level: "Candidate for Master of Mathematics in Computer Science"
     institution: "University of Waterloo"
     location: "Waterloo ON"
-    date: "Jun 2016 (expected)"
+    date: "Aug 2016 (expected)"
   -
     level: "Bachelor of Software Engineering"
     institution: "University of Waterloo"
