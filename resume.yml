@@ -37,18 +37,12 @@ research:
     location: "Waterloo ON"
     start: "Sep"
     end: "Dec 2012"
-    description:
-      - "Part-time position supervised by Professor Lin Tan"
-      - "Project: analyzing software dependencies using the LLVM infrastructure"
   -
     position: "Research Assistant and Developer"
     institution: "University of Waterloo"
     location: "Waterloo ON"
     start: "May"
     end: "Aug 2012"
-    description:
-      - "Full-time position supervised by Professor Lin Tan"
-      - "Project: automatically generating test cases from stack traces"
 work:
   -
     title: "Software Development Engineering Intern"
