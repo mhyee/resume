@@ -26,7 +26,7 @@ research:
     position: "Capstone Design Project"
     institution: "University of Waterloo"
     location: "Waterloo ON"
-    start: "Nov 2012"
+    start: "Sep 2012"
     end: "Apr 2014"
     description:
       - "Course work in a team of four undergraduate students, supervised by Professor Derek Rayside"
@@ -178,13 +178,13 @@ education:
     level: "Ph.D. Student"
     institution: "Northeastern University"
     location: "Boston MA"
-    date: "Sep 2014 [--] present"
+    date: "Sep 2016 [--] present"
   -
     level: "Candidate for Master of Mathematics in Computer Science"
     institution: "University of Waterloo"
     location: "Waterloo ON"
     date: "Jun 2017 (expected)"
-    note: "Thesis: [Implementing a Functional Language for Flix](http://hdl.handle.net/10012/10856) (completed Aug 2016)"
+    note: "Thesis: [Implementing a Functional Language for Flix](http://hdl.handle.net/10012/10856) (completed Sep 2016)"
   -
     level: "Bachelor of Software Engineering"
     institution: "University of Waterloo"
