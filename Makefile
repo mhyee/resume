@@ -1,7 +1,10 @@
-all: output/resume.txt output/resume-web.txt output/resume.html output/resume-web.html output/resume.pdf output/resume-web.pdf
+all: output/resume.txt output/resume.md output/resume-web.txt output/resume.html output/resume-web.html output/resume.pdf output/resume-web.pdf
 
 output/resume.txt: generate.rb resume.yml private.yml templates/resume.txt.erb templates/escape_txt.rb
 	@./generate.rb -t resume.txt.erb
+
+output/resume.md: generate.rb resume.yml private.yml templates/resume.md.erb templates/escape_txt.rb
+	@./generate.rb -t resume.md.erb
 
 output/resume-web.txt: generate.rb resume.yml templates/resume.txt.erb templates/escape_txt.rb
 	@./generate.rb -t resume.txt.erb -w

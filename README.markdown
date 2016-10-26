@@ -1,7 +1,7 @@
 Resume
 ======
 
-.This resume system stores content in a YAML file and uses Ruby's ERB templating
+This resume system stores content in a YAML file and uses Ruby's ERB templating
 system to handle format and layout. Currently, the three templates implemented
 are HTML, LaTeX, and plain text. You can use pdflatex to create a PDF file from
 the generated LaTeX file.
