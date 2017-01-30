@@ -1,8 +1,8 @@
 .DS_Store
 *~
 *.swp
-*private.*.yaml
-*private.*.yml
+private.de.yaml
+private.en.yaml
 output/*
 _archive/*
 bibliography/*

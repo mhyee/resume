@@ -1,0 +1,9 @@
+person:
+  birthDate: "1900-00-00"
+  birthPlace: "000"
+  cellphone: "000"
+  locationPrivate:
+    address: 000
+    postcode: 000
+    city: 000
+    countryCode: 000 

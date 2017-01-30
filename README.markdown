@@ -12,7 +12,7 @@ The `-e` or `--english` option creates an English version of the CV, using both 
 This project is a fork from [Ming-Ho Yee's project](https://github.com/mhyee/resume) which was inspired by [David Hu's resume project](https://github.com/divad12/resume).
 
 For examples, my templates are included in this repository, while the generated
-resumes are on [my website][https://www.stefangroth.com/cv].
+resumes are on [my website](https://www.stefangroth.com/cv).
 
 ### Usage
 
@@ -58,7 +58,7 @@ The `Makefile`, once properly implemented, will generate `.tex`, `.md` and `.pdf
 
 ### License
 
-The resume content in this repo (`cv-sgroth.de.yaml` and `cv-sgroth.en.yaml`) is copyrighted by [Stefan Groth](https://www.stefangroth.com).
+The resume content in this repo (`cv.de.yaml` and `cv.en.yaml`) is copyrighted by [Stefan Groth](https://www.stefangroth.com).
 
 The rest of the project is licensed under the MIT License.
 
