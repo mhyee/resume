@@ -1,0 +1,227 @@
+person:
+  - name:
+      first: Stefan
+      last: Groth
+      title: Dr. phil.
+    email: stefan.groth@uzh.ch
+    phone: +41 44 634 92 96
+    url: http://www.stefangroth.com
+    position: Senior Researcher / Head Laboratory Popular Culture Studies
+    affiliation:
+      university: University of Zurich
+      institute: Institute of Social Anthropology and Cultural Studies (ISEK)
+      department: Popular Culture Studies
+      url: https://www.isek.uzh.ch
+    location:
+      address: Affolternstrasse 56
+      postcode: 8050
+      city: Zurich
+      countrycode: CH 
+
+# About
+about:
+  - about-lead: |
+      Text
+    about-body: |
+      Text
+
+# Research Interest
+research-interests: Global Governance and Multilateral Negotiations, Normative Dimensions of Everyday Culture, Linguistic Anthropology, Social and Technological Innovation in Everyday Culture, Cultural Property and Cultural Heritage, Sport as Cultural Practice, Foundations of Cooperation, Anthropology and Social Theory
+
+# Education
+education:
+  - university: Georg-August-University Göttingen
+    location: Göttingen, Germany
+    degree: "Dr. phil. in Cultural Anthropology / European Ethnology"
+    thesis: "Negotiating Tradition: The Pragmatics of International Deliberations on Cultural Property"
+    grade: summa cum laude
+    advisor: Prof. Dr. Regina F. Bendix (Göttingen), Prof. Dr. Donald F. Brenneis (UC Santa Cruz)
+    dates: 2008–2011
+  - university: Georg-August-University Göttingen
+    location: Göttingen, Germany
+    subject: "Sociology, Cultural Anthropology / European Ethnology, Social & Economic Psychology"
+    degree: "M.A. in Sociology"
+    thesis: "Open-Source-Software Engineering: Sociological Discussion of a Specific Form of Innovation Networks (Entwicklung von Open-Source-Software: Soziologische Diskussion einer spezifischen Form von Innovationsnetzwerk)"
+    grade: Sehr gut
+    dates: 10/2003—03/2008
+  - university: "Università degli Studi di Udine"
+    location: Udine, Italy
+    degree: Erasmus Student Exchange Programme
+    subject: Public Relations
+    dates: 10/2006–01/2007
+
+# Positions Held
+positions:
+  - university: University of Zurich
+    institute: Institute of Social Anthropology and Cultural Studies (ISEK)
+    department: Popular Culture Studies
+    dates: 09/2016--Present
+    position: Post-Doc
+  - university: University of Bonn
+    institute: Institute of Archeology and Cultural Anthropology
+    department: Cultural Anthropology / Folklore Studies
+    dates: 10/2015--08/2016
+    position: Post-Doc
+  - university: University Duisburg–Essen.
+    institute: "[Käte Hamburger Kolleg / Centre for Global Cooperation Research](https://www.gcr21.org)"
+    dates: 2014--2015
+    position: Post-Doctoral Fellow
+    project: "Culture as Resource and Diplomacy: Between Geopolitics and Issues-Based Policy"
+  - university: Georg-August-University Göttingen
+    institute: Institute of Cultural Anthropology / European Ethnology
+    dates: 2011--2014
+    position: Post-Doctoral Researcher
+    project: "The Ethics of/in Negotiating and Regulating Cultural Property (Sub-Project, Interdisciplinary DFG Research Unit [“The Constituting of Cultural Property: Actors, Discourses, Contexts, Rules”](http://www.cultural-property.org))"
+  - university: Georg-August-University Göttingen
+    institute: Institute of Cultural Anthropology / European Ethnology
+    dates: 2008--2011
+    position: Research Associate/Ph.D. Candidate
+    project: "Communication Patterns and Decision-Making about Cultural Property in the International Forum of the World Intellectual Property Organization (Sub-Project, [“The Constituting of Cultural Property: Actors, Discourses, Contexts, Rules”](http://www.cultural-property.org))"
+    project_url: "http://www.cultural-property.org"
+
+# Stays Abroad
+stays-abroad:
+  - stay-abroad: DAAD (German Academic Exchange Service) Fellowship for Ph.D. Research Studies, Research Visits at University of Chicago, University of California at Santa Cruz, School for Advanced Research in Santa Fe, USA
+    date: 03/2010–04/2010
+  - stay-abroad: Erasmus Student Exchange Programme, Public Relations, Università degli Studi di Udine, Italy 
+    date: 10/2006–01/2007 
+  - stay-abroad: Erasmus Teaching Staff Mobility Grant, Seminar für Kulturwissenschaft und Europäische Ethnologie, University of Basel, Switzerland
+    date: Fall 2012
+
+# Teaching Experience
+teaching-experience:
+  - course: Certificate Programme in University Didactics
+    university: Georg-August-University Göttingen
+    year: 2013–2014
+  - course: Empirische Kulturanalyse des Alltags
+    institute: Institute of Archeology and Cultural Anthropology
+    department: Department of Cultural Anthropology / Folklore Studies 
+    university: Friedrich-Wilhelms-University Bonn
+    year: 2016  
+    semester: SS
+  - course: Projektseminar
+    institute: Institute of Archeology and Cultural Anthropology
+    department: Department of Cultural Anthropology / Folklore Studies 
+    university: Friedrich-Wilhelms-University Bonn
+    year: 2015/2016  
+    semester: WS   
+  - course: Projektseminar
+    institute: Institute of Archeology and Cultural Anthropology
+    department: Department of Cultural Anthropology / Folklore Studies 
+    university: Friedrich-Wilhelms-University Bonn
+    year: 2016  
+    semester: SS 
+  - course: Kulturerbe und kulturelles Eigentum (Cultural Heritage and Cultural Property)
+    institute: Institute of Archeology and Cultural Anthropology
+    department: Department of Cultural Anthropology / Folklore Studies
+    university: Friedrich-Wilhelms-University Bonn
+    year: 2015/2016  
+    semester: WS
+  - course: "Kultur und Kommunikation: Einführung in die Ethnographie der Kommunikation und linguistische Anthropologie (Culture & Communication: Introduction to Linguistic Anthropology)"
+    institute: Institute of Cultural Anthropology / European Ethnology
+    university: Georg-August-University Göttingen
+    year: 2013/2014  
+    semester: WS
+  - course: Vorlesung Kulturtheorien (Regina Bendix, Carola Lipp), Übernahme der Vorlesung „Strukturalismus“ (Lecture Culture Theories, Session “Structuralism”)
+    institute: Institute of Cultural Anthropology / European Ethnology
+    university: Georg-August-University Göttingen
+    year: 2013  
+    semester: SS
+  - course: "Kulturerbe verhandeln: Methodische und theoretische Zugänge (Negotiating Cultural Heritage: Methodological and Theoretical Approaches)"
+    institute: 
+    department: Seminar für Kulturwissenschaft und Europäische Ethnologie
+    university: University of Basel
+    year: 2012  
+    semester: HS
+  - course: "Vorlesung Kulturtheorien (Regina Bendix, Carola Lipp), Übernahme der Vorlesung „Frühe Paradigmen der Kulturanthropologie/Europäischen Ethnologie: Evolutionismus, Kulturrelativismus, Funktionalismus“ (Lecture Culture Theories, Session “Early Paradigms of European Ethnology: Evolutionism, Cultural Relativism, Functionalism”)"
+    institute: Institute of Cultural Anthropology / European Ethnology
+    university: Georg-August-University Göttingen
+    year: 2012  
+    semester: SS
+  - course: Kulturtheorien (Culture Theories)
+    institute: Institute of Cultural Anthropology / European Ethnology
+    university: Georg-August-University Göttingen
+    year: 2011  
+    semester: SS  
+  - course: Das Konzept des Kulturrelativismus (The Concept of Cultural Relativism)
+    institute: Institute of Cultural Anthropology / European Ethnology
+    university: Georg-August-University Göttingen
+    year: 2009/2010  
+    semester: WS    
+
+# Organizational Activities
+#organizational-activities:
+
+#Organization with Dr. Katja Freistein (Duisburg) and Dr. Alejandro Esguerra Portocarrero (Duisburg), Interdiscplinary Workshop Studying Micro-Practices in (International) Institutions: Chances and Limitations of Theory-Building, November 26-27, 2015, Centre for Global Cooperation Research (GCR), Duisburg (Progamm als PDF). With contributions by Maria Sapignoli (MPI Halle), Birgit Müller (Paris), Chiara Bortolotto (Paris), Shirin Saeidi (Duisburg), Tobias Berger (FU Berlin/MPI Halle), Frank Gadinger (Duisburg), Susanne Buckley Zistel (Duisburg/Marburg). http://stefangroth.com/img/micro-programm.pdf
+#Organization with Prof. Dr. Charles Briggs (UC Berkeley) and Prof. Dr. Regina Bendix, International Working Conference Justice in Discourse, April 4–5, 2013, Göttingen (Progamm als PDF). With contributions by Prof. Dr. Srikant Sarangi (Cardiff), Prof. Dr. Jan Blommaert (Tilburg), Prof. Dr. Patrick Eisenlohr (Göttingen), Prof. Dr. Charles Briggs (Berkeley), Prof. Dr. Regina Bendix (Göttingen), Dr. Stefan Groth (Göttingen), Ruth Goldstein (Berkeley), Ina Lehmann (Bremen). (Tagungsbericht auf H-Soz-Kult) http://stefangroth.com/img/justice-programm.pdf http://www.hsozkult.de/conferencereport/id/tagungsberichte-4961
+#Organization with Nadine Wagener-Böck M.A., Workshop „Subjektbegriffe der Europäischen Ethnologie“ (“Concepts of the ‘Subject’ in European Ethnology”), December 13-14, 2012, Göttingen (Progamm als PDF). With contributions by Prof. em. Dr. Johannes Fabian (Amsterdam), Prof. Dr. Andreas Schmidt (Kiel), PD Dr. Jochen Bonz (Bremen), Christine Öldorp M.A. (Zürich), Dr. Gerrit Herlyn (Hamburg), Julia Butschatskaja M.A. (Sankt Petersburg), Nadine Heymann M.A. (Berlin), Dr. Thomas Dörfler (Lüneburg), Martina Röthl M.A. (Innsbruck), Erdem Evren M.A. (Berlin), Maria Schwertl M.A. (Göttingen). http://stefangroth.com/img/subjekt-programm.pdf
+
+# Memberships and Professional Activities:
+#memberships:
+#
+#  Professionelle Aktivitäten und Mitgliedschaften
+#
+#Center of Modern Humanities (ZTMK), Göttingen (Board, 2010–2014)
+#Deutsche Gesellschaft für Volkskunde (DGV)
+#European Association of Social Anthropologists (EASA)
+#Societé Internationale d´Ethnologie et de Folklore (SIEF)
+#DFG-Netzwerk „Wettbewerb und Konkurrenz: Zur kulturellen Logik kompetitiver #Figurationen“ (since 2014). http://www.konkurrenz.uni-kiel.de/de
+#EASA Network “Anthropology of International Governance” (AIG) (since 2008).
+#Rheinische Vereinigung für Volkskunde (RVV) http://easaonline.org/networks/aig
+#Reviewer for
+#
+#International Journal of Heritage Studies
+#
+## Conference Contributions and Invited Talks
+#conference-contributions:
+#
+#  2016
+#
+#„Ambivalenz, Intention und Kompetenz zwischen Linguistischer Anthropologie und Narrationsanalyse“, Workshop Narrationsanalyse in der Europäischen Ethnologie, Universität Innsbruck (09/2016).
+#mit Regina F. Bendix, „,Kultur(-Erbe)‘ als flexibles Konzept in #EU-Kulturpolitik und Außenbeziehungen“, Institut für Europäische Ethnologie, #HU Berlin (05/2016).
+#2015
+#
+#„Welche Rolle spielt Gerechtigkeit in Verhandlungen um kulturelles Eigentum?“, #DIES Bonn (12/2015).
+#mit Katja Freistein und Alejandro Esguerra, “Observing Micro-Practices, Making #Generalizations: A Concept Note”, Workshop “Studying Micro-Practices in (#International) Institutions: Chances and Limitations of Theory-Building”, #Duisburg (11/2015).
+#„,Kein sichereres Mittel existirt zur Abwehr von allem Lupengesindel‘: Zur #Technisierung und Legitimierung von Sicherheits- und Kontrollregimen um #1900.“, Tagung „Der Alltag der (Un)Sicherheit. #Ethnographisch-kulturwissenschaftliche Perspektiven auf die #Sicherheitsgesellschaft“, Graz (11/2015).
+#„Subjektiver Sinn, objektive Indikatoren? Zum Verhältnis von Wahrnehmung und #Vermessung im freizeitsportlichen Rennradsport“, Kongress der Deutschen #Gesellschaft für Volkskunde (DGV), Zurich, DGV (07/2015)
+#“The Pragmatics of Multilateral Negotiations”, Midterm Conference Käte #Hamburger Kolleg/Centre for Global Cooperation Research, Duisburg (07/2015).
+#“Recognition and Multiculturalism: German Heritage Discourse in the European #Context”, SIEF-Kongress, Zagreb (06/2015).
+#“Culture Concepts and Normative Principles: On the Framing and Justification #of Cultural Property in EU-Conventions”, Käte Hamburger Kolleg/Centre for #Global Cooperation Research, Duisburg (5/2015).
+#„Kultur als “Soft Power”? Zur Rahmung und Rechtfertigung von Kulturerbe in der #Europäischen Union“, Abteilung Kulturanthropologie/Volkskunde, Bonn (#05/2015).
+#2014
+#
+#“Modalities of Normative Claims to Culture in Multilateral Negotiations”, Käte #Hamburger Kolleg/Centre for Global Cooperation Research, Duisburg (11/2014).
+#„Kooperation als Ressource: Zur Produktion kooperativen Alltagshandelns“, #Tagung „Zum Umgang mit begrenzten Ressourcen”, Kiel (11/2014).
+#“Producing Stability: On the Pragmatics of Multilateral Negotiations”, WISC #Frankfurt (08/2014).
+#„Normative Forderungen über Kultur als Themenfeld transnationaler #Kooperation“, Konstanz (07/2014).
+#„Welche Rolle spielt Gerechtigkeit in Diskussionen um kulturelles Eigentum?“, #Vortragsreihe der Cultural Property Forschergruppe, Göttingen (01/2014).
+#2013
+#
+#“Implicit Ethics: Normative Claims in International Negotiations on #Traditional Knowledge”, Working Conference “Justice in Discourse”, Göttingen #(04/2013).
+#“Perspectives on Traditonal Knowledge: The Involvement of Indigenous and Local #Communities in WIPO’s Committee on Intellectual Property and Traditional #Knowledge”, SOGIP Seminar “Les questions de savoirs et de droit dans #l’institutionnalisation internationale des autochtones”, Paris (01/2013).
+#2012
+#
+#„Sprache und Anerkennung: Die Verortung von Subjekten in Diskursen“, Workshop #Subjektbegriffe der Europäischen Ethnologie, Göttingen (12/2012).
+#“Between Society and Culture: The Theory of Recogniton in Cultural Heritage #Contexts”, Atelier de Recherche Trinational “Institutions, Territoires et #Communautés: Perspectives sur le Patrimoine Culturel Immatériel Translocal”, #Villa Vigoni, Italy (10/2012).
+#“The Indeterminacy of Cultural Heritage and Cultural Property in International #Negotiations and Local Configurations”, Local Vocabularies of Heritage #Workshop, Évora, Portugal (02/2012).
+#2011
+#
+#„Die Erfindung der Moral: Allmendgemeinschaften und Cultural Commons in der #Diskussion um kulturelles Eigentum“, 38. Kongress der Deutschen Gesellschaft #für Volkskunde (DGV), Tübingen (09/2011).
+#with Regina Bendix, “Speeding, Stalling, Editing: Maximal Communication for #Minimal Results?”, International Symposium of the Interdisciplinary Research #Unit on Cultural Property, Göttingen, Germany (06/2011).
+#“Scholarship and Policy – Oppositional Perspectives within Interdisciplinary #Cooperation”, debate with Kilian Bizer, International Symposium of the #Interdisciplinary Research Unit on Cultural Property, Göttingen, Germany (#06/2011).
+#2010
+#
+#“Metapragmatics on the Global Stage: The Multiplicity of Meaning in #International Negotiations”, Workshop on the Anthropology of International #Institutions: How Ethnography Contributes to Understanding Mechanisms of #Global Governance, Paris (06/2010).
+#“Language Ideologies and International Institutions: The Case of the #Intergovernmental Committee on Intellectual Property and Traditional #Knowledge”, Department of Anthropology, UC Santa Cruz (04/2010).
+#„Cultural Property als kulturanthropologisches Forschungsthema“, Institut für #Kulturanthropologie/Europäische Ethnologie der Universität Göttingen (#01/2010).
+#2009
+#
+#“Ideologies in Motion: Language, Power and Performance in International #Institutions”, Annual Meeting of the American Anthropological Association (#AAA), Philadelphia (12/2009).
+#“On Tradition and the Politics of Difference”, International Symposium on #Cultural Property, Interdisciplinary Research Unit on Cultural Property, #Göttingen (11/2009).
+#“Negotiating Tradition, Representing Social Structure: Culture, Community, and #Language in WIPO’s Committee on Traditional Knowledge and Folklore”, #International Summer University “Local Knowledge and Open Borders: C#reativity and Heritage”, Tartu University, Tartu (07/2009).
+#„Tradition und Folklore in der Weltorganisation für Geistiges Eigentum (WIPO) #– Eine kommunikationsethnographische Perspektive“, Hamburger Gesellschaft #für Volkskunde (HGV), Hamburg (05/2009).
+#2008
+#
+#with Regina Bendix, “Stalling & Speeding: Ways of Speaking at WIPO’s #Intergovernmental Committee on Cultural Property”, Conference of the #European Association of Social Anthropologists (EASA), Ljubljana (08/2008).
+#

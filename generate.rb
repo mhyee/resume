@@ -5,24 +5,30 @@ require 'yaml'
 require 'erb'
 require 'ostruct'
 
+# include ERB::Util
+
 options = {}
 optparse = OptionParser.new do |opts|
   opts.banner = "Usage: generate.rb [options]"
-  options[:input] = 'resume.yml'
+  options[:input] = 'cv.de.yaml'
   opts.on( '-i', '--input INPUT', 'input file' ) do |input|
     options[:input] = input
   end
-  options[:private] = 'private.yml'
+  options[:private] = 'private.de.yaml'
   opts.on( '-p', '--private PRIVATE', 'private input file' ) do |private|
     options[:private] = private
   end
-  options[:template] = 'resume.html.erb'
+  options[:template] = 'cv.md.erb'
   opts.on( '-t', '--template TEMPLATE', 'template file' ) do |template|
     options[:template] = template
   end
   options[:web] = false
   opts.on( '-w', '--web', 'create a web version omitting private information' ) do |w|
     options[:web] = true
+  end
+  options[:english] = false
+  opts.on( '-e', '--english', 'create an english version' ) do |e|
+    options[:english] = true
   end
 end.parse!
 
@@ -45,18 +51,29 @@ abort("Error: #{options[:private]} is not present in this directory.  Use -p or 
 # Does the template file exist?
 abort("Error: template #{options[:template]} is not present in the templates directory.  Use -t or --template to specify another template file.") unless File.exists?( 'templates/' + options[:template] )
 
-input_basename, input_extension = options[:input].split('.')
+input_basename, input_extension1, input_extension2 = options[:input].split('.')
 template_basename, template_extension1, template_extension2 = options[:template].split('.')
 
-if options[:web]
-  output_file = input_basename + '-web.' + template_extension1
-else
-  output_file = input_basename + '.' + template_extension1
-
+if options[:web] && options[:english]
+  output_file = input_basename + '.web.en.' + template_extension1
+  load 'i18n/en.i18n'
+elsif options[:web]
+  output_file = input_basename + '.web.de.' + template_extension1
+  load 'i18n/de.i18n'
+elsif options[:english]
+  output_file = input_basename + '.en.' + template_extension1
+  load 'i18n/en.i18n' 
   # Load and merge contact information (for full resume)
-  # private.yml contains contact information I don't want posted
+  # private.yaml contains contact information I don't want posted
+  private = YAML::load( File.open("private.en.yaml") )
+  resume["person"] = resume["person"].merge(private["person"])
+else
+  output_file = input_basename + '.de.' + template_extension1
+  load 'i18n/de.i18n'
+  # Load and merge contact information (for full resume)
+  # private.yaml contains contact information I don't want posted
   private = YAML::load( File.open(options[:private]) )
-  resume["contact"] = resume["contact"].merge(private["contact"])
+  resume["person"] = resume["person"].merge(private["person"])
 end
 
 # Load the escape function and run it on resume hash (if escape function exists)
@@ -73,8 +90,16 @@ result = template.result namespace.send(:get_binding)
 # Create 'output' directory if it doesn't exist
 Dir.mkdir("output") unless File.exists?("output") && File.directory?("output")
 
+if options[:web]
+  Dir.mkdir("data") unless File.exists?("output") && File.directory?("data")
+  File.open( 'data/' + output_file, "w" ) do |file|
+    file.write result
+  end
+  puts "Created #{output_file} in data directory"
+end 
+
 # Write to output file
 File.open( 'output/' + output_file, "w" ) do |file|
   file.write result
 end
-puts "Created #{output_file}"
+puts "Created #{output_file} in output directory"

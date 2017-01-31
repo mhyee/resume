@@ -1,5 +1,8 @@
 .DS_Store
 *~
 *.swp
-private.yml
+private.de.yaml
+private.en.yaml
 output/*
+_archive/*
+Academic CV/*
