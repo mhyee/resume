@@ -56,20 +56,20 @@ template_basename, template_extension1, template_extension2 = options[:template]
 
 if options[:web] && options[:english]
   output_file = input_basename + '.web.en.' + template_extension1
-  load 'en.i18n'
+  load 'i18n/en.i18n'
 elsif options[:web]
   output_file = input_basename + '.web.de.' + template_extension1
-  load 'de.i18n'
+  load 'i18n/de.i18n'
 elsif options[:english]
   output_file = input_basename + '.en.' + template_extension1
-  load 'en.i18n' 
+  load 'i18n/en.i18n' 
   # Load and merge contact information (for full resume)
   # private.yaml contains contact information I don't want posted
   private = YAML::load( File.open("private.en.yaml") )
   resume["person"] = resume["person"].merge(private["person"])
 else
   output_file = input_basename + '.de.' + template_extension1
-  load 'de.i18n'
+  load 'i18n/de.i18n'
   # Load and merge contact information (for full resume)
   # private.yaml contains contact information I don't want posted
   private = YAML::load( File.open(options[:private]) )
@@ -90,8 +90,16 @@ result = template.result namespace.send(:get_binding)
 # Create 'output' directory if it doesn't exist
 Dir.mkdir("output") unless File.exists?("output") && File.directory?("output")
 
+if options[:web]
+  Dir.mkdir("data") unless File.exists?("output") && File.directory?("data")
+  File.open( 'data/' + output_file, "w" ) do |file|
+    file.write result
+  end
+  puts "Created #{output_file} in data directory"
+end 
+
 # Write to output file
 File.open( 'output/' + output_file, "w" ) do |file|
   file.write result
 end
-puts "Created #{output_file}"
+puts "Created #{output_file} in output directory"

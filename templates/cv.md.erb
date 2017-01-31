@@ -31,55 +31,53 @@
 <%= entry["jobTitle"] %>, <% if entry["department"] %><%= entry["department"] %>, <% end %><%= entry["institute"] %>, <%= entry["university"] %>. <% if entry["project"] %><%= $project %>: <%= entry["project"] %>.<% end %>  
 <% end #each %>
 
-# <%= $education %>
+## <%= $education %>
 <% education.each do |entry| %>
 * **<%= entry["dates"] %>**  
 <%= entry["degree"] %>, <% if entry["subject"] %><%= $subjects %>: <%= entry["subject"] %>, <% end %><%= entry["university"] %> (<%= entry["location"]["countryCode"] %>). <% if entry["thesis"] %><%= entry["thesisType"] %>: "<%= entry["thesis"] %>" (<%= entry["grade"] %>).<% end %><% if entry["advisor"] %> <%= $advisorName %>: <%= entry["advisor"] %>.<% end %>  
 <% end #each %>
 
-# <%= $staysabroad %>
+## <%= $staysabroad %>
 <% staysabroad.each do |entry| %>
 * **<%= entry["dates"] %>**  
 <%= entry["stayabroad"] %>.  
 <% end #each %>
 
-# <%= $qualifications %>
+## <%= $qualifications %>
 <% qualifications.each do |entry| %>
 * <%= entry["title"] %>, <%= entry["date"] %>.<% if entry["subitems"] %> Kurse: <% entry["subitems"].each do |subitem| %>
   * <%= subitem %>  <% end %><% end %>
 <% end #each %>
 
-# <%= $researchinterests %>
+## <%= $researchinterests %>
 <% researchinterests.each do |entry| %>
 * <%= entry %>  
 <% end %>
 
-# <%= $professionalactivities %>
+## <%= $professionalactivities %>
 <% memberships.each do |entry| %>
 * <% if entry["url"] %>[<%= entry["title"] %>](<%= entry["url"] %>)<% if entry["dates"] %> (<%= entry["dates"] %>)<% end %><% else %><%= entry["title"] %><% if entry["dates"] %> (<%= entry["dates"] %>)<% end %><% end %>  
 <% end #each %>
 
-## <%= $reviewerfor %>
+### <%= $reviewerfor %>
 <% reviewerfor.each do |entry| %>
 * <%= entry %>  
 <% end #each %>
 
-# <%= $workshops %>
+## <%= $workshops %>
 <% organizationalactivities.each do |entry| %>
 * <%= entry %>  
 <% end #each %>
 
-# <%= $teachingexperience %>
+## <%= $teachingexperience %>
 <% teachingexperience.each do |entry| %>
 * <%= entry["course"] %><% if entry["level"] %> (<%= entry["level"] %>)<% end %>,<% if entry["semester"] %> <%= entry["semester"] %><% end %> <%= entry["year"] %>. <% if entry["department"] %><%= entry["department"] %>, <% end %><% if entry["institute"] %><%= entry["institute"] %>, <% end %><%= entry["university"] %>.  
 <% end #each %>
 
-# <%= $conferencecontributions %>
+## <%= $conferencecontributions %>
 <% conferencecontributions.each do |entry, year| %>
 * <% if entry["coauthor"] %><%= $with %> <%= entry["coauthor"] %>, <% end %>"<%= entry["title"] %>". <% if entry["conference"] %><%= entry["conference"] %>, <% end %><% if entry["institution"] %><%= entry["institution"] %>, <% end %><%= entry["location"] %> (<%= entry["month"] %>/<%= entry["year"] %>).
 <% end #each %>
-
 <% def wrap(text) %>
 <% text.gsub(/(.{1,74})(\s+|$)/, "\\1\n      ").strip %>
 <% end #def %>
-
