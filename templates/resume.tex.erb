@@ -2,7 +2,7 @@
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[margin=2.4cm]{geometry}
+\usepackage[margin={1.5cm,1.2cm}]{geometry}
 \usepackage{changepage}
 \usepackage{libertine}
 \usepackage{microtype}
@@ -19,17 +19,16 @@
 \setlength{\parindent}{0pt}
 \setlist{nolistsep}
 
-\newcommand{\indentleft}{0.75cm}
+\newcommand{\indentleft}{0.4cm}
 \newcommand{\indentright}{0cm}
 \newcommand{\interlist}{0.5em}
-\newcommand{\postsubhead}{-0.5em}
-\newcommand{\postsection}{-0.5em}
+\newcommand{\postsubhead}{-0.7em}
+\newcommand{\postsection}{-1em}
 
 \begin{document}
 \raggedright
 
-  {\Huge\textbf{<%= contact["name"] %>}}
-  \vspace*{2pt}
+  {\huge\textbf{<%= contact["name"] %>}}
 
 <% site = contact["site"] %>
 <% email = contact["email"] %>
