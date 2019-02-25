@@ -148,6 +148,48 @@ publications:
     title: "[Altered macromolecule signal in the hippocampus in alzheimer patients measured by 1H magnetic resonance spectroscopy](https://doi.org/10.1016/j.jalz.2009.04.138)"
     in: "Alzheimer's [&] Dementia: J. Alzheimer's Assoc."
     date: "Jul 2009"
+service:
+  -
+    position: "Student Volunteer"
+    list:
+      -
+        name: "SPLASH 2018"
+        link: "https://2018.splashcon.org/"
+        note: "local organizer"
+      -
+        name: "ECOOP 2018"
+        link: "https://2018.ecoop.org/"
+        note: "co-chair"
+      -
+        name: "POPL 2018"
+        link: "https://popl18.sigplan.org/"
+      -
+        name: "PLDI/ECOOP 2017"
+        link: "https://conf.researchr.org/home/pldi-ecoop-2017"
+      -
+        name: "ECOOP 2016"
+        link: "https://2016.ecoop.org/"
+      -
+        name: "PLDI 2016"
+        link: "https://conf.researchr.org/home/pldi-2016"
+  -
+    position: "Artifact Evaluation Committee"
+    list:
+      -
+        name: "ECOOP 2018"
+        link: "https://2018.ecoop.org/track/ecoop-2018-artifacts"
+  -
+    position: "External Reviewer"
+    list:
+      -
+        name: "VEE 2019"
+        link: "https://conf.researchr.org/home/vee-2019"
+      -
+        name: "ECOOP 2017"
+        link: "http://drops.dagstuhl.de/portals/extern/index.php?semnr=16035"
+      -
+        name: "CC 2016"
+        link: "http://dl.acm.org/citation.cfm?id=2892208"
 skills:
   - "Experienced with C, [CPP], Scala, Java, and Ruby"
   - "Familiar with C[#], Perl, x86 and MIPS assembly, and JVM bytecode"

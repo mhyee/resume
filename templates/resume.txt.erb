@@ -7,7 +7,7 @@ http://<%= contact["github"] %> * <%= contact["email"] %> * http://<%= contact["
 <% end #if %>
 --------------------------------------------------------------------------------
 <% def wrap(text) %>
-<% text.gsub(/(.{1,74})(\s+|$)/, "\\1\n      ").strip %>
+<%   text.gsub(/(.{1,74})(\s+|$)/, "\\1\n      ").strip %>
 <% end #def %>
 
 RESEARCH EXPERIENCE
@@ -73,6 +73,21 @@ TEACHING EXPERIENCE
 
 <% end #if %>
 <% end #each %>
+
+SERVICE
+
+<% service.each_with_index do |entry, index| %>
+  <%= entry["position"] %>
+<% list = entry["list"].map do |e| %>
+<%   note = if e["note"] then " (#{e['note']})" else "" end %>
+<%   "#{e['name']}#{note}" %>
+<% end #map %>
+    - <%= wrap list.join(", ") %>
+<% if index != service.size - 1 %>
+
+<% end #if %>
+<% end #each %>
+
 
 ACTIVITIES
 

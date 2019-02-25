@@ -45,6 +45,7 @@
       }
       #resume a:hover {
         color: rgb(86,119,206);
+        text-decoration: underline;
       }
       #resume #container {
         margin-left: auto;
@@ -243,6 +244,25 @@
 <% end #each %>
         </ul>
 <% end #if %>
+<% end #each %>
+      </div><!-- div.subsection -->
+
+      <h2>Service</h2>
+      <div class="subsection">
+<% service.each do |entry| %>
+        <h3>
+          <span class="title"><%= entry["position"] %></span>
+        </h3>
+        <div class="h3sub"></div>
+        <ul>
+<% list = entry["list"].map do |e| %>
+<%   note = if e["note"] then " (#{e['note']})" else "" end %>
+<%   "<a href=\"#{e['link']}\">#{e['name']}</a>#{note}" %>
+<% end #map %>
+          <li>
+            <%= list.join(", ") %>
+          </li>
+        </ul>
 <% end #each %>
       </div><!-- div.subsection -->
 

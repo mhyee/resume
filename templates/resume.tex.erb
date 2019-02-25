@@ -145,9 +145,28 @@
 <% end #each %>
       \end{itemize}
 <% end #if %>
-<% if index != work.size - 1 %>
+<% if index != teaching.size - 1 %>
       \vspace{\interlist}
 
+<% end #if %>
+<% end #each_with_index %>
+    \end{adjustwidth}
+    \vspace{\postsection}
+
+  \section*{Service}
+    \vspace{\postsubhead}
+    \begin{adjustwidth}{\indentleft}{\indentright}
+<% service.each_with_index do |entry, index| %>
+      \textbf{<%= entry["position"] %>}
+      \begin{itemize}
+<% list = entry["list"].map do |e| %>
+<%   note = if e["note"] then " (#{e['note']})" else "" end %>
+<%   "\\mbox{\\href{#{e['link']}}{#{e['name']}}#{note}}" %>
+<% end #map %>
+        \item <%= list.join(", ") %>
+      \end{itemize}
+<% if index != service.size - 1 %>
+      \vspace{\interlist}
 <% end #if %>
 <% end #each_with_index %>
     \end{adjustwidth}
