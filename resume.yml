@@ -102,8 +102,16 @@ work:
     end: "Aug 2008"
     description:
       - "Implemented a new module for pre-existing data analysis software, using IDL (Interactive Data Language)"
-      - "[Examined MRI spectroscopy data with the new module to research drug treatments for Alzheimer's Disease](http://www.alzheimersanddementia.com/article/PIIS1552526009002611/fulltext)"
+      - "[Examined MRI spectroscopy data with the new module to research drug treatments for Alzheimer's Disease](https://doi.org/10.1016/j.jalz.2009.04.138)"
 teaching:
+  -
+    title: "Teaching Assistant"
+    employer: "Northeastern University"
+    location: "Boston MA"
+    start: "Jan 2018"
+    end: "Apr 2018"
+    description:
+      - "[CS 2510: Fundamentals II, Introduction to Class-based Program Design](https://course.ccs.neu.edu/cs2510sp18/)"
   -
     title: "Teaching Assistant"
     employer: "University of Waterloo"
@@ -116,8 +124,13 @@ teaching:
       - "[CS 241: Foundations of Sequential Programs](https://www.student.cs.uwaterloo.ca/~cs241/) (Spring 2015, Spring 2016)"
 publications:
   -
+    authors: "O. Flückiger, G. Scherer, M.-H. Yee, A. Goel, A. Ahmed, J. Vitek"
+    title: "[Correctness of Speculative Optimizations with Dynamic Deoptimization](https://doi.org/10.1145/3158137)"
+    in: "PACMPL (POPL) 2018"
+    date: "Jan 2018"
+  -
     authors: "M. Madsen, M.-H. Yee, O. Lhoták"
-    title: "[From Datalog to Flix: A Declarative Language for Fixed Points on Lattices](https://flix.github.io/pub/pldi2016/paper.pdf)"
+    title: "[From Datalog to Flix: A Declarative Language for Fixed Points on Lattices](https://doi.org/10.1145/2908080.2908096)"
     in: "PLDI 2016"
     date: "Jun 2016"
   -
@@ -127,9 +140,14 @@ publications:
     date: "Jan 2016"
   -
     authors: "E. Zulkoski, C. Kleynhans, M.-H. Yee, D. Rayside, K. Czarnecki"
-    title: "[Optimizing Alloy for Multi-objective Software Product Line Configuration](http://gsd.uwaterloo.ca/node/569)"
+    title: "[Optimizing Alloy for Multi-objective Software Product Line Configuration](https://doi.org/10.1007/978-3-662-43652-3_34)"
     in: "ABZ 2014"
     date: "Jun 2014"
+  -
+    authors: "R. Bartha, M.-H. Yee, R. Rupsingh, M. Smith, M. Borrie"
+    title: "[Altered macromolecule signal in the hippocampus in alzheimer patients measured by 1H magnetic resonance spectroscopy](https://doi.org/10.1016/j.jalz.2009.04.138)"
+    in: "Alzheimer's [&] Dementia: J. Alzheimer's Assoc."
+    date: "Jul 2009"
 skills:
   - "Experienced with C, [CPP], Scala, Java, and Ruby"
   - "Familiar with C[#], Perl, x86 and MIPS assembly, and JVM bytecode"
@@ -180,10 +198,10 @@ education:
     location: "Boston MA"
     date: "Sep 2016 [--] present"
   -
-    level: "Candidate for Master of Mathematics in Computer Science"
+    level: "Master of Mathematics in Computer Science"
     institution: "University of Waterloo"
     location: "Waterloo ON"
-    date: "Jun 2017 (expected)"
+    date: "Jun 2017"
     note: "Thesis: [Implementing a Functional Language for Flix](http://hdl.handle.net/10012/10856) (completed Sep 2016)"
   -
     level: "Bachelor of Software Engineering"
