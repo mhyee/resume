@@ -123,6 +123,11 @@ teaching:
       - "[CS 241: Foundations of Sequential Programs](https://www.student.cs.uwaterloo.ca/~cs241/) (Spring 2015, Spring 2016)"
 publications:
   -
+    authors: "O. Flückiger, G. Chari, M.-H. Yee, J. Ječmen, J. Hain, J. Vitek"
+    title: "[Contextual Dispatch for Function Specialization](https://doi.org/10.1145/3428288)"
+    in: "OOPSLA 2020"
+    date: "Nov 2020"
+  -
     authors: "O. Flückiger, G. Chari, J. Ječmen, M.-H. Yee, J. Hain, J. Vitek"
     title: "[R Melts Brains: An IR for First-Class Environments and Lazy Effectful Arguments](https://doi.org/10.1145/3359619.3359744)"
     in: "DLS 2019"
