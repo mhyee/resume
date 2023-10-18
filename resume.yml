@@ -74,34 +74,24 @@ work:
     start: "Sep"
     end: "Dec 2011"
     description:
-      - "Along with a senior developer, designed, built, and launched [Engagio](http://www.avc.com/a_vc/2011/12/engagio.html), [``]the universal commenting inbox['']"
-      - "Optimized the background task queuing system to dynamically prioritize fetch tasks"
   -
     title: "Developer"
     employer: "Eqentia"
     location: "Toronto ON"
     start: "Jan"
     end: "Apr 2011"
-    description:
-      - "Designed and implemented a feature for users to add content by sending emails"
-      - "Co-led the implementation of the new front-end interface redesign"
   -
     title: "Software Development Research Intern"
     employer: "Genesys Telecommunications Laboratories"
     location: "Markham ON"
     start: "May"
     end: "Aug 2010"
-    description:
-      - "Developed a proof-of-concept speech analytics application to improve customer experience at call centres"
   -
     title: "Junior Developer"
     employer: "Robarts Research Institute"
     location: "London ON"
     start: "Jul"
     end: "Aug 2008"
-    description:
-      - "Implemented a new module for pre-existing data analysis software, using IDL (Interactive Data Language)"
-      - "[Examined MRI spectroscopy data with the new module to research drug treatments for Alzheimer's Disease](https://doi.org/10.1016/j.jalz.2009.04.138)"
 teaching:
   -
     title: "Teaching Assistant"
@@ -192,7 +182,6 @@ service:
       -
         name: "SPLASH 2018"
         link: "https://2018.splashcon.org/"
-        note: "local organizer"
       -
         name: "ECOOP 2018"
         link: "https://2018.ecoop.org/"
