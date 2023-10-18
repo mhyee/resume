@@ -260,15 +260,21 @@ education:
     institution: "Northeastern University"
     location: "Boston MA"
     date: "Sep 2016 [--] present"
+    notes:
+      - "Proposed thesis: Predicting TypeScript Type Annotations and Definitions With Machine Learning"
+      - "Advisor: [Arjun Guha](https://www.khoury.northeastern.edu/~arjunguha/main/home/)"
   -
     level: "Master of Mathematics in Computer Science"
     institution: "University of Waterloo"
     location: "Waterloo ON"
     date: "Jun 2017"
-    note: "Thesis: [Implementing a Functional Language for Flix](http://hdl.handle.net/10012/10856) (completed Sep 2016)"
+    notes:
+      - "Thesis: [Implementing a Functional Language for Flix](http://hdl.handle.net/10012/10856) (completed Sep 2016)"
+      - "Advisor: [Ondřej Lhoták](https://plg.uwaterloo.ca/~olhotak/)"
   -
     level: "Bachelor of Software Engineering"
     institution: "University of Waterloo"
     location: "Waterloo ON"
     date: "Jun 2014"
-    note: "With Distinction [---] Dean's Honours List"
+    notes:
+      - "With Distinction [---] Dean's Honours List"

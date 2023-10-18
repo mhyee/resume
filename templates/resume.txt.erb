@@ -110,8 +110,10 @@ EDUCATION
 <% else %>
   <%= entry["date"] %>
 <% end #if %>
-<% if entry["note"] %>
-      <%= entry["note"] %>
+<% if entry["notes"] %>
+<% entry["notes"].each do |item| %>
+      <%= item %>
+<% end #each %>
 <% end #if %>
 <% if index != education.size - 1 %>
 

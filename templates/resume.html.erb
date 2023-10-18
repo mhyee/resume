@@ -293,11 +293,13 @@
   <span class="date"><%= entry["start"] %> &ndash; <%= entry["end"] %></span>
 <% end #if %>
         </div>
-<% if entry["note"] %>
+<% if entry["notes"] %>
         <ul>
+<% entry["notes"].each do |item| %>
           <li>
-            <%= entry["note"] %>
+            <%= item %>
           </li>
+<% end #each %>
         </ul>
 <% end #if %>
 <% end #each %>

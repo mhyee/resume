@@ -198,9 +198,11 @@
 <% else %>
       \textit{<%= entry["date"] %>}
 <% end #if %>
-<% if entry["note"] %>
+<% if entry["notes"] %>
       \begin{itemize}
-        \item <%= entry["note"] %>
+<% entry["notes"].each do |item| %>
+        \item <%= item %>
+<% end #each %>
       \end{itemize}
 <% end #if %>
 \vspace{\interlist}
