@@ -217,10 +217,9 @@ service:
         name: "CC 2016"
         link: "http://dl.acm.org/citation.cfm?id=2892208"
 skills:
-  - "Experienced with C, [CPP], Scala, Java, and Ruby"
-  - "Familiar with C[#], Perl, x86 and MIPS assembly, and JVM bytecode"
-  - "Some knowledge of Racket, OCaml, Haskell, ARM assembly, and LLVM IR"
-  - "Comfortable with Linux, macOS, and Windows environments"
+  - "Experienced with C, [CPP], Scala, Java, Ruby, and Python"
+  - "Familiar with OCaml, C[#], Perl, x86 and MIPS assembly, and JVM bytecode"
+  - "Some knowledge of Racket, Haskell, ARM assembly, and LLVM IR"
 awards:
   -
     name: "NSERC Postgraduate Scholarship - Doctoral"
