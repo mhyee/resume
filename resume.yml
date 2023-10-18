@@ -123,9 +123,29 @@ teaching:
       - "[CS 241: Foundations of Sequential Programs](https://www.student.cs.uwaterloo.ca/~cs241/) (Spring 2015, Spring 2016)"
 publications:
   -
+    authors: "M.-H. Yee and A. Guha"
+    title: "[Do Machine Learning Models Produce TypeScript Types That Type Check?](https://doi.org/10.4230/LIPIcs.ECOOP.2023.37)"
+    in: "ECOOP 2023"
+    date: "Jul 2023"
+  -
+    authors: "L. von Werra, H. de Vries, et al."
+    title: "[StarCoder: may the source be with you!](https://doi.org/10.48550/arXiv.2305.06161)"
+    in: "(preprint)"
+    date: "May 2023"
+  -
+    authors: "F. Cassano, M.-H. Yee, N. Shinn, A. Guha, S. Holtzen"
+    title: "[Type Prediction With Program Decomposition and Fill-in-the-Type Training](https://doi.org/10.48550/arXiv.2305.17145)"
+    in: "(preprint)"
+    date: "May 2023"
+  -
+    authors: "F. Cassano et al."
+    title: "[MultiPL-E: A Scalable and Polyglot Approach to Benchmarking Neural Code Generation](https://doi.org/10.1109/TSE.2023.3267446)"
+    in: "TSE 2023"
+    date: "Apr 2023"
+  -
     authors: "O. Flückiger, G. Chari, M.-H. Yee, J. Ječmen, J. Hain, J. Vitek"
     title: "[Contextual Dispatch for Function Specialization](https://doi.org/10.1145/3428288)"
-    in: "OOPSLA 2020"
+    in: "PACMPL (OOPSLA) 2020"
     date: "Nov 2020"
   -
     authors: "O. Flückiger, G. Chari, J. Ječmen, M.-H. Yee, J. Hain, J. Vitek"
