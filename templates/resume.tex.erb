@@ -48,30 +48,6 @@
   }
   \hrule
 
-  \section*{Research Experience}
-    \vspace{\postsubhead}
-    \begin{adjustwidth}{\indentleft}{\indentright}
-<% research.each_with_index do |entry, index| %>
-      \textbf{<%= entry["position"] %>}
-      \hfill
-      \textbf{<%= entry["location"] %>}\\
-      \textit{<%= entry["institution"] %>}
-      \hfill
-      \textit{<%= entry["start"] %> -- <%= entry["end"] %>}
-<% if entry["description"] %>
-      \begin{itemize}
-<% entry["description"].each do |item| %>
-        \item <%= item %>
-<% end #each %>
-      \end{itemize}
-<% end #if %>
-<% if index != research.size - 1 %>
-      \vspace{\interlist}
-
-<% end #if %>
-<% end #each_with_index %>
-    \end{adjustwidth}
-    \vspace{\postsection}
 
   \section*{Work Experience}
     \vspace{\postsubhead}
@@ -96,36 +72,7 @@
 <% end #if %>
 <% end #each_with_index %>
     \end{adjustwidth}
-    \vspace{\postsection}
 
-  \section*{Publications}
-    \vspace{\postsubhead}
-    \begin{adjustwidth}{\indentleft}{\indentright}
-      \begin{itemize}
-<% publications.each do |entry| %>
-<% authors = entry["authors"] %>
-<% title = entry["title"] %>
-<% published_in = entry["in"] %>
-<% date = entry["date"] %>
-        \item <%= authors %>,
-              <%= title %>,
-              \textbf{<%= published_in %>},
-              <%= date %>
-<% end #each %>
-      \end{itemize}
-    \end{adjustwidth}
-    \vspace{\postsection}
-
-  \section*{Technical Skills}
-    \vspace{\postsubhead}
-    \begin{adjustwidth}{\indentleft}{\indentright}
-      \begin{itemize}
-<% skills.each do |entry| %>
-        \item <%= entry %>
-<% end #each %>
-      \end{itemize}
-    \end{adjustwidth}
-    \vspace{\postsection}
 
   \section*{Teaching Experience}
     \vspace{\postsubhead}
@@ -149,6 +96,36 @@
 
 <% end #if %>
 <% end #each_with_index %>
+    \end{adjustwidth}
+    \vspace{\postsection}
+
+  \section*{Technical Skills}
+    \vspace{\postsubhead}
+    \begin{adjustwidth}{\indentleft}{\indentright}
+      \begin{itemize}
+<% skills.each do |entry| %>
+        \item <%= entry %>
+<% end #each %>
+      \end{itemize}
+    \end{adjustwidth}
+    \vspace{\postsection}
+
+  \clearpage
+  \section*{Publications}
+    \vspace{\postsubhead}
+    \begin{adjustwidth}{\indentleft}{\indentright}
+      \begin{itemize}
+<% publications.each do |entry| %>
+<% authors = entry["authors"] %>
+<% title = entry["title"] %>
+<% published_in = entry["in"] %>
+<% date = entry["date"] %>
+        \item <%= authors %>,
+              <%= title %>,
+              \textbf{<%= published_in %>},
+              <%= date %>
+<% end #each %>
+      \end{itemize}
     \end{adjustwidth}
     \vspace{\postsection}
 

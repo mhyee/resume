@@ -10,21 +10,6 @@ http://<%= contact["github"] %> * <%= contact["email"] %> * http://<%= contact["
 <%   text.gsub(/(.{1,74})(\s+|$)/, "\\1\n      ").strip %>
 <% end #def %>
 
-RESEARCH EXPERIENCE
-
-<% research.each do |entry| %>
-  <%= entry["position"] %>
-  <%= entry["institution"] %>, <%= entry["location"] %>
-  <%= entry["start"] %> -- <%= entry["end"] %>
-
-<% if entry["description"] %>
-<% entry["description"].each do |item| %>
-    - <%= wrap item %>
-<% end #each %>
-
-<% end #if %>
-<% end #each %>
-
 WORK EXPERIENCE
 
 <% work.each do |entry| %>
@@ -40,25 +25,6 @@ WORK EXPERIENCE
 <% end #if %>
 <% end #each %>
 
-PUBLICATIONS
-
-<% publications.each do |entry| %>
-<% authors = entry["authors"] %>
-<% title = entry["title"] %>
-<% published_in = entry["in"] %>
-<% date = entry["date"] %>
-<% entry_text = "#{authors}, #{title}, #{published_in}, #{date}" %>
-    - <%= wrap entry_text %>
-<% end #each %>
-
-
-TECHNICAL SKILLS
-
-<% skills.each do |entry| %>
-    - <%= wrap entry %>
-<% end #each %>
-
-
 TEACHING EXPERIENCE
 
 <% teaching.each do |entry| %>
@@ -72,6 +38,24 @@ TEACHING EXPERIENCE
 <% end #each %>
 
 <% end #if %>
+<% end #each %>
+
+TECHNICAL SKILLS
+
+<% skills.each do |entry| %>
+    - <%= wrap entry %>
+<% end #each %>
+
+
+PUBLICATIONS
+
+<% publications.each do |entry| %>
+<% authors = entry["authors"] %>
+<% title = entry["title"] %>
+<% published_in = entry["in"] %>
+<% date = entry["date"] %>
+<% entry_text = "#{authors}, #{title}, #{published_in}, #{date}" %>
+    - <%= wrap entry_text %>
 <% end #each %>
 
 SERVICE
