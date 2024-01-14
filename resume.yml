@@ -80,9 +80,10 @@ teaching:
     title: "Teaching Assistant"
     employer: "Northeastern University"
     location: "Boston MA"
-    date: "Jan [--] Apr 2018"
+    date: "Jan [--] Apr 2018, Jan [--] Apr 2024"
     description:
-      - "[CS 2510: Fundamentals II, Introduction to Class-based Program Design](https://course.ccs.neu.edu/cs2510sp18/)"
+      - "[CS 2510: Fundamentals II, Introduction to Class-based Program Design](https://course.ccs.neu.edu/cs2510sp18/) (Spring 2018)"
+      - "[CS 4530: Fundamentals of Software Engineering](https://neu-se.github.io/CS4530-Spring-2024/) (Spring 2024)"
   -
     title: "Teaching Assistant"
     employer: "University of Waterloo"
