@@ -9,13 +9,6 @@
     <style type="text/css" media="all">
       /* print styles override */
       @media print {
-        li {
-          page-break-after: avoid;
-          page-break-before: avoid;
-        }
-        .pagebreak {
-          page-break-before: always;
-        }
         a, a:link, a:visited {
           color: #000 !important;
         }
@@ -55,18 +48,21 @@
       #resume h1 {
         margin-top: 0;
         margin-bottom: 5px;
-        font-size: 220%;
+        font-size: 300%;
+        text-align: center;
       }
       #resume .contact {
-        font-size: 80%;
+        text-align: center;
+      }
+      #resume .citizenship {
+        margin-top: 5px;
+        text-align: center;
+      }
+      #resume .underline {
+        margin-top: 1px;
+        margin-bottom: -5px;
         border-bottom: 1px solid #000;
       }
-        #resume .contact .address {
-          padding-left: 62px;
-        }
-        #resume .contact .cell {
-          float: right;
-        }
       #resume h2 {
         font-variant: small-caps;
         font-size: 130%;
@@ -128,26 +124,32 @@
   <body id="resume">
     <div id="container">
       <h1><%= contact["name"] %></h1>
+<% site = contact["site"] %>
 <% github = contact["github"] %>
 <% email = contact["email"] %>
-<% site = contact["site"] %>
       <div class="contact">
         <span class="digital">
+          <a href="http://<%= site %>"><%= site %></a>
+          &bull;
           <a href="http://<%= github %>"><%= github %></a>
           &bull;
           <a href="mailto:<%= email %>"><%= email %></a>
-          &bull;
-          <a href="http://<%= site %>"><%= site %></a>
         </span>
 <% if contact["address"] && contact["cell"] %>
-        <span class="address">
+        <br/>
+        <span class="physical">
           <%= contact["address"] %>
-        </span>
-        <span class="cell">
+          &bull;
           <%= contact["cell"] %>
         </span>
 <% end #if %>
       </div><!-- div.contact -->
+<% if contact["citizenship"] %>
+      <div class="citizenship">
+        <%= contact["citizenship"] %>
+      </div><!-- div.citizenship -->
+<% end #if %>
+      <div class="underline"></div>
 
       <h2>Research Experience</h2>
       <div class="subsection">

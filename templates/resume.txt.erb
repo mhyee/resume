@@ -1,10 +1,12 @@
-<%= contact["name"] + "\n" %>
+<%= contact["name"].upcase + "\n" %>
 
-http://<%= contact["github"] %> * <%= contact["email"] %> * http://<%= contact["site"] %>
+http://<%= contact["site"] %> * http://<%= contact["github"] %> * <%= contact["email"] %>
 <% if contact["address"] && contact["cell"] %>
-<%= contact["address"] %> * <%= contact["cell"] %>
-
+<%= contact["address"] %> * <%= contact["cell"] + "\n" %>
 <% end #if %>
+<% if contact["citizenship"] %>
+<%= contact["citizenship"] + "\n" %>
+<% end #if%>
 --------------------------------------------------------------------------------
 <% def wrap(text) %>
 <%   text.gsub(/(.{1,74})(\s+|$)/, "\\1\n      ").strip %>

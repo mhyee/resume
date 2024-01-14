@@ -13,11 +13,15 @@
 \usepackage{hyperref}
 
 \titleformat*{\section}{\Large\bfseries\scshape}
-\definecolor{foo}{rgb}{0.18,0.31,0.65}
-\hypersetup{colorlinks=true,urlcolor=foo}
+\definecolor{myblue}{rgb}{0.18,0.31,0.65}
+\hypersetup{colorlinks=true,urlcolor=myblue}
 \pagestyle{empty}
 \setlength{\parindent}{0pt}
 \setlist{nolistsep}
+
+\makeatletter
+\newcommand\HUGE{\@setfontsize\Huge{30}{36}}
+\makeatother
 
 \newcommand{\indentleft}{0.4cm}
 \newcommand{\indentright}{0cm}
@@ -28,25 +32,30 @@
 \begin{document}
 \raggedright
 
-  {\huge\textbf{<%= contact["name"] %>}}
+  \begin{center}
+    {\HUGE\textbf{<%= contact["name"] %>}}
 
 <% site = contact["site"] %>
-<% email = contact["email"] %>
 <% github = contact["github"] %>
-  {\small
+<% email = contact["email"] %>
+    \href{http://<%= site %>}{<%= site %>}
+    \textbullet\
     \href{http://<%= github %>}{<%= github %>}
     \textbullet\
     \href{mailto:<%= email %>}{<%= email %>}
-    \textbullet\
-    \href{http://<%= site %>}{<%= site %>}
 <% if contact["address"] && contact["cell"] %>
-    \hfill
+    \\
+    \vspace{-0.5ex}
     <%= contact["address"] %>
-    \hfill
+    \textbullet\
     <%= contact["cell"] %>
 <% end #if %>
-  }
-  \hrule
+<% if contact["citizenship"] %>
+    \\
+    <%= contact["citizenship"] %>
+<% end #if %>
+    \hrule
+  \end{center}
 
   \section*{Research Experience}
     \vspace{\postsubhead}
