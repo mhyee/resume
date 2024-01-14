@@ -107,38 +107,6 @@
     \end{adjustwidth}
     \vspace{\postsection}
 
-  \section*{Service}
-    \vspace{\postsubhead}
-    \begin{adjustwidth}{\indentleft}{\indentright}
-<% service.each_with_index do |entry, index| %>
-      \textbf{<%= entry["position"] %>}
-      \begin{itemize}
-<% list = entry["list"].map do |e| %>
-<%   note = if e["note"] then " (#{e['note']})" else "" end %>
-<%   "\\mbox{\\href{#{e['link']}}{#{e['name']}}#{note}}" %>
-<% end #map %>
-        \item <%= list.join(", ") %>
-      \end{itemize}
-<% if index != service.size - 1 %>
-      \vspace{\interlist}
-<% end #if %>
-<% end #each_with_index %>
-    \end{adjustwidth}
-    \vspace{\postsection}
-
-  \section*{Awards}
-    \vspace{\postsubhead}
-    \begin{adjustwidth}{\indentleft}{\indentright}
-      \begin{itemize}
-<% awards.each do |entry| %>
-        \item <%= entry["name"] %>
-        \hfill
-        \textit{<%= entry["date"] %>}
-<% end #each %>
-      \end{itemize}
-    \end{adjustwidth}
-    \vspace{\postsection}
-
   \section*{Education}
     \vspace{\postsubhead}
     \begin{adjustwidth}{\indentleft}{\indentright}

@@ -48,32 +48,6 @@ TECHNICAL SKILLS
 <% end #each %>
 
 
-SERVICE
-
-<% service.each_with_index do |entry, index| %>
-  <%= entry["position"] %>
-<% list = entry["list"].map do |e| %>
-<%   note = if e["note"] then " (#{e['note']})" else "" end %>
-<%   "#{e['name']}#{note}" %>
-<% end #map %>
-    - <%= wrap list.join(", ") %>
-<% if index != service.size - 1 %>
-
-<% end #if %>
-<% end #each %>
-
-
-AWARDS
-
-<% awards.each_with_index do |entry, index| %>
-    - <%= wrap entry["name"] %>
-      <%= entry["date"] %>
-<% if index != awards.size - 1 %>
-
-<% end #if %>
-<% end #each %>
-
-
 EDUCATION
 
 <% education.each_with_index do |entry, index| %>
