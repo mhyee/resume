@@ -12,21 +12,6 @@ http://<%= contact["site"] %> * http://<%= contact["github"] %> * <%= contact["e
 <%   text.gsub(/(.{1,74})(\s+|$)/, "\\1\n      ").strip %>
 <% end #def %>
 
-RESEARCH EXPERIENCE
-
-<% research.each do |entry| %>
-  <%= entry["position"] %>
-  <%= entry["institution"] %>, <%= entry["location"] %>
-  <%= entry["start"] %> -- <%= entry["end"] %>
-
-<% if entry["description"] %>
-<% entry["description"].each do |item| %>
-    - <%= wrap item %>
-<% end #each %>
-
-<% end #if %>
-<% end #each %>
-
 WORK EXPERIENCE
 
 <% work.each do |entry| %>

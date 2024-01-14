@@ -3,38 +3,18 @@ contact:
   email: "mh@mhyee.com"
   site: "mhyee.com"
   github: "github.com/mhyee"
-research:
+work:
   -
-    position: "Research Assistant"
-    institution: "Northeastern University"
+    title: "Research Assistant"
+    employer: "Northeastern University"
     location: "Boston MA"
     start: "Sep 2016"
     end: "present"
-  -
-    position: "Research Assistant"
-    institution: "University of Waterloo"
-    location: "Waterloo ON"
-    start: "Sep 2014"
-    end: "Aug 2016"
-  -
-    position: "Capstone Design Project"
-    institution: "University of Waterloo"
-    location: "Waterloo ON"
-    start: "Sep 2012"
-    end: "Apr 2014"
-  -
-    position: "Undergraduate Research Assistant"
-    institution: "University of Waterloo"
-    location: "Waterloo ON"
-    start: "Sep"
-    end: "Dec 2012"
-  -
-    position: "Research Assistant and Developer"
-    institution: "University of Waterloo"
-    location: "Waterloo ON"
-    start: "May"
-    end: "Aug 2012"
-work:
+    description:
+      - "Worked on a [just-in-time compiler](https://github.com/reactorlabs/rir) for R"
+      - "Studied the [semantics of static and dynamic program analysis](https://github.com/reactorlabs/rhotic) for R"
+      - "Evaluated machine learning models on the [type prediction task](https://github.com/nuprl/TypeWeaver) for TypeScript"
+      - "Fine-tuned a large language model for code to [generate type definitions](https://github.com/nuprl/StenoType) for TypeScript"
   -
     title: "Researcher Intern"
     employer: "Microsoft Research"
@@ -42,7 +22,15 @@ work:
     start: "Sep"
     end: "Dec 2019"
     description:
-      - "Worked on memory management for [Project Verona](https://github.com/microsoft/verona)"
+      - "Implemented different memory management strategies for [Project Verona](https://github.com/microsoft/verona-rt)"
+  -
+    title: "Research Assistant"
+    employer: "University of Waterloo"
+    location: "Waterloo ON"
+    start: "Sep 2014"
+    end: "Aug 2016"
+    description:
+      - "Implemented the initial interpreter and compiler for the functional sub-language of [Flix](https://flix.dev/)"
   -
     title: "Software Development Engineering Intern"
     employer: "Microsoft"
@@ -50,7 +38,7 @@ work:
     start: "May"
     end: "Jul 2014"
     description:
-      - "Implemented a partial prototype of concepts lite in the Visual [CPP] compiler"
+      - "Prototyped [concepts lite](https://en.cppreference.com/w/cpp/language/constraints) in the Microsoft Visual [CPP] (MSVC) compiler"
   -
     title: "Software Development Engineering Intern"
     employer: "Microsoft"
@@ -58,7 +46,7 @@ work:
     start: "Sep"
     end: "Dec 2013"
     description:
-      - "Implemented user-defined literals for the Visual [CPP] compiler"
+      - "Implemented [user-defined literals](https://en.cppreference.com/w/cpp/language/user_literal) in the Microsoft Visual [CPP] (MSVC) compiler"
   -
     title: "Software Development Engineering Intern"
     employer: "Microsoft"
@@ -67,6 +55,12 @@ work:
     end: "Apr 2013"
     description:
       - "Prototyped, developed, and evaluated a heap memory collection tool for .NET applications"
+  -
+    title: "Undergraduate Research Assistant"
+    employer: "University of Waterloo"
+    location: "Waterloo ON"
+    start: "May"
+    end: "Dec 2012"
   -
     title: "Developer"
     employer: "Engagio (formerly Eqentia)"

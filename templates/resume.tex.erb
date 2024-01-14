@@ -57,32 +57,7 @@
     \hrule
   \end{center}
 
-  \section*{Research Experience}
-    \vspace{\postsubhead}
-    \begin{adjustwidth}{\indentleft}{\indentright}
-<% research.each_with_index do |entry, index| %>
-      \textbf{<%= entry["position"] %>}
-      \hfill
-      \textbf{<%= entry["location"] %>}\\
-      \textit{<%= entry["institution"] %>}
-      \hfill
-      \textit{<%= entry["start"] %> -- <%= entry["end"] %>}
-<% if entry["description"] %>
-      \begin{itemize}
-<% entry["description"].each do |item| %>
-        \item <%= item %>
-<% end #each %>
-      \end{itemize}
-<% end #if %>
-<% if index != research.size - 1 %>
-      \vspace{\interlist}
-
-<% end #if %>
-<% end #each_with_index %>
-    \end{adjustwidth}
-    \vspace{\postsection}
-
-  \section*{Work Experience}
+  \section*{Experience}
     \vspace{\postsubhead}
     \begin{adjustwidth}{\indentleft}{\indentright}
 <% work.each_with_index do |entry, index| %>

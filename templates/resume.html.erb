@@ -89,6 +89,9 @@
         overflow: hidden;
         visibility: hidden;
       }
+      #resume .h3nolist {
+        height: 5px;
+      }
       #resume h3, #resume .h3sub {
         display: block;
       }
@@ -152,30 +155,7 @@
 <% end #if %>
       <div class="underline"></div>
 
-      <h2>Research Experience</h2>
-      <div class="subsection">
-<% research.each do |entry| %>
-        <h3>
-          <span class="position"><%= entry["position"] %></span>
-          <span class="location"><%= entry["location"] %></span>
-        </h3>
-        <div class="h3sub">
-          <span class="institution"><%= entry["institution"] %></span>
-          <span class="date"><%= entry["start"] %> &ndash; <%= entry["end"] %></span>
-        </div>
-<% if entry["description"] %>
-        <ul>
-<% entry["description"].each do |item| %>
-          <li>
-            <%= item %>
-          </li>
-<% end #each %>
-        </ul>
-<% end #if %>
-<% end #each %>
-      </div><!-- div.subsection -->
-
-      <h2>Work Experience</h2>
+      <h2>Experience</h2>
       <div class="subsection">
 <% work.each do |entry| %>
         <h3>
@@ -194,6 +174,8 @@
           </li>
 <% end #each %>
         </ul>
+<% else %>
+        <div class="h3nolist"></div>
 <% end #if %>
 <% end #each %>
       </div><!-- div.subsection -->
