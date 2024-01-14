@@ -12,7 +12,7 @@ http://<%= contact["site"] %> * http://<%= contact["github"] %> * <%= contact["e
 <%   text.gsub(/\]\(/, "\] \(").gsub(/(.{1,74})(\s+|$)/, "\\1\n      ").strip %>
 <% end #def %>
 
-WORK EXPERIENCE
+EXPERIENCE
 
 <% work.each do |entry| %>
   <%= entry["title"] %>
@@ -20,6 +20,7 @@ WORK EXPERIENCE
   <%= entry["date"] %>
 <% if entry["description"] %>
 <% entry["description"].each do |item| %>
+
     - <%= wrap item %>
 <% end #each %>
 
@@ -46,21 +47,6 @@ TECHNICAL SKILLS
     - <%= wrap entry %>
 <% end #each %>
 
-
-TEACHING EXPERIENCE
-
-<% teaching.each do |entry| %>
-  <%= entry["title"] %>
-  <%= entry["employer"] %>, <%= entry["location"] %>
-  <%= entry["date"] %>
-
-<% if entry["description"] %>
-<% entry["description"].each do |item| %>
-    - <%= wrap item %>
-<% end #each %>
-
-<% end #if %>
-<% end #each %>
 
 SERVICE
 

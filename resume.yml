@@ -5,15 +5,15 @@ contact:
   github: "github.com/mhyee"
 work:
   -
-    title: "Research Assistant"
+    title: "Research Assistant and Teaching Assistant"
     employer: "Northeastern University"
     location: "Boston MA"
     date: "Sep 2016 [--] present"
     description:
-      - "Worked on a [just-in-time compiler](https://github.com/reactorlabs/rir) for R"
-      - "Studied the [semantics of static and dynamic program analysis](https://github.com/reactorlabs/rhotic) for R"
+      - "Worked on a [just-in-time compiler](https://github.com/reactorlabs/rir) for R, and studied the [semantics of static and dynamic program analysis](https://github.com/reactorlabs/rhotic)"
       - "Evaluated machine learning models on the [type prediction task](https://github.com/nuprl/TypeWeaver) for TypeScript"
       - "Fine-tuned and evaluated a large language model for code to [generate type definitions](https://github.com/nuprl/StenoType) for TypeScript"
+      - "Teaching assistant for Fundamentals II, Introduction to Class-based Program Design ([CS 2510](https://course.ccs.neu.edu/cs2510sp18/)) and Fundamentals of Software Engineering ([CS 4530](https://neu-se.github.io/CS4530-Spring-2024/))"
   -
     title: "Researcher Intern"
     employer: "Microsoft Research"
@@ -22,12 +22,13 @@ work:
     description:
       - "Implemented different memory management strategies for [Project Verona](https://github.com/microsoft/verona-rt)"
   -
-    title: "Research Assistant"
+    title: "Research Assistant and Teaching Assistant"
     employer: "University of Waterloo"
     location: "Waterloo ON"
     date: "Sep 2014 [--] Aug 2016"
     description:
       - "Implemented the initial interpreter and compiler for the functional sub-language of [Flix](https://flix.dev/)"
+      - "Teaching assistant for Foundations of Sequential Programs ([CS 241](https://www.student.cs.uwaterloo.ca/~cs241/), [CS 241E](https://www.student.cs.uwaterloo.ca/~cs241e/)) and Compiler Construction ([CS 444](https://www.student.cs.uwaterloo.ca/~cs444/))"
   -
     title: "Software Development Engineering Intern"
     employer: "Microsoft"
@@ -75,24 +76,6 @@ work:
     employer: "Robarts Research Institute"
     location: "London ON"
     date: "Jul [--] Aug 2008"
-teaching:
-  -
-    title: "Teaching Assistant"
-    employer: "Northeastern University"
-    location: "Boston MA"
-    date: "Jan [--] Apr 2018, Jan [--] Apr 2024"
-    description:
-      - "[CS 2510: Fundamentals II, Introduction to Class-based Program Design](https://course.ccs.neu.edu/cs2510sp18/) (Spring 2018)"
-      - "[CS 4530: Fundamentals of Software Engineering](https://neu-se.github.io/CS4530-Spring-2024/) (Spring 2024)"
-  -
-    title: "Teaching Assistant"
-    employer: "University of Waterloo"
-    location: "Waterloo ON"
-    date: "May 2015 [--] Aug 2016"
-    description:
-      - "[CS 444: Compiler Construction](https://www.student.cs.uwaterloo.ca/~cs444/) (Winter 2016)"
-      - "[CS 241E: Foundations of Sequential Programs, Enriched](https://www.student.cs.uwaterloo.ca/~cs241e/) (Fall 2015)"
-      - "[CS 241: Foundations of Sequential Programs](https://www.student.cs.uwaterloo.ca/~cs241/) (Spring 2015, Spring 2016)"
 publications:
   -
     authors: "M.-H. Yee and A. Guha"

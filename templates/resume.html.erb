@@ -42,7 +42,7 @@
       #resume #container {
         margin-left: auto;
         margin-right: auto;
-        width: 750px;
+        width: 800px;
       }
       #resume h1 {
         margin-top: 0;
@@ -70,7 +70,7 @@
         margin-bottom: -5px;
       }
       #resume .subsection {
-        margin-left: 30px;
+        margin-left: 15px;
       }
       #resume h3 {
         font-weight: bold;
@@ -154,7 +154,7 @@
 <% end #if %>
       <div class="underline"></div>
 
-      <h2>Work Experience</h2>
+      <h2>Experience</h2>
       <div class="subsection">
 <% work.each do |entry| %>
         <h3>
@@ -202,29 +202,6 @@
           </li>
 <% end #each %>
         </ul>
-      </div><!-- div.subsection -->
-
-      <h2>Teaching Experience</h2>
-      <div class="subsection">
-<% teaching.each do |entry| %>
-        <h3>
-          <span class="title"><%= entry["title"] %></span>
-          <span class="location"><%= entry["location"] %></span>
-        </h3>
-        <div class="h3sub">
-          <span class="employer"><%= entry["employer"] %></span>
-          <span class="date"><%= entry["date"] %></span>
-        </div>
-<% if entry["description"] %>
-        <ul>
-<% entry["description"].each do |item| %>
-          <li>
-            <%= item %>
-          </li>
-<% end #each %>
-        </ul>
-<% end #if %>
-<% end #each %>
       </div><!-- div.subsection -->
 
       <h2>Service</h2>
