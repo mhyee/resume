@@ -14,7 +14,7 @@ work:
       - "Worked on a [just-in-time compiler](https://github.com/reactorlabs/rir) for R"
       - "Studied the [semantics of static and dynamic program analysis](https://github.com/reactorlabs/rhotic) for R"
       - "Evaluated machine learning models on the [type prediction task](https://github.com/nuprl/TypeWeaver) for TypeScript"
-      - "Fine-tuned a large language model for code to [generate type definitions](https://github.com/nuprl/StenoType) for TypeScript"
+      - "Fine-tuned and evaluated a large language model for code to [generate type definitions](https://github.com/nuprl/StenoType) for TypeScript"
   -
     title: "Researcher Intern"
     employer: "Microsoft Research"
