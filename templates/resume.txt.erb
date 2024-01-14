@@ -5,7 +5,7 @@ http://<%= contact["site"] %> * http://<%= contact["github"] %> * <%= contact["e
 <%= contact["address"] %> * <%= contact["cell"] + "\n" %>
 <% end #if %>
 <% if contact["citizenship"] %>
-<%= contact["citizenship"] + "\n" %>
+<%= "**" + contact["citizenship"] + "**\n" %>
 <% end #if%>
 --------------------------------------------------------------------------------
 <% def wrap(text) %>
