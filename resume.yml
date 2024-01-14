@@ -143,12 +143,12 @@ skills:
   - "Some knowledge of Racket, Haskell, ARM assembly, and LLVM IR"
 education:
   -
-    level: "Ph.D. Candidate"
+    level: "Candidate for Doctor of Philosophy in Computer Science"
     institution: "Northeastern University"
     location: "Boston MA"
-    date: "Sep 2016 [--] present"
+    date: "Apr 2024 (expected)"
     notes:
-      - "Proposed thesis: Predicting TypeScript Type Annotations and Definitions With Machine Learning"
+      - "Thesis: Predicting TypeScript Type Annotations and Definitions with Machine Learning"
       - "Advisor: [Arjun Guha](https://www.khoury.northeastern.edu/~arjunguha/main/home/)"
   -
     level: "Master of Mathematics in Computer Science"
@@ -156,7 +156,7 @@ education:
     location: "Waterloo ON"
     date: "Jun 2017"
     notes:
-      - "Thesis: [Implementing a Functional Language for Flix](http://hdl.handle.net/10012/10856) (completed Sep 2016)"
+      - "Thesis: [Implementing a Functional Language for Flix](http://hdl.handle.net/10012/10856)"
       - "Advisor: [Ondřej Lhoták](https://plg.uwaterloo.ca/~olhotak/)"
   -
     level: "Bachelor of Software Engineering"
