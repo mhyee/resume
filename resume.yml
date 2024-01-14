@@ -8,8 +8,7 @@ work:
     title: "Research Assistant"
     employer: "Northeastern University"
     location: "Boston MA"
-    start: "Sep 2016"
-    end: "present"
+    date: "Sep 2016 [--] present"
     description:
       - "Worked on a [just-in-time compiler](https://github.com/reactorlabs/rir) for R"
       - "Studied the [semantics of static and dynamic program analysis](https://github.com/reactorlabs/rhotic) for R"
@@ -19,88 +18,76 @@ work:
     title: "Researcher Intern"
     employer: "Microsoft Research"
     location: "Cambridge UK"
-    start: "Sep"
-    end: "Dec 2019"
+    date: "Sep [--] Dec 2019"
     description:
       - "Implemented different memory management strategies for [Project Verona](https://github.com/microsoft/verona-rt)"
   -
     title: "Research Assistant"
     employer: "University of Waterloo"
     location: "Waterloo ON"
-    start: "Sep 2014"
-    end: "Aug 2016"
+    date: "Sep 2014 [--] Aug 2016"
     description:
       - "Implemented the initial interpreter and compiler for the functional sub-language of [Flix](https://flix.dev/)"
   -
     title: "Software Development Engineering Intern"
     employer: "Microsoft"
     location: "Redmond WA"
-    start: "May"
-    end: "Jul 2014"
+    date: "May [--] Jul 2014"
     description:
       - "Prototyped [concepts lite](https://en.cppreference.com/w/cpp/language/constraints) in the Microsoft Visual [CPP] (MSVC) compiler"
   -
     title: "Software Development Engineering Intern"
     employer: "Microsoft"
     location: "Redmond WA"
-    start: "Sep"
-    end: "Dec 2013"
+    date: "Sep [--] Dec 2013"
     description:
       - "Implemented [user-defined literals](https://en.cppreference.com/w/cpp/language/user_literal) in the Microsoft Visual [CPP] (MSVC) compiler"
   -
     title: "Software Development Engineering Intern"
     employer: "Microsoft"
     location: "Redmond WA"
-    start: "Jan"
-    end: "Apr 2013"
+    date: "Jan [--] Apr 2013"
     description:
       - "Prototyped, developed, and evaluated a heap memory collection tool for .NET applications"
   -
     title: "Undergraduate Research Assistant"
     employer: "University of Waterloo"
     location: "Waterloo ON"
-    start: "May"
-    end: "Dec 2012"
+    date: "May [--] Dec 2012"
   -
     title: "Developer"
     employer: "Engagio (formerly Eqentia)"
     location: "Toronto ON"
-    start: "Sep"
-    end: "Dec 2011"
+    date: "Sep [--] Dec 2011"
     description:
   -
     title: "Developer"
     employer: "Eqentia"
     location: "Toronto ON"
-    start: "Jan"
-    end: "Apr 2011"
+    date: "Jan [--] Apr 2011"
   -
     title: "Software Development Research Intern"
     employer: "Genesys Telecommunications Laboratories"
     location: "Markham ON"
-    start: "May"
-    end: "Aug 2010"
+    date: "May [--] Aug 2010"
   -
     title: "Junior Developer"
     employer: "Robarts Research Institute"
     location: "London ON"
-    start: "Jul"
-    end: "Aug 2008"
+    date: "Jul [--] Aug 2008"
 teaching:
   -
     title: "Teaching Assistant"
     employer: "Northeastern University"
     location: "Boston MA"
-    start: "Jan"
-    end: "Apr 2018"
+    date: "Jan [--] Apr 2018"
     description:
       - "[CS 2510: Fundamentals II, Introduction to Class-based Program Design](https://course.ccs.neu.edu/cs2510sp18/)"
   -
     title: "Teaching Assistant"
     employer: "University of Waterloo"
     location: "Waterloo ON"
-    start: "May 2015"
-    end: "Aug 2016"
+    date: "May 2015 [--] Aug 2016"
     description:
       - "[CS 444: Compiler Construction](https://www.student.cs.uwaterloo.ca/~cs444/) (Winter 2016)"
       - "[CS 241E: Foundations of Sequential Programs, Enriched](https://www.student.cs.uwaterloo.ca/~cs241e/) (Fall 2015)"

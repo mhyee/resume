@@ -66,7 +66,7 @@
       \textbf{<%= entry["location"] %>}\\
       \textit{<%= entry["employer"] %>}
       \hfill
-      \textit{<%= entry["start"] %> -- <%= entry["end"] %>}
+      \textit{<%= entry["date"] %>}
 <% if entry["description"] %>
       \begin{itemize}
 <% entry["description"].each do |item| %>
@@ -87,14 +87,10 @@
     \begin{adjustwidth}{\indentleft}{\indentright}
       \begin{itemize}
 <% publications.each do |entry| %>
-<% authors = entry["authors"] %>
-<% title = entry["title"] %>
-<% published_in = entry["in"] %>
-<% date = entry["date"] %>
-        \item <%= authors %>,
-              <%= title %>,
-              \textbf{<%= published_in %>},
-              <%= date %>
+        \item <%= entry["authors"] %>,
+              <%= entry["title"] %>,
+              \textbf{<%= entry["in"] %>},
+              <%= entry["date"] %>
 <% end #each %>
       \end{itemize}
     \end{adjustwidth}
@@ -120,7 +116,7 @@
       \textbf{<%= entry["location"] %>}\\
       \textit{<%= entry["employer"] %>}
       \hfill
-      \textit{<%= entry["start"] %> -- <%= entry["end"] %>}
+      \textit{<%= entry["date"] %>}
 <% if entry["description"] %>
       \begin{itemize}
 <% entry["description"].each do |item| %>
@@ -177,11 +173,7 @@
       \textbf{<%= entry["location"] %>}\\
       \textit{<%= entry["institution"] %>}
       \hfill
-<% if entry["date"].nil? %>
-      \textit{<%= entry["start"] %> -- <%= entry["end"] %>}\\
-<% else %>
       \textit{<%= entry["date"] %>}
-<% end #if %>
 <% if entry["notes"] %>
       \begin{itemize}
 <% entry["notes"].each do |item| %>

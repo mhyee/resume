@@ -163,7 +163,7 @@
         </h3>
         <div class="h3sub">
           <span class="employer"><%= entry["employer"] %></span>
-          <span class="date"><%= entry["start"] %> &ndash; <%= entry["end"] %></span>
+          <span class="date"><%= entry["date"] %></span>
         </div>
 <% if entry["description"] %>
         <ul>
@@ -183,15 +183,11 @@
       <div class="subsection">
         <ul>
 <% publications.each do |entry| %>
-<% authors = entry["authors"] %>
-<% title = entry["title"] %>
-<% published_in = entry["in"] %>
-<% date = entry["date"] %>
           <li>
-            <%= authors %>,
-            <%= title %>,
-            <span class="in"><%= published_in %></span>,
-            <%= date %>
+            <%= entry["authors"] %>,
+            <%= entry["title"] %>,
+            <span class="in"><%= entry["in"] %></span>,
+            <%= entry["date"] %>
           </li>
 <% end #each %>
         </ul>
@@ -217,7 +213,7 @@
         </h3>
         <div class="h3sub">
           <span class="employer"><%= entry["employer"] %></span>
-          <span class="date"><%= entry["start"] %> &ndash; <%= entry["end"] %></span>
+          <span class="date"><%= entry["date"] %></span>
         </div>
 <% if entry["description"] %>
         <ul>
@@ -271,11 +267,7 @@
         </h3>
         <div class="h3sub">
           <span class="institution"><%= entry["institution"] %></span>
-<% if entry["date"] %>
           <span class="date"><%= entry["date"] %></span>
-<% else %>
-  <span class="date"><%= entry["start"] %> &ndash; <%= entry["end"] %></span>
-<% end #if %>
         </div>
 <% if entry["notes"] %>
         <ul>

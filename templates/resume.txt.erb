@@ -17,7 +17,7 @@ WORK EXPERIENCE
 <% work.each do |entry| %>
   <%= entry["title"] %>
   <%= entry["employer"] %>, <%= entry["location"] %>
-  <%= entry["start"] %> -- <%= entry["end"] %>
+  <%= entry["date"] %>
 <% if entry["description"] %>
 <% entry["description"].each do |item| %>
     - <%= wrap item %>
@@ -52,7 +52,7 @@ TEACHING EXPERIENCE
 <% teaching.each do |entry| %>
   <%= entry["title"] %>
   <%= entry["employer"] %>, <%= entry["location"] %>
-  <%= entry["start"] %> -- <%= entry["end"] %>
+  <%= entry["date"] %>
 
 <% if entry["description"] %>
 <% entry["description"].each do |item| %>
@@ -93,11 +93,7 @@ EDUCATION
 <% education.each_with_index do |entry, index| %>
   <%= entry["level"] %>
   <%= entry["institution"] %>, <%= entry["location"] %>
-<% if entry["date"].nil? %>
-  <%= entry["start"] %> -- <%= entry["end"] %>
-<% else %>
   <%= entry["date"] %>
-<% end #if %>
 <% if entry["notes"] %>
 <% entry["notes"].each do |item| %>
       <%= item %>
