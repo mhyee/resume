@@ -24,7 +24,7 @@ For examples, my templates are included in this repository, while the generated
 resumes are on [my website][].
 
 [David Hu's resume project]: https://github.com/divad12/resume
-[my website]: http://mhyee.com/resume.html
+[my website]: http://mhyee.com/resume/resume.html
 
 ### Usage
 
