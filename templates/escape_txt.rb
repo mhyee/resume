@@ -16,6 +16,7 @@ def escape(input='')
     input.gsub!(/\[--\]/, "--")           # En dash
     # Don't need to escape links for txt resume
     input.gsub!(/\[CPP\]/, "C++")         # C++
+    input.gsub!(/\[MH Yee\]/, "MH Yee")   # Do nothing for name in pubs
   else
     input
   end

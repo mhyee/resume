@@ -18,6 +18,7 @@ def escape(input='')
     input.gsub!(/\[--\]/, "--")                 # En dash
     input.gsub!(/\[(.*?)\]\((.*?)\)/, "\\\\href{\\2}{\\1}")   # Link handling
     input.gsub!(/\[CPP\]/, CPP_TEX)             # C++
+    input.gsub!(/\[MH Yee\]/, "\\textbf{MH Yee}") # Bold name in pubs
   else
     input
   end
