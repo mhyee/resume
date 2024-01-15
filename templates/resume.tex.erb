@@ -25,6 +25,7 @@
 
 \newcommand{\indentleft}{0.4cm}
 \newcommand{\indentright}{0cm}
+\newcommand{\indenthang}{1.5em}
 \newcommand{\interlist}{0.5em}
 \newcommand{\postsubhead}{-0.7em}
 \newcommand{\postsection}{-1em}
@@ -84,16 +85,16 @@
 
   \section*{Publications}
     \vspace{\postsubhead}
-    \begin{adjustwidth}{\indentleft}{\indentright}
-      \begin{itemize}
-<% publications.each do |entry| %>
-        \item <%= entry["authors"] %>,
-              <%= entry["title"] %>,
-              \textbf{<%= entry["in"] %>},
-              <%= entry["date"] %>
-<% end #each %>
-      \end{itemize}
-    \end{adjustwidth}
+<% publications.each_with_index do |entry, index| %>
+      \leftskip=\indentleft
+      \hangindent=\indenthang
+      <%= entry["authors"] %> (<%= entry["date"] %>).
+      <%= entry["title"] %>, \emph{<%= entry["in"] %>}.
+<% if index != publications.size - 1 %>
+      \vspace{\interlist}
+
+<% end #if %>
+<% end #each_with_index %>
     \vspace{\postsection}
 
   \section*{Technical Skills}

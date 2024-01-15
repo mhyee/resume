@@ -31,14 +31,17 @@ EXPERIENCE
 
 PUBLICATIONS
 
-<% publications.each do |entry| %>
+<% publications.each_with_index do |entry, index| %>
 <% authors = entry["authors"] %>
+<% date = entry["date"] %>
 <% title = entry["title"] %>
 <% published_in = entry["in"] %>
-<% date = entry["date"] %>
-<% entry_text = "#{authors}, #{title}, #{published_in}, #{date}" %>
-    - <%= wrap entry_text %>
-<% end #each %>
+<% entry_text = "#{authors} (#{date}). #{title}, #{published_in}." %>
+  <%= wrap entry_text %>
+<% if index != publications.size - 1 %>
+
+<% end #if %>
+<% end #each_with_index %>
 
 
 TECHNICAL SKILLS

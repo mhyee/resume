@@ -115,11 +115,15 @@
         margin-top: 0;
         margin-bottom: -10px;
       }
-      #resume li .date, #resume li .title {
-        font-style: italic;
+      #resume .publication {
+        padding-left: 1.5em;
+        text-indent: -1.5em;
       }
-      #resume li .in {
+      #resume .publication .name {
         font-weight: bold;
+      }
+      #resume .publication .in {
+        font-style: italic;
       }
     </style>
   </head>
@@ -181,16 +185,13 @@
 
       <h2>Publications</h2>
       <div class="subsection">
-        <ul>
 <% publications.each do |entry| %>
-          <li>
-            <%= entry["authors"] %>,
-            <%= entry["title"] %>,
-            <span class="in"><%= entry["in"] %></span>,
-            <%= entry["date"] %>
-          </li>
+        <p class="publication">
+          <%= entry["authors"] %> (<span class="date"><%= entry["date"] %></span>).
+          <span class="title"><%= entry["title"] %></span>,
+          <span class="in"><%= entry["in"] %></span>.
+        </p>
 <% end #each %>
-        </ul>
       </div><!-- div.subsection -->
 
       <h2>Technical Skills</h2>
