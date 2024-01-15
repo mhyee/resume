@@ -141,9 +141,9 @@ publications:
     date: "2009"
 
 skills:
-  - "Experienced with C, [CPP], Scala, Java, Ruby, and Python."
-  - "Familiar with OCaml, C[#], Perl, x86 and MIPS assembly, and JVM bytecode."
-  - "Some knowledge of Racket, Haskell, ARM assembly, and LLVM IR."
+  - "Implementation experience: interpreters, just-in-time compilers, memory management, program analysis."
+  - "Languages: C, [CPP], Java, Scala, OCaml, Python, Ruby, JavaScript, TypeScript, R."
+  - "Compilation targets: ARM, JVM, LLVM, MIPS, x86."
 
 education:
   -
