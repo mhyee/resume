@@ -30,30 +30,27 @@ EXPERIENCE
 <% end #each %>
 
 PUBLICATIONS
-
-<% publications.each_with_index do |entry, index| %>
+<% publications.each do |entry| %>
 <% authors = entry["authors"] %>
 <% date = entry["date"] %>
 <% title = entry["title"] %>
 <% published_in = entry["in"] %>
 <% entry_text = "#{authors} (#{date}). #{title}, #{published_in}." %>
-  <%= wrap entry_text %>
-<% if index != publications.size - 1 %>
 
-<% end #if %>
-<% end #each_with_index %>
+  <%= wrap entry_text %>
+<% end #each %>
 
 
 TECHNICAL SKILLS
-
 <% skills.each do |entry| %>
+
     - <%= wrap entry %>
 <% end #each %>
 
 
 EDUCATION
+<% education.each do |entry| %>
 
-<% education.each_with_index do |entry, index| %>
   <%= entry["level"] %>
   <%= entry["institution"] %>, <%= entry["location"] %>
   <%= entry["date"] %>
@@ -62,7 +59,4 @@ EDUCATION
       <%= item %>
 <% end #each %>
 <% end #if %>
-<% if index != education.size - 1 %>
-
-<% end #if %>
-<% end #each_with_index %>
+<% end #each %>
