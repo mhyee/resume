@@ -23,8 +23,8 @@
 \newcommand\HUGE{\@setfontsize\Huge{30}{36}}
 \makeatother
 
-\newcommand{\indentleft}{0.4cm}
-\newcommand{\indentright}{0cm}
+\newcommand{\indentleft}{1em}
+\newcommand{\indentright}{0em}
 \newcommand{\indenthang}{1.5em}
 \newcommand{\interlist}{0.5em}
 \newcommand{\postsubhead}{-0.7em}
@@ -65,9 +65,9 @@
       \textbf{<%= entry["title"] %>}
       \hfill
       \textbf{<%= entry["location"] %>}\\
-      \textit{<%= entry["employer"] %>}
+      \emph{<%= entry["employer"] %>}
       \hfill
-      \textit{<%= entry["date"] %>}
+      \emph{<%= entry["date"] %>}
 <% if entry["description"] %>
       \begin{itemize}
 <% entry["description"].each do |item| %>
@@ -115,9 +115,9 @@
       \textbf{<%= entry["level"] %>}
       \hfill
       \textbf{<%= entry["location"] %>}\\
-      \textit{<%= entry["institution"] %>}
+      \emph{<%= entry["institution"] %>}
       \hfill
-      \textit{<%= entry["date"] %>}
+      \emph{<%= entry["date"] %>}
 <% if entry["notes"] %>
       \begin{itemize}
 <% entry["notes"].each do |item| %>
