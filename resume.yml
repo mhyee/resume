@@ -11,10 +11,10 @@ work:
     location: "Boston MA"
     date: "Sep 2016 [--] present"
     description:
-      - "Worked on a [just-in-time compiler](https://github.com/reactorlabs/rir) for R by reviewing code, fixing bugs, maintaining infrastructure, and implementing and debugging optimizations."
+      - "Evaluated machine learning models on the [type prediction task](https://github.com/nuprl/TypeWeaver) for TypeScript, showing that 69[%] of files type check."
+      - "Fine-tuned and evaluated a large language model for code to [generate type definitions](https://github.com/nuprl/StenoType) for TypeScript, improving on the state-of-the-art by 22[%] (absolute)."
       - "Studied the [semantics of static and dynamic program analysis](https://github.com/reactorlabs/rhotic) for R, by implementing an interpreter in OCaml."
-      - "Evaluated machine learning models on the [type prediction task](https://github.com/nuprl/TypeWeaver) for TypeScript."
-      - "Fine-tuned and evaluated a large language model for code to [generate type definitions](https://github.com/nuprl/StenoType) for TypeScript."
+      - "Worked on a [just-in-time compiler](https://github.com/reactorlabs/rir) for R by reviewing code, fixing bugs, maintaining infrastructure, and implementing and debugging optimizations."
       - "Co-chaired, organized, and led over 40 student volunteers at [ECOOP/ISSTA 2018](https://conf.researchr.org/home/ecoop-issta-2018), an international conference for programming languages and software engineering with over 600 attendees."
       - "Mentored undergraduate, master's, and Ph.D. students by providing feedback and advice on project planning, software development, and written and oral communication."
       - "Teaching assistant for Fundamentals II, Introduction to Class-based Program Design ([CS 2510](https://course.ccs.neu.edu/cs2510sp18/)) and Fundamentals of Software Engineering ([CS 4530](https://neu-se.github.io/CS4530-Spring-2024/)): helped design assignments, held office hours, and graded exams."
@@ -31,7 +31,7 @@ work:
     location: "Waterloo ON"
     date: "Sep 2014 [--] Aug 2016"
     description:
-      - "Designed and led the initial implementation of the interpreter and compiler for the functional sub-language of [Flix](https://flix.dev/)."
+      - "Designed and led the implementation of the initial interpreter and compiler for the functional sub-language of [Flix](https://flix.dev/)."
       - "Experimented with different code generation techniques for Flix, such as Scala macros and generating Scala code."
       - "Teaching assistant for Foundations of Sequential Programs ([CS 241](https://www.student.cs.uwaterloo.ca/~cs241/), [CS 241E](https://www.student.cs.uwaterloo.ca/~cs241e/)) and Compiler Construction ([CS 444](https://www.student.cs.uwaterloo.ca/~cs444/)): held office hours and provided feedback on assignments and exams for the first offering of CS 241E."
   -
@@ -40,14 +40,14 @@ work:
     location: "Redmond WA"
     date: "May [--] Jul 2014"
     description:
-      - "Prototyped [concepts lite](https://en.cppreference.com/w/cpp/language/constraints) in the Microsoft Visual [CPP] (MSVC) compiler."
+      - "Prototyped [concepts lite](https://en.cppreference.com/w/cpp/language/constraints) in the Microsoft Visual [CPP] (MSVC) compiler, a feature that was eventually added to [CPP]20."
   -
     title: "Software Development Engineering Intern"
     employer: "Microsoft"
     location: "Redmond WA"
     date: "Sep [--] Dec 2013"
     description:
-      - "Implemented [user-defined literals](https://en.cppreference.com/w/cpp/language/user_literal) in the Microsoft Visual [CPP] (MSVC) compiler."
+      - "Implemented [user-defined literals](https://en.cppreference.com/w/cpp/language/user_literal) in the Microsoft Visual [CPP] (MSVC) compiler, a [CPP]11 feature that was previously missing from MSVC."
   -
     title: "Software Development Engineering Intern"
     employer: "Microsoft"

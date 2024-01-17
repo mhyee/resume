@@ -8,6 +8,9 @@
     <style media="all">
       /* print styles override */
       @media print {
+        .pagebreak {
+          page-break-before: always;
+        }
         a, a:link, a:visited {
           color: #000 !important;
         }
@@ -45,7 +48,7 @@
         width: 800px;
       }
       #resume h1 {
-        margin-top: 0;
+        margin-top: 0.5rem;
         margin-bottom: 0.2rem;
         font-size: 300%;
         text-align: center;
@@ -70,7 +73,7 @@
         margin-bottom: -0.25rem;
       }
       #resume .subsection {
-        margin-left: 0.75em;
+        margin-left: 0.7em;
       }
       #resume h3 {
         font-weight: bold;
@@ -182,6 +185,7 @@
 <% end #if %>
 <% end #each %>
       </div><!-- div.subsection -->
+      <div class="pagebreak"></div>
 
       <h2>Publications</h2>
       <div class="subsection">

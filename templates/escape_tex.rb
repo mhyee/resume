@@ -14,6 +14,7 @@ def escape(input='')
     input.gsub!(/\[''\]/, "''")                 # Smart quotes (close)
     input.gsub!(/\[#\]/, "\\\\#")               # Number sign
     input.gsub!(/\[\$\]/, "\\\\$")              # Dollar sign
+    input.gsub!(/\[%\]/, "\\\\%")               # Percent sign
     input.gsub!(/\[---\]/, "---")               # Em dash
     input.gsub!(/\[--\]/, "--")                 # En dash
     input.gsub!(/\[(.*?)\]\((.*?)\)/, "\\\\href{\\2}{\\1}")   # Link handling
