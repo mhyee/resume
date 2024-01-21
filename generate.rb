@@ -16,8 +16,8 @@ optparse = OptionParser.new do |opts|
   opts.on( '-p', '--private PRIVATE', 'private input file' ) do |private|
     options[:private] = private
   end
-  options[:template] = 'templates/resume.html.erb'
-  opts.on( '-t', '--template TEMPLATE', 'template file' ) do |template|
+  options[:template] = 'html'
+  opts.on( '-t', '--template TEMPLATE', 'template for extension' ) do |template|
     options[:template] = template
   end
   options[:web] = false
@@ -43,15 +43,15 @@ resume = YAML::load( File.open(options[:input]) )
 abort("Error: #{options[:private]} is not present in this directory.  Use -p or --private to specify another private input file.") unless File.exist?( options[:private] ) or options[:web]
 
 # Does the template file exist?
-abort("Error: template #{options[:template]} does not exist.  Use -t or --template to specify another template file.") unless File.exist?( options[:template] )
+template_file = File.join( File.dirname(__FILE__), 'templates', options[:template] + '.erb')
+abort("Error: template for #{options[:template]} does not exist.  Use -t or --template to specify another template file.") unless File.exist?(template_file)
 
 input_basename, input_extension = options[:input].split('.')
-template_basename, template_extension1, template_extension2 = options[:template].split('.')
 
 if options[:web]
-  output_file = input_basename + '-web.' + template_extension1
+  output_file = input_basename + '-web.' + options[:template]
 else
-  output_file = input_basename + '.' + template_extension1
+  output_file = input_basename + '.' + options[:template]
 
   # Load and merge contact information (for full resume)
   # private.yml contains contact information I don't want posted
@@ -60,12 +60,12 @@ else
 end
 
 # Load the escape function and run it on resume hash (if escape function exists)
-escape_defn = File.join( File.dirname(__FILE__), 'templates', '/escape_' + template_extension1 + '.rb' )
+escape_defn = File.join( File.dirname(__FILE__), 'escape', options[:template] + '.rb' )
 require escape_defn if File.exist?(escape_defn)
 escape(resume) if defined?(escape)
 
 # Load the ERB template
-template = ERB.new( File.new(options[:template]).read, trim_mode: "<>" )
+template = ERB.new( File.new(template_file).read, trim_mode: "<>" )
 
 namespace = ErbBinding.new resume
 result = template.result namespace.send(:get_binding)

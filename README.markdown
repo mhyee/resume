@@ -6,11 +6,11 @@ system to handle format and layout. Currently, the three templates implemented
 are HTML, LaTeX, and plain text. You can use pdflatex to create a PDF file from
 the generated LaTeX file.
 
-`escape_html.rb`, `escape_tex.rb`, and `escape_txt.rb` define `escape` functions
-for handling special characters or cases. (For example, `&` must be escaped as
-`\&amp;` in HTML, and `\\&` in LaTeX. The `escape` function also handles other
-special cases, including links.) Escape characters must appear in square
-brackets in the YAML file. For example, to include an ampersand, use `[&]`.
+The files in `escape/` define `escape` functions for handling special characters
+or cases. (For example, `&` must be escaped as `\&amp;` in HTML, and `\\&` in
+LaTeX. The `escape` function also handles other special cases, including links.)
+Escape characters must appear in square brackets in the YAML file. For example,
+to include an ampersand, use `[&]`.
 
 Store private contact information in the `private.yml` file. This information
 will be omitted from the "web" version of the generated resume (selected with
@@ -34,7 +34,7 @@ resume. (Obviously, the resume content is mine.)
     Usage: generate.rb [options]
         -i, --input INPUT                input file
         -p, --private PRIVATE            private input file
-        -t, --template TEMPLATE          template file
+        -t, --template TEMPLATE          template for extension
         -w, --web                        create a web version omitting private information
 
 ### Dependencies

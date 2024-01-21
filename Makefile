@@ -4,16 +4,16 @@ EXTS    := html pdf tex txt
 PRV_OUT := $(addprefix output/resume., $(EXTS))
 WEB_OUT := $(addprefix output/resume-web., $(EXTS))
 
-TEMPLATES  := templates/resume.%.erb templates/escape_%.rb
+TEMPLATES  := templates/%.erb escape/%.rb
 WEB_PREREQ := $(TEMPLATES) generate.rb resume.yml
 
 all: $(PRV_OUT) $(WEB_OUT)
 
 output/resume.%: $(WEB_PREREQ) private.yml
-	@./generate.rb -t templates/resume.$*.erb
+	@./generate.rb -t $*
 
 output/resume-web.%: $(WEB_PREREQ)
-	@./generate.rb -t templates/resume.$*.erb -w
+	@./generate.rb -t $* -w
 
 output/%.pdf: output/%.tex
 	@echo "Created $(@:output/%=%)"
