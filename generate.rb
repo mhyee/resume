@@ -16,7 +16,7 @@ optparse = OptionParser.new do |opts|
   opts.on( '-p', '--private PRIVATE', 'private input file' ) do |private|
     options[:private] = private
   end
-  options[:template] = 'resume.html.erb'
+  options[:template] = 'templates/resume.html.erb'
   opts.on( '-t', '--template TEMPLATE', 'template file' ) do |template|
     options[:template] = template
   end
@@ -43,7 +43,7 @@ resume = YAML::load( File.open(options[:input]) )
 abort("Error: #{options[:private]} is not present in this directory.  Use -p or --private to specify another private input file.") unless File.exist?( options[:private] ) or options[:web]
 
 # Does the template file exist?
-abort("Error: template #{options[:template]} is not present in the templates directory.  Use -t or --template to specify another template file.") unless File.exist?( 'templates/' + options[:template] )
+abort("Error: template #{options[:template]} does not exist.  Use -t or --template to specify another template file.") unless File.exist?( options[:template] )
 
 input_basename, input_extension = options[:input].split('.')
 template_basename, template_extension1, template_extension2 = options[:template].split('.')
@@ -65,7 +65,7 @@ require escape_defn if File.exist?(escape_defn)
 escape(resume) if defined?(escape)
 
 # Load the ERB template
-template = ERB.new( File.new('templates/' + options[:template]).read, trim_mode: "<>" )
+template = ERB.new( File.new(options[:template]).read, trim_mode: "<>" )
 
 namespace = ErbBinding.new resume
 result = template.result namespace.send(:get_binding)
