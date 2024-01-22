@@ -8,18 +8,18 @@ def escape(input='')
     input.map{|elt| escape(elt)}
   when String
     # Do the actual escaping here
-    input.gsub!(/\[&\]/, "&amp;")         # Ampersands
+    input.gsub!(/\[&\]/, '&amp;')         # Ampersands
     input.gsub!(/\[LaTeX\]/, LATEX_HTML)  # LaTeX
-    input.gsub!(/\[``\]/, "&ldquo;")      # Smart quotes (open)
-    input.gsub!(/\[''\]/, "&rdquo;")      # Smart quotes (close)
-    input.gsub!(/\[#\]/, "#")             # Number sign
-    input.gsub!(/\[\$\]/, "$")            # Dollar sign
-    input.gsub!(/\[%\]/, "%")             # Percent sign
-    input.gsub!(/\[---\]/, "&mdash;")     # Em dash
-    input.gsub!(/\[--\]/, "&ndash;")      # En dash
-    input.gsub!(/\[(.*?)\]\((.*?)\)/, "<a href=\"\\2\">\\1</a>")    # Link handling
-    input.gsub!(/\[CPP\]/, "C++")         # C++
-    input.gsub!(/\[MH Yee\]/, "<span class=\"name\">MH Yee</span>") # Bold name in pubs
+    input.gsub!(/\[``\]/, '&ldquo;')      # Smart quotes (open)
+    input.gsub!(/\[''\]/, '&rdquo;')      # Smart quotes (close)
+    input.gsub!(/\[#\]/, '#')             # Number sign
+    input.gsub!(/\[\$\]/, '$')            # Dollar sign
+    input.gsub!(/\[%\]/, '%')             # Percent sign
+    input.gsub!(/\[---\]/, '&mdash;')     # Em dash
+    input.gsub!(/\[--\]/, '&ndash;')      # En dash
+    input.gsub!(/\[(.*?)\]\((.*?)\)/, '<a href="\\2">\\1</a>')    # Link handling
+    input.gsub!(/\[CPP\]/, 'C++')         # C++
+    input.gsub!(/\[MH Yee\]/, '<span class="name">MH Yee</span>') # Bold name in pubs
   else
     input
   end
