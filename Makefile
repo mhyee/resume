@@ -6,10 +6,11 @@ WEB_OUT := $(addprefix output/resume-web., $(EXTS))
 
 TEMPLATES  := templates/%.erb escape/%.rb
 WEB_PREREQ := $(TEMPLATES) generate.rb resume.yml
+PRV_PREREQ := $(WEB_PREREQ) private.yml
 
 all: $(PRV_OUT) $(WEB_OUT)
 
-output/resume.%: $(WEB_PREREQ) private.yml
+output/resume.%: $(PRV_PREREQ)
 	@./generate.rb -t $*
 
 output/resume-web.%: $(WEB_PREREQ)
