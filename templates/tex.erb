@@ -29,6 +29,10 @@
 \newcommand{\interlist}{0.5em}
 \newcommand{\postsubhead}{-0.7em}
 \newcommand{\postsection}{-1em}
+\newcommand{\hangingindent}{%
+  \leftskip=\indentleft
+  \hangindent=\indenthang
+}
 
 \begin{document}
 \raggedright
@@ -82,15 +86,15 @@
 <% end #each_with_index %>
     \end{adjustwidth}
     \vspace{\postsection}
+    \clearpage%
 
-  \clearpage%
   \section*{Publications}
     \vspace{\postsubhead}
 <% publications.each_with_index do |entry, index| %>
-      \leftskip=\indentleft
-      \hangindent=\indenthang
+      \hangingindent
       <%= entry["authors"] %> (<%= entry["date"] %>).
-      <%= entry["title"] %>, \emph{<%= entry["in"] %>}.
+      <%= entry["title"] %>,
+      \emph{<%= entry["in"] %>}.
 <% if index != publications.size - 1 %>
       \vspace{\interlist}
 
@@ -126,7 +130,7 @@
 <% end #each %>
       \end{itemize}
 <% end #if %>
-\vspace{\interlist}
+      \vspace{\interlist}
 <% if index != education.size - 1 %>
 
 <% end #if %>
