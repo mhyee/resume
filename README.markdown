@@ -7,7 +7,7 @@ are HTML, LaTeX, and plain text. You can use pdflatex to create a PDF file from
 the generated LaTeX file.
 
 The files in `escape/` define `escape` functions for handling special characters
-or cases. (For example, `&` must be escaped as `\&amp;` in HTML, and `\\&` in
+or cases. (For example, `&` must be escaped as `&amp;` in HTML, and `\&` in
 LaTeX. The `escape` function also handles other special cases, including links.)
 Escape characters must appear in square brackets in the YAML file. For example,
 to include an ampersand, use `[&]`.
@@ -24,7 +24,7 @@ For examples, my templates are included in this repository, while the generated
 resumes are on [my website][].
 
 [David Hu's resume project]: https://github.com/divad12/resume
-[my website]: http://mhyee.com/resume/resume.html
+[my website]: http://mhyee.com/resume/
 
 ### Usage
 
