@@ -12,7 +12,7 @@ work:
     date: "Sep 2016 [--] present"
     description:
       - "Evaluated machine learning models on the [type prediction task](https://github.com/nuprl/TypeWeaver) for TypeScript, showing that 69[%] of files type check."
-      - "Fine-tuned and evaluated a large language model for code to [generate type definitions](https://github.com/nuprl/StenoType) for TypeScript, improving on the state-of-the-art by 22[%] (absolute)."
+      - "Fine-tuned and evaluated a large language model for code to [generate type definitions](https://github.com/nuprl/StenoType) for TypeScript, allowing 47[%] of files (with missing type definitions) to type check (22[%] absolute improvement)."
       - "Studied the [semantics of static and dynamic program analysis](https://github.com/reactorlabs/rhotic) for R, by implementing an interpreter in OCaml."
       - "Worked on a [just-in-time compiler](https://github.com/reactorlabs/rir) for R by reviewing code, fixing bugs, maintaining infrastructure, and implementing and debugging optimizations."
       - "Co-chaired, organized, and led over 40 student volunteers at [ECOOP/ISSTA 2018](https://conf.researchr.org/home/ecoop-issta-2018), an international conference for programming languages and software engineering with over 600 attendees."
