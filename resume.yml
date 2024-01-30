@@ -100,7 +100,7 @@ publications:
   -
     authors: "F Cassano, [MH Yee], N Shinn, A Guha, S Holtzen"
     title: "[Type Prediction With Program Decomposition and Fill-in-the-Type Training](https://doi.org/10.48550/arXiv.2305.17145)"
-    in: "(preprint)"
+    in: "preprint"
     date: "2023"
   -
     authors: "F Cassano et al."
@@ -120,7 +120,7 @@ publications:
   -
     authors: "[MH Yee], A Badouraly, O Lhoták, F Tip, J Vitek"
     title: "[Precise Dataflow Analysis of Event-Driven Applications](https://arxiv.org/abs/1910.12935)"
-    in: "(preprint)"
+    in: "technical report"
     date: "2019"
   -
     authors: "O Flückiger, G Scherer, [MH Yee], A Goel, A Ahmed, J Vitek"
