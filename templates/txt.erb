@@ -8,9 +8,6 @@ http://<%= contact["site"] %> * http://<%= contact["github"] %> * <%= contact["e
 <%= "**" + contact["citizenship"] + "**\n" %>
 <% end #if%>
 --------------------------------------------------------------------------------
-<% def wrap(text) %>
-<%   text.gsub(/\]\(/, "\] \(").gsub(/(.{1,74})(\s+|$)/, "\\1\n      ").strip %>
-<% end #def %>
 
 EXPERIENCE
 
@@ -21,7 +18,7 @@ EXPERIENCE
 <% if entry["description"] %>
 <% entry["description"].each do |item| %>
 
-    - <%= wrap item %>
+    - <%= wrap item, 6 %>
 <% end #each %>
 
 <% else %>
@@ -37,14 +34,14 @@ PUBLICATIONS
 <% published_in = entry["in"] %>
 <% entry_text = "#{authors} (#{date}). #{title}, #{published_in}." %>
 
-  <%= wrap entry_text %>
+  <%= wrap entry_text, 4 %>
 <% end #each %>
 
 
 TECHNICAL SKILLS
 <% skills.each do |entry| %>
 
-    - <%= wrap entry %>
+    - <%= wrap entry, 6 %>
 <% end #each %>
 
 
