@@ -31,7 +31,7 @@ work:
     location: "Waterloo ON"
     date: "Sep 2014 [--] Aug 2016"
     description:
-      - "Designed and led the implementation of the initial interpreter and compiler for the functional sub-language of [Flix](https://flix.dev/)."
+      - "Designed and led the implementation of the original interpreter and compiler for the functional sub-language of [Flix](https://flix.dev/)."
       - "Experimented with different code generation techniques for Flix, such as Scala macros and generating Scala code."
       - "Teaching assistant for Foundations of Sequential Programs ([CS 241](https://www.student.cs.uwaterloo.ca/~cs241/), [CS 241E](https://www.student.cs.uwaterloo.ca/~cs241e/)) and Compiler Construction ([CS 444](https://www.student.cs.uwaterloo.ca/~cs444/)): held office hours and provided feedback on assignments and exams for the first offering of CS 241E."
   -
