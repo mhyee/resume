@@ -6,18 +6,18 @@ contact:
 
 work:
   -
-    title: "Research Assistant and Teaching Assistant"
+    title: "Ph.D. Candidate"
     employer: "Northeastern University"
     location: "Boston MA"
     date: "Sep 2016 [--] present"
     description:
-      - "Evaluated machine learning models on the [type prediction task](https://github.com/nuprl/TypeWeaver) for TypeScript, showing that 69[%] of files type check."
+      - "Built [TypeWeaver](https://github.com/nuprl/TypeWeaver), the first machine-learning-based tool to migrate files from JavaScript to TypeScript, with a 69[%] success rate (as measured by type checking)."
       - "Fine-tuned and evaluated a large language model for code to [generate type definitions](https://github.com/nuprl/StenoType) for TypeScript, allowing 47[%] of files (with missing type definitions) to type check (22[%] absolute improvement)."
-      - "Studied the [semantics of static and dynamic program analysis](https://github.com/reactorlabs/rhotic) for R, by implementing an interpreter in OCaml."
-      - "Worked on a [just-in-time compiler](https://github.com/reactorlabs/rir) for R by reviewing code, fixing bugs, maintaining infrastructure, and implementing and debugging optimizations."
+      - "Built an [interpreter in OCaml for a subset of R](https://github.com/reactorlabs/rhotic) to model the relationship between static and dynamic program analysis."
+      - "Sped up test suite by 15[%] by optimizing dominance graph construction in Ř, a [just-in-time compiler for R](https://github.com/reactorlabs/rir)."
       - "Co-chaired, organized, and led over 40 student volunteers at [ECOOP/ISSTA 2018](https://conf.researchr.org/home/ecoop-issta-2018), an international conference for programming languages and software engineering with over 600 attendees."
       - "Mentored undergraduate, master's, and Ph.D. students by providing feedback and advice on project planning, software development, and written and oral communication."
-      - "Teaching assistant for Fundamentals II, Introduction to Class-based Program Design ([CS 2510](https://course.ccs.neu.edu/cs2510sp18/)) and Fundamentals of Software Engineering ([CS 4530](https://neu-se.github.io/CS4530-Spring-2024/)): helped design assignments, held office hours, and graded exams."
+      - "Teaching assistant for [``]Fundamentals II, Introduction to Class-based Program Design[''] ([CS 2510](https://course.ccs.neu.edu/cs2510sp18/)) and [``]Fundamentals of Software Engineering[''] ([CS 4530](https://neu-se.github.io/CS4530-Spring-2024/)): helped design assignments, held office hours, and graded exams."
   -
     title: "Researcher Intern"
     employer: "Microsoft Research"
@@ -26,14 +26,14 @@ work:
     description:
       - "Explored, implemented, and tested different memory management strategies for [Project Verona](https://github.com/microsoft/verona-rt)."
   -
-    title: "Research Assistant and Teaching Assistant"
+    title: "MMath Candidate"
     employer: "University of Waterloo"
     location: "Waterloo ON"
     date: "Sep 2014 [--] Aug 2016"
     description:
       - "Designed and led the implementation of the original interpreter and compiler for the functional sub-language of [Flix](https://flix.dev/)."
       - "Experimented with different code generation techniques for Flix, such as Scala macros and generating Scala code."
-      - "Teaching assistant for Foundations of Sequential Programs ([CS 241](https://www.student.cs.uwaterloo.ca/~cs241/), [CS 241E](https://www.student.cs.uwaterloo.ca/~cs241e/)) and Compiler Construction ([CS 444](https://www.student.cs.uwaterloo.ca/~cs444/)): held office hours and provided feedback on assignments and exams for the first offering of CS 241E."
+      - "Teaching assistant for [``]Foundations of Sequential Programs[''] ([CS 241](https://www.student.cs.uwaterloo.ca/~cs241/), [CS 241E](https://www.student.cs.uwaterloo.ca/~cs241e/)) and [``]Compiler Construction[''] ([CS 444](https://www.student.cs.uwaterloo.ca/~cs444/)): held office hours and provided feedback on assignments and exams for the first offering of CS 241E."
   -
     title: "Software Development Engineering Intern"
     employer: "Microsoft"
@@ -47,7 +47,7 @@ work:
     location: "Redmond WA"
     date: "Sep [--] Dec 2013"
     description:
-      - "Implemented [user-defined literals](https://en.cppreference.com/w/cpp/language/user_literal) in the Microsoft Visual [CPP] (MSVC) compiler, a [CPP]11 feature that was previously missing from MSVC."
+      - "Implemented [user-defined literals](https://en.cppreference.com/w/cpp/language/user_literal) in the Microsoft Visual [CPP] (MSVC) compiler, a [CPP]11 feature that was missing from MSVC."
   -
     title: "Software Development Engineering Intern"
     employer: "Microsoft"
