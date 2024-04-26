@@ -9,7 +9,7 @@ work:
     title: "Ph.D. Candidate"
     employer: "Northeastern University"
     location: "Boston MA"
-    date: "Sep 2016 [--] present"
+    date: "Sep 2016 [--] Apr 2024"
     description:
       - "Built [TypeWeaver](https://github.com/nuprl/TypeWeaver), the first machine-learning-based tool to migrate files from JavaScript to TypeScript, with a 69[%] success rate (as measured by type checking)."
       - "Fine-tuned and evaluated a large language model for code to [generate type definitions](https://github.com/nuprl/StenoType) for TypeScript, allowing 47[%] of files (with missing type definitions) to type check (22[%] absolute improvement)."
@@ -134,7 +134,7 @@ publications:
     date: "2016"
   -
     authors: "M Safa, [MH Yee], D Rayside, C T Haas"
-    title: "[Optimizing Contractor Selection for Construction Packages in Capital Projects](http://dx.doi.org/10.1061/%28ASCE%29CP.1943-5487.0000555)"
+    title: "[Optimizing Contractor Selection for Construction Packages in Capital Projects](https://dx.doi.org/10.1061/%28ASCE%29CP.1943-5487.0000555)"
     in: "ASCE J. Comput. Civ. Eng"
     date: "2016"
   -
@@ -155,12 +155,12 @@ skills:
 
 education:
   -
-    level: "Candidate for Doctor of Philosophy in Computer Science"
+    level: "Doctor of Philosophy in Computer Science"
     institution: "Northeastern University"
     location: "Boston MA"
-    date: "Apr 2024 (expected)"
+    date: "Apr 2024"
     notes:
-      - "Thesis: Predicting TypeScript Type Annotations and Definitions with Machine Learning"
+      - "Thesis: [Predicting TypeScript Type Annotations and Definitions with Machine Learning](https://hdl.handle.net/2047/D20653005)"
       - "Advisor: [Arjun Guha](https://www.khoury.northeastern.edu/~arjunguha/main/home/)"
   -
     level: "Master of Mathematics in Computer Science"
@@ -168,7 +168,7 @@ education:
     location: "Waterloo ON"
     date: "Jun 2017"
     notes:
-      - "Thesis: [Implementing a Functional Language for Flix](http://hdl.handle.net/10012/10856)"
+      - "Thesis: [Implementing a Functional Language for Flix](https://hdl.handle.net/10012/10856) (completed Aug 2016)"
       - "Advisor: [Ondřej Lhoták](https://plg.uwaterloo.ca/~olhotak/)"
   -
     level: "Bachelor of Software Engineering"
