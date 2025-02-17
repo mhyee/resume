@@ -10,6 +10,10 @@ work:
     employer: "Meta"
     location: "Menlo Park CA"
     date: "Aug 2024 [--] present"
+    description:
+      - "Worked on the runtime software team for [MTIA](https://ai.meta.com/blog/next-generation-meta-training-inference-accelerator-AI-MTIA/), Meta's custom silicon for AI workloads."
+      - "Investigated and demonstrated functional readiness for enabling the next generation PyTorch runtime on MTIA."
+      - "Maintained and refactored a testing/benchmarking tool to improve modularity, allowing internal users to easily extend the tool with custom functionality."
   -
     title: "Ph.D. Candidate"
     employer: "Northeastern University"
@@ -18,7 +22,7 @@ work:
     description:
       - "Built [TypeWeaver](https://github.com/nuprl/TypeWeaver), the first machine-learning-based tool to migrate files from JavaScript to TypeScript, with a 69[%] success rate (as measured by type checking)."
       - "Fine-tuned and evaluated a large language model for code to [generate type definitions](https://github.com/nuprl/StenoType) for TypeScript, allowing 47[%] of files (with missing type definitions) to type check (22[%] absolute improvement)."
-      - "Built an [interpreter in OCaml for a subset of R](https://github.com/reactorlabs/rhotic) to model the relationship between static and dynamic program analysis."
+      - "Built an [interpreter in OCaml for a subset of R](https://github.com/reactorlabs/rhotic) to model static and dynamic program analysis."
       - "Sped up test suite by 15[%] by optimizing dominance graph construction in Ř, a [just-in-time compiler for R](https://github.com/reactorlabs/rir)."
       - "Co-chaired, organized, and led over 40 student volunteers at [ECOOP/ISSTA 2018](https://conf.researchr.org/home/ecoop-issta-2018), an international conference for programming languages and software engineering with over 600 attendees."
       - "Mentored undergraduate, master's, and Ph.D. students by providing feedback and advice on project planning, software development, and written and oral communication."
@@ -45,22 +49,19 @@ work:
     location: "Redmond WA"
     date: "May [--] Jul 2014"
     description:
-      - "Prototyped [concepts lite](https://en.cppreference.com/w/cpp/language/constraints) in the Microsoft Visual [CPP] (MSVC) compiler, a feature that was eventually added to [CPP]20."
+      - "Prototyped [concepts lite](https://en.cppreference.com/w/cpp/language/constraints) in the Microsoft Visual [CPP] compiler, a feature that was eventually added to [CPP]20."
   -
     title: "Software Development Engineering Intern"
     employer: "Microsoft"
     location: "Redmond WA"
     date: "Sep [--] Dec 2013"
     description:
-      - "Implemented [user-defined literals](https://en.cppreference.com/w/cpp/language/user_literal) in the Microsoft Visual [CPP] (MSVC) compiler, a [CPP]11 feature that was missing from MSVC."
+      - "Implemented [user-defined literals](https://en.cppreference.com/w/cpp/language/user_literal), a [CPP]11 feature, in the Microsoft Visual [CPP] compiler."
   -
     title: "Software Development Engineering Intern"
     employer: "Microsoft"
     location: "Redmond WA"
     date: "Jan [--] Apr 2013"
-    description:
-      - "Developed a heap memory collection tool for debugging .NET applications."
-      - "Designed and conducted performance tests for the memory collection tool."
   -
     title: "Undergraduate Research Assistant"
     employer: "University of Waterloo"
@@ -152,7 +153,7 @@ publications:
 
 skills:
   - "Implementation experience: interpreters, just-in-time compilers, memory management, program analysis."
-  - "Languages: C, [CPP], Java, Scala, OCaml, Python, Ruby, JavaScript, TypeScript, R."
+  - "Languages: C, [CPP], Rust, Java, Scala, OCaml, Python, Ruby, JavaScript, TypeScript, R."
   - "Compilation targets: ARM, JVM, LLVM, MIPS, x86."
 
 education:
