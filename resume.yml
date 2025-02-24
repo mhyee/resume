@@ -9,19 +9,19 @@ work:
     title: "Research Scientist"
     employer: "Meta"
     location: "Menlo Park CA"
-    date: "Aug 2024 [--] present"
+    date: "Aug 2024[--]present"
     description:
       - "Worked on the runtime software team for [MTIA](https://ai.meta.com/blog/next-generation-meta-training-inference-accelerator-AI-MTIA/), Meta's custom silicon for AI workloads."
       - "Investigated and demonstrated functional readiness for enabling the next generation PyTorch runtime on MTIA."
       - "Maintained and refactored a testing/benchmarking tool to improve modularity, allowing internal users to easily extend the tool with custom functionality."
   -
-    title: "Ph.D. Candidate"
+    title: "Research Assistant and Teaching Assistant"
     employer: "Northeastern University"
     location: "Boston MA"
-    date: "Sep 2016 [--] Apr 2024"
+    date: "Sep 2016[--]Apr 2024"
     description:
       - "Built [TypeWeaver](https://github.com/nuprl/TypeWeaver), the first machine-learning-based tool to migrate files from JavaScript to TypeScript, with a 69[%] success rate (as measured by type checking)."
-      - "Fine-tuned and evaluated a large language model for code to [generate type definitions](https://github.com/nuprl/StenoType) for TypeScript, allowing 47[%] of files (with missing type definitions) to type check (22[%] absolute improvement)."
+      - "Fine-tuned and evaluated a code LLM to [generate type definitions](https://github.com/nuprl/StenoType) for TypeScript, allowing 47[%] of files (with missing type definitions) to type check (22[%] absolute improvement)."
       - "Built an [interpreter in OCaml for a subset of R](https://github.com/reactorlabs/rhotic) to model static and dynamic program analysis."
       - "Sped up test suite by 15[%] by optimizing dominance graph construction in Ř, a [just-in-time compiler for R](https://github.com/reactorlabs/rir)."
       - "Co-chaired, organized, and led over 40 student volunteers at [ECOOP/ISSTA 2018](https://conf.researchr.org/home/ecoop-issta-2018), an international conference for programming languages and software engineering with over 600 attendees."
@@ -31,63 +31,51 @@ work:
     title: "Researcher Intern"
     employer: "Microsoft Research"
     location: "Cambridge UK"
-    date: "Sep [--] Dec 2019"
+    date: "Sep[--]Dec 2019"
     description:
-      - "Explored, implemented, and tested different memory management strategies for [Project Verona](https://github.com/microsoft/verona-rt)."
+      - "Implemented and evaluated different memory management strategies for [Project Verona](https://github.com/microsoft/verona-rt), a research programming language for concurrent ownership."
   -
-    title: "MMath Candidate"
+    title: "Research Assistant and Teaching Assistant"
     employer: "University of Waterloo"
     location: "Waterloo ON"
-    date: "Sep 2014 [--] Aug 2016"
+    date: "Sep 2014[--]Aug 2016"
     description:
-      - "Designed and led the implementation of the original interpreter and compiler for the functional sub-language of [Flix](https://flix.dev/)."
-      - "Experimented with different code generation techniques for Flix, such as Scala macros and generating Scala code."
+      - "Designed, implemented, and benchmarked the interpreter and compiler for the functional sub-language of [Flix](https://flix.dev/)."
+      - "Experimented with different code generation techniques for Flix, such as using Scala macros."
       - "Teaching assistant for [``]Foundations of Sequential Programs[''] ([CS 241](https://www.student.cs.uwaterloo.ca/~cs241/), [CS 241E](https://www.student.cs.uwaterloo.ca/~cs241e/)) and [``]Compiler Construction[''] ([CS 444](https://www.student.cs.uwaterloo.ca/~cs444/)): held office hours and provided feedback on assignments and exams for the first offering of CS 241E."
   -
     title: "Software Development Engineering Intern"
     employer: "Microsoft"
     location: "Redmond WA"
-    date: "May [--] Jul 2014"
+    date: "Sep[--]Dec 2013; May[--]Jul 2014"
     description:
-      - "Prototyped [concepts lite](https://en.cppreference.com/w/cpp/language/constraints) in the Microsoft Visual [CPP] compiler, a feature that was eventually added to [CPP]20."
+      - "Implemented [user-defined literals](https://en.cppreference.com/w/cpp/language/user_literal), a [CPP]11 feature, in the Microsoft Visual [CPP] compiler, bringing the compiler closer to C++ standards conformance."
+      - "Prototyped [concepts lite](https://en.cppreference.com/w/cpp/language/constraints) in the Microsoft Visual [CPP] compiler, a feature that was eventually added to the [CPP] standard and shipped in Visual Studio 2019."
   -
     title: "Software Development Engineering Intern"
     employer: "Microsoft"
     location: "Redmond WA"
-    date: "Sep [--] Dec 2013"
-    description:
-      - "Implemented [user-defined literals](https://en.cppreference.com/w/cpp/language/user_literal), a [CPP]11 feature, in the Microsoft Visual [CPP] compiler."
-  -
-    title: "Software Development Engineering Intern"
-    employer: "Microsoft"
-    location: "Redmond WA"
-    date: "Jan [--] Apr 2013"
+    date: "Jan[--]Apr 2013"
   -
     title: "Undergraduate Research Assistant"
     employer: "University of Waterloo"
     location: "Waterloo ON"
-    date: "May [--] Dec 2012"
+    date: "Apr[--]Dec 2012"
   -
-    title: "Developer"
-    employer: "Engagio (formerly Eqentia)"
-    location: "Toronto ON"
-    date: "Sep [--] Dec 2011"
-    description:
-  -
-    title: "Developer"
+    title: "Web Developer Intern"
     employer: "Eqentia"
     location: "Toronto ON"
-    date: "Jan [--] Apr 2011"
+    date: "Jan[--]Apr; Aug[--]Dec 2011"
   -
     title: "Software Development Research Intern"
     employer: "Genesys Telecommunications Laboratories"
     location: "Markham ON"
-    date: "May [--] Aug 2010"
+    date: "May[--]Aug 2010"
   -
-    title: "Junior Developer"
+    title: "Software Developer Intern"
     employer: "Robarts Research Institute"
     location: "London ON"
-    date: "Jul [--] Aug 2008"
+    date: "Jun[--]Aug 2008"
 
 publications:
   -
@@ -171,7 +159,7 @@ education:
     location: "Waterloo ON"
     date: "Jun 2017"
     notes:
-      - "Thesis: [Implementing a Functional Language for Flix](https://hdl.handle.net/10012/10856) (completed Aug 2016)"
+      - "Thesis: [Implementing a Functional Language for Flix](https://hdl.handle.net/10012/10856) (completed Sep 2016)"
       - "Advisor: [Ondřej Lhoták](https://plg.uwaterloo.ca/~olhotak/)"
   -
     level: "Bachelor of Software Engineering"
