@@ -56,26 +56,49 @@ work:
     employer: "Microsoft"
     location: "Redmond WA"
     date: "Jan[--]Apr 2013"
+    hidden:
+      - "Prototyped and developed a heap memory collection tool for .NET applications."
+      - "Designed and conducted performance tests for the memory collection tool."
+      - "Implemented LINQ for heap memory graphs."
   -
     title: "Undergraduate Research Assistant"
     employer: "University of Waterloo"
     location: "Waterloo ON"
     date: "Apr[--]Dec 2012"
+    hidden:
+      - "Investigated how to improve developer productivity by automatically producing test cases from stack traces."
+      - "Analyzed software dependencies using the LLVM infrastructure."
   -
     title: "Web Developer Intern"
     employer: "Eqentia"
     location: "Toronto ON"
     date: "Jan[--]Apr; Aug[--]Dec 2011"
+    hidden:
+      - "Designed and implemented a feature for users to submit content by emailing a private Eqentia email address."
+      - "Migrated Eqentia's outgoing email services to use the Amazon Simple Email Service, improving reliability and reducing costs."
+      - "Co-led the implementation and migration to a new front-end interface design."
+      - "Developed a feature for tracking and sorting news articles by relevancy."
+      - "Designed monitors and alerts to track Amazon Web Services costs, allowing computing expenses to be reduced."
+      - "Enhanced and maintained Eqentia's custom PHP WordPress plugin."
+      - "As part of a two-person development team, designed, built, and launched [Engagio](https://www.avc.com/a_vc/2011/12/engagio.html), [``]the universal commenting inbox,[''] by integrating multiple APIs from external services."
+      - "Optimized Engagio's background task queueing system to dynamically prioritize comment fetch tasks."
   -
     title: "Software Development Research Intern"
     employer: "Genesys Telecommunications Laboratories"
     location: "Markham ON"
     date: "May[--]Aug 2010"
+    hidden:
+      - "Developed a proof-of-concept speech analytics application in VoiceXML and SCXML, to improve customer experience at call centres."
+      - "Designed and implemented an interactive web-based report for call recordings."
+      - "Integrated external APIs into a Java backend and added support for multichannel audio processing."
   -
     title: "Software Developer Intern"
     employer: "Robarts Research Institute"
     location: "London ON"
     date: "Jun[--]Aug 2008"
+    hidden:
+      - "Implemented a module for aligning MRI spectroscopy data, using Interactive Data Language."
+      - "Used the new module to examine data from clinical trials, resulting in a [publication in Alzheimer's [&] Dementia](https://doi.org/10.1016/j.jalz.2009.04.138)."
 
 publications:
   -
