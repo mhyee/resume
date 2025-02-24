@@ -6,10 +6,10 @@ def escape(input='')
     input.map{|elt| escape(elt)}
   when String
     # Do the actual escaping here
-    input.gsub!(/\[&\]/, '&;')            # Ampersands
+    input.gsub!(/\[&\]/, '&')             # Ampersands
     input.gsub!(/\[LaTeX\]/, 'LaTeX')     # LaTeX
-    input.gsub!(/\[``\]/, '"')           # Smart quotes (open)
-    input.gsub!(/\[''\]/, '"')           # Smart quotes (close)
+    input.gsub!(/\[``\]/, '"')            # Smart quotes (open)
+    input.gsub!(/\[''\]/, '"')            # Smart quotes (close)
     input.gsub!(/\[#\]/, '#')             # Number sign
     input.gsub!(/\[\$\]/, '$')            # Dollar sign
     input.gsub!(/\[%\]/, '%')             # Percent sign
